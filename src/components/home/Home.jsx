@@ -21,8 +21,29 @@ function Home() {
                 <i class="fa-brands fa-github"></i>
                 <i class="fa-brands fa-docker"></i>
                 <i class="fa-brands fa-python"></i>
-                
+                <p>Mongo DB and SQL</p>
+            </div>
+            <div className={styles.projects}>
+                <h3>Brandywine Carriage Tours</h3>
+                <p>A website I built for a horse drawn carriage service</p>
+                <p>Include an image</p>
+                <p>Include a link</p>
 
+                <h3>Project 2</h3>
+                <p>A website for a horseback riding school</p>
+                <p>Include an image</p>
+                <p>Include a link</p>
+
+                <h3>Guitar Paths</h3>
+                <p>A website where you can sign up and access several different lessons for guitarist who want to sing while playing.</p>
+                <p>Include a video</p>
+                <p>Include a link</p>
+            </div>
+            <div className={styles.pricing}>
+                <h1>Pricing</h1>
+                <p>
+                    40$/hour or 800$/website
+                </p>
             </div>
         </div>
     );
