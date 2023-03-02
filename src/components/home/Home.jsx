@@ -9,6 +9,7 @@ function Home() {
                 <h3>A web developer</h3>
                 <p>I create beautiful, responsive websites</p>
                 <p>Elevate your business with a modern look!</p>
+                <p>WEEEEE!!!! Testing</p>
             </div>
             <div className={styles.tech}>
                 <h3>My tech stack</h3>
