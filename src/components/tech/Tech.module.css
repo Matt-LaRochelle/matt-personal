@@ -1,0 +1,19 @@
+.tech {
+    color: #333;
+}
+
+.title {
+    padding: 30px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.stack {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.stack i {
+    padding: 30px;
+    font-size: 3rem;
+}
