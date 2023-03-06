@@ -1,5 +1,6 @@
 .tech {
     color: #333;
+    width: 100%;
 }
 
 .title {
@@ -9,11 +10,34 @@
 }
 
 .stack {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-}
-.stack i {
-    padding: 30px;
+    width: 80%;
     font-size: 3rem;
+    margin: auto;
+    text-align: center;
+}
+
+.stack p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.row3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1rem;
 }
