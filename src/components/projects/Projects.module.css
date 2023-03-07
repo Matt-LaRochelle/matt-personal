@@ -1,11 +1,11 @@
-.projects {
+.portfolio {
     background-color: #333;
     color: lightblue;
     padding: 80px;
     text-align: center;
 }
 
-.projects h1 {
+.portfolio h1 {
     font-size: 3rem;
 }
 
@@ -15,32 +15,28 @@
 }
 
 .project {
-    padding: 40px;
-    text-align: center;
-}
-
-.project h3 {
-    font-size: 2rem;
-}
-
-.project p {
-    font-size: 1.2rem;
-    margin-top: 20px;
-}
-
-.project img {
-    height: 400px;
-    width: 300px;
+    display: grid;
+    grid-template-columns: 300px 100px;
+    grid-template-rows: 2;
     border-style: solid;
-    border-width: 5px;
-    border-color: linear-gradient(rgb(226, 231, 233), rgb(29, 175, 224));
+}
 
-    margin: 20px auto;
+
+.project_content {
+    border-style: solid;
+}
+
+.project_image img {
+    border-style: solid;
+    height: 200px;
+    width: auto;
+    object-fit: contain;
 }
 
 .links {
     display: flex;
     justify-content: space-evenly;
+    border-style: solid;
 }
 
 .links button {

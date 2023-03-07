@@ -12,7 +12,7 @@ import {IoLogoJavascript} from 'react-icons/io';
 
 function Projects() {
     return (
-        <div className={styles.projects}>
+        <div className={styles.portfolio}>
         <h1>Projects</h1>
             <Swiper
                 spaceBetween={10}
@@ -24,10 +24,14 @@ function Projects() {
                 className={styles.container}
             >
                 <SwiperSlide className={styles.project}>
-                    <h3>Brandywine Carriage Tours</h3>
-                    <p>A website I built for a horse drawn carriage service</p>
-                    <p><FaReact /> <IoLogoJavascript /> <FaHtml5 /> <FaCss3 /></p>
-                    <img src={ImgCarriage} alt='horse-carriage website' />
+                    <div className={styles.project_content}>
+                        <h3>Brandywine Carriage Tours</h3>
+                        <p>A website I built for a horse drawn carriage service</p>
+                        <p><FaReact /> <IoLogoJavascript /> <FaHtml5 /> <FaCss3 /></p>
+                    </div>
+                    <div className={styles.project_image}>
+                        <img src={ImgCarriage} alt='horse-carriage website' />
+                    </div>
                     <div className={styles.links}>
                         <button><a href='https://moonlit-shortbread-27d65b.netlify.app'>Link</a></button>
                         <button><a href='https://github.com/Matt-LaRochelle/carriage'>Code</a></button>
@@ -40,11 +44,14 @@ function Projects() {
                     <p>Include a link</p>
                 </SwiperSlide>
                 <SwiperSlide className={styles.project}>
-                    <h3>Portfolio website</h3>
-                    <p>A website built to track my projects and show to potential clients</p>
-                    <p><FaReact /> <IoLogoJavascript /> <FaHtml5 /> <FaCss3 /></p>
-                    <p></p>
-                    <img src={Personal} alt="my personal website" />
+                    <div className={styles.project_content}>
+                        <h3>Portfolio website</h3>
+                        <p>A website built to track my projects and show to potential clients</p>
+                        <p><FaReact /> <IoLogoJavascript /> <FaHtml5 /> <FaCss3 /></p>
+                    </div>
+                    <div className={styles.project_image}>
+                        <img src={Personal} alt="my personal website" />
+                    </div>
                     <div className={styles.links}>
                         <button><a href='https://rad-meringue-4511ee.netlify.app/'>Link</a></button>
                         <button><a href='https://github.com/Matt-LaRochelle/matt-personal'>Code</a></button>
