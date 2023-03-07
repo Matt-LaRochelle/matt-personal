@@ -12,6 +12,7 @@ import {IoLogoJavascript} from 'react-icons/io';
 function Projects() {
     return (
         <div className={styles.projects}>
+        <h1>My Projects</h1>
             <Swiper
                 spaceBetween={10}
                 slidesPerView={1}
@@ -25,7 +26,7 @@ function Projects() {
                     <h3>Brandywine Carriage Tours</h3>
                     <p>A website I built for a horse drawn carriage service</p>
                     <p><FaReact /> <IoLogoJavascript /> <FaHtml5 /> <FaCss3 /></p>
-                    <img src={ImgCarriage} alt='picture of horse-carriage website' />
+                    <img src={ImgCarriage} alt='horse-carriage website' />
                     <div className={styles.links}>
                         <button><a href='https://moonlit-shortbread-27d65b.netlify.app'>Link</a></button>
                         <button><a href='https://github.com/Matt-LaRochelle/carriage'>Code</a></button>

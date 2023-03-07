@@ -13,11 +13,20 @@
     background-color:#f9f9f992;
     border-radius: 8px;
     box-shadow: rgba(0,0,0,0.9) 0px 8px 24px;
-    max-width: 200px;
     width: 100%;
     margin: auto;
     padding: 6px 15px;
     text-align: center;
+}
+
+.t1 {
+    font-size: 3rem;
+    max-width: 240px;
+}
+
+.t2 {
+    font-size: 1.4rem;
+    max-width: 220px;
 }
 
 .t2 span {

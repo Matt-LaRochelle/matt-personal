@@ -48,4 +48,6 @@
     border: 1px solid #333;
     border-radius: 8px;
     padding: 10px;
+    box-shadow: rgba(0,0,0,0.5) 0px 4px 10px;
+    background-image: linear-gradient(rgb(136, 229, 252), rgb(96, 215, 245));
 }
