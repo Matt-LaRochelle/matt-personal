@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.pricing h1 {
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
 .pricing p {
-    padding: 40px;
+    padding: 10px;
 }

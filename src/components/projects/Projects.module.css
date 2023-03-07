@@ -45,7 +45,7 @@
 .links button {
     background-image: linear-gradient(lightblue, rgb(84, 192, 228));
     border: none;
-    color: darkblue;
+    color: #333;
     border-radius: 8px;
     font-size: 1.6rem;
     padding: 12px;
@@ -60,5 +60,13 @@
 
 .links a:visited {
     color: inherit;
+}
+
+.swiper-button-prev {
+    color: red; 
+}
+
+.swiper-button-next {
+    color: #000; 
 }
 

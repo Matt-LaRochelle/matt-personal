@@ -8,7 +8,7 @@ function Tech() {
     return (
         <div>
             <div className={styles.tech}>
-                <h3 className={styles.title}>My Tech Stack</h3>
+                <h3 className={styles.title}>Skills</h3>
                 <div className={styles.stack}>
                     <div className={styles.row1}>
                         <div className={styles.item}>

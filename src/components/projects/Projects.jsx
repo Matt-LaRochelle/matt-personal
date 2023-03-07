@@ -12,7 +12,7 @@ import {IoLogoJavascript} from 'react-icons/io';
 function Projects() {
     return (
         <div className={styles.projects}>
-        <h1>My Projects</h1>
+        <h1>Projects</h1>
             <Swiper
                 spaceBetween={10}
                 slidesPerView={1}
