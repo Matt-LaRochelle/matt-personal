@@ -1,6 +1,8 @@
 .tech {
     color: #333;
     width: 100%;
+    padding: 80px;
+    background-color: rgb(136, 229, 252);
 }
 
 .title {
@@ -40,4 +42,10 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     margin-bottom: 1rem;
+}
+
+.item {
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px;
 }

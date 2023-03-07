@@ -6,7 +6,7 @@ function Pricing() {
         <div className={styles.pricing}>
                 <h1>Pricing</h1>
                 <p>
-                    40$/hour or 800$/website
+                    $40/hour or $800/website
                 </p>
             </div>
     );
