@@ -27,8 +27,8 @@ function Tech() {
                             <FaCss3 />
                             <p>CSS</p>
                         </div>
-                    </div>
-                    <div className={styles.row2}>
+                    {/* </div> */}
+                    {/* <div className={styles.row2}> */}
                         <div className={styles.item}>
                             <FaBootstrap />
                             <p>Bootstrap</p>
@@ -45,8 +45,8 @@ function Tech() {
                             <FaPython />
                             <p>Python</p>
                         </div>
-                    </div>
-                    <div className={styles.row3}>
+                    {/* </div>
+                    <div className={styles.row3}> */}
                         <div className={styles.item}>
                             <FaGithub />
                             <p>GitHub</p>
