@@ -44,7 +44,10 @@
     border-radius: 8px;
     font-size: 1.6rem;
     padding: 12px;
+}
 
+.links button:hover {
+    background-image: linear-gradient(rgb(127, 255, 144), rgb(48, 220, 71))
 }
 .links a {
     text-decoration: none;

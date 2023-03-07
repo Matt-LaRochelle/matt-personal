@@ -4,6 +4,7 @@ import Title from '../title/Title';
 import Tech from '../tech/Tech';
 import Projects from '../projects/Projects';
 import Pricing from '../pricing/Pricing';
+import Footer from '../footer/Footer';
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
             <Tech />
             <Projects />
             <Pricing />
+            <Footer />
         </div>
     );
 }

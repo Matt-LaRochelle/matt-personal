@@ -1,0 +1,34 @@
+.container {
+    height: 200px;
+    width: 100%;
+    background-color: #333;
+    color: rgb(136, 229, 252);
+    text-align: center;
+    padding: 40px;
+}
+
+.container p {
+    padding-bottom: 20px;
+}
+
+.container .icon {
+    font-size: 2rem;
+}
+
+.icons {
+    margin: auto;
+    margin-bottom: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.icon:hover {
+    color: rgb(127, 255, 144);
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+a:visited {
+    color: inherit;
+}
