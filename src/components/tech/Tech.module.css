@@ -2,7 +2,8 @@
     color: #333;
     width: 100%;
     padding: 80px;
-    background-color: rgb(136, 229, 252);
+    /* background-color: rgb(136, 229, 252); */
+    background-color: #f8f8f8;
 }
 
 .title {

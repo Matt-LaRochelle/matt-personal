@@ -10,8 +10,8 @@
 }
 
 .container {
-    width: 600px;
-    height: 700px;
+    width: 800px;
+    height: 800px;
 }
 
 .project {
@@ -33,6 +33,7 @@
     width: auto;
     border-style: solid;
     border-width: 5px;
+    border-color: linear-gradient(rgb(226, 231, 233), rgb(29, 175, 224));
 
     margin: 20px auto;
 }
@@ -43,7 +44,7 @@
 }
 
 .links button {
-    background-image: linear-gradient(lightblue, rgb(84, 192, 228));
+    background-image: linear-gradient(rgb(147, 197, 214), rgb(84, 192, 228));
     border: none;
     color: #333;
     border-radius: 8px;
@@ -52,7 +53,8 @@
 }
 
 .links button:hover {
-    background-image: linear-gradient(rgb(127, 255, 144), rgb(48, 220, 71))
+    background-image: linear-gradient(rgb(127, 255, 144), rgb(48, 220, 71));
+    cursor: pointer;
 }
 .links a {
     text-decoration: none;

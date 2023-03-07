@@ -6,6 +6,7 @@ import 'swiper/css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import ImgCarriage from '../images/carriage_pic.png';
+import Personal from '../images/personal.png'
 import { FaReact, FaHtml5, FaCss3 } from 'react-icons/fa';
 import {IoLogoJavascript} from 'react-icons/io';
 
@@ -39,10 +40,15 @@ function Projects() {
                     <p>Include a link</p>
                 </SwiperSlide>
                 <SwiperSlide className={styles.project}>
-                    <h3>Guitar Paths</h3>
-                    <p>A website where you can sign up and access several different lessons for guitarist who want to sing while playing.</p>
-                    <p>Include a video</p>
-                    <p>Include a link</p>
+                    <h3>Portfolio website</h3>
+                    <p>A website built to track my projects and show to potential clients</p>
+                    <p><FaReact /> <IoLogoJavascript /> <FaHtml5 /> <FaCss3 /></p>
+                    <p></p>
+                    <img src={Personal} alt="my personal website" />
+                    <div className={styles.links}>
+                        <button><a href='https://rad-meringue-4511ee.netlify.app/'>Link</a></button>
+                        <button><a href='https://github.com/Matt-LaRochelle/matt-personal'>Code</a></button>
+                    </div>
                 </SwiperSlide>
             </Swiper>
                 
