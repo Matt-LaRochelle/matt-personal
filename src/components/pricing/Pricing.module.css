@@ -3,12 +3,12 @@
     background-color: #f8f8f8;
     width: 100%;
     height: auto;
-    color: #333;
+    color: #444;
     padding: 80px;
     text-align: center;
 }
 
-.pricing h1 {
+.pricing > h1 {
     margin-bottom: 40px;
     font-size: 3rem;
 }
