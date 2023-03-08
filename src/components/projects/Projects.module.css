@@ -3,6 +3,8 @@
     color: lightblue;
     padding: 80px;
     text-align: center;
+    /* border-style: solid;
+    border-color: red; */
 }
 
 .portfolio h1 {
@@ -11,33 +13,73 @@
 
 .container {
     width: 800px;
-    height: 800px;
+    height: 500px;
+    /* border-style: solid;
+    border-color: orange; */
 }
 
 .project {
+    /* border-style: solid;
+    border-color: yellow; */
     display: grid;
-    grid-template-columns: 300px 100px;
-    grid-template-rows: 2;
-    border-style: solid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 6fr, 1fr;
+    gap: 1.5rem;
+    height: 90%;
+    width: 90%;
+    margin: auto;
 }
 
-
 .project_content {
-    border-style: solid;
+    /* border-style: solid;
+    border-color: green; */
+    text-align: left;
+    position: relative;
+}
+
+.project_content h3 {
+    margin: 20px;
+    color:rgb(62, 135, 214)
+}
+
+.project_content p, li {
+    margin-left: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.project_image {
+    /* border-style: solid;
+    border-color: blue; */
 }
 
 .project_image img {
-    border-style: solid;
-    height: 200px;
-    width: auto;
-    object-fit: contain;
+    margin-top: 20px;
+    height: 400px;
+    width: 300px;
+    object-fit: fill;
+    /* border-style: solid;
+    border-color: orange; */
 }
 
 .links {
+    /* border-style: solid;
+    border-color: purple; */
+    position: absolute;
+    bottom: 40px;
     display: flex;
     justify-content: space-evenly;
-    border-style: solid;
+    height: 60px;
+    width: 100%;
+
 }
+
+
+
+
+
 
 .links button {
     background-image: linear-gradient(rgb(147, 197, 214), rgb(84, 192, 228));
@@ -58,13 +100,5 @@
 
 .links a:visited {
     color: inherit;
-}
-
-.swiper-button-prev {
-    color: red; 
-}
-
-.swiper-button-next {
-    color: #000; 
 }
 
