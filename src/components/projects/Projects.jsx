@@ -61,6 +61,13 @@ function Projects() {
                         <div className={styles.project_content}>
                             <h3>Portfolio website</h3>
                             <p>A website built to track my projects and show to potential clients</p>
+                            <h3>Challenges faced</h3>
+                            <ul>
+                                <li>Darkening an image to lay text on top</li>
+                                <li>Practice with CSS grid</li>
+                                <li>Absolute and relative positioning</li>
+                            </ul>
+                            <h3>Technologies used:</h3>
                             <p><FaReact /> <IoLogoJavascript /> <FaHtml5 /> <FaCss3 /></p>
                             <div className={styles.links}>
                                 <button><a href='https://rad-meringue-4511ee.netlify.app/'>Link</a></button>
