@@ -18,7 +18,6 @@ function Projects() {
                 spaceBetween={10}
                 slidesPerView={1}
                 loop={true}
-                navigation={true}
                 pagination={{clickable: true}}
                 modules={[Pagination, Navigation]}
                 className={styles.container}
@@ -50,14 +49,6 @@ function Projects() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.project}>
-                        <h3>Project 2</h3>
-                        <p>A website for a horseback riding school</p>
-                        <p>Include an image</p>
-                        <p>Include a link</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.project}>
                         <div className={styles.project_content}>
                             <h3>Portfolio website</h3>
                             <p>A website built to track my projects and show to potential clients</p>
@@ -66,6 +57,8 @@ function Projects() {
                                 <li>Darkening an image to lay text on top</li>
                                 <li>Practice with CSS grid</li>
                                 <li>Absolute and relative positioning</li>
+                                <li>Using borders to debug CSS styling</li>
+                                <li>Creating responsive layouts</li>
                             </ul>
                             <h3>Technologies used:</h3>
                             <p><FaReact /> <IoLogoJavascript /> <FaHtml5 /> <FaCss3 /></p>
