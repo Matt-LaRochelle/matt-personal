@@ -38,8 +38,8 @@ function Projects() {
                             <h3>Technologies used:</h3>
                             <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
                             <div className={styles.links}>
-                                <button><a href='https://moonlit-shortbread-27d65b.netlify.app'>Link</a></button>
-                                <button><a href='https://github.com/Matt-LaRochelle/carriage'>Code</a></button>
+                                <a href='https://moonlit-shortbread-27d65b.netlify.app'><button>Link</button></a>
+                                <a href='https://github.com/Matt-LaRochelle/carriage'><button>Code</button></a>
                             </div>
                         </div>
                         <div className={styles.project_image}>
@@ -63,8 +63,8 @@ function Projects() {
                             <h3>Technologies used:</h3>
                             <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
                             <div className={styles.links}>
-                                <button><a href='https://rad-meringue-4511ee.netlify.app/'>Link</a></button>
-                                <button><a href='https://github.com/Matt-LaRochelle/matt-personal'>Code</a></button>
+                                <a href='https://rad-meringue-4511ee.netlify.app/'><button>Link</button></a>
+                                <a href='https://github.com/Matt-LaRochelle/matt-personal'><button>Code</button></a>
                             </div>
                         </div>
                         <div className={styles.project_image}>
