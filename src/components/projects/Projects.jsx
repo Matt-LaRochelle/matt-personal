@@ -36,7 +36,7 @@ function Projects() {
                                 <li>Creating a custom contact form</li>
                             </ul>
                             <h3>Technologies used:</h3>
-                            <p><FaReact /> <IoLogoJavascript /> <FaHtml5 /> <FaCss3 /></p>
+                            <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
                             <div className={styles.links}>
                                 <button><a href='https://moonlit-shortbread-27d65b.netlify.app'>Link</a></button>
                                 <button><a href='https://github.com/Matt-LaRochelle/carriage'>Code</a></button>
@@ -51,7 +51,7 @@ function Projects() {
                     <div className={styles.project}>
                         <div className={styles.project_content}>
                             <h3>Portfolio website</h3>
-                            <p>A website built to track my projects and show to potential clients</p>
+                            <p>A website built to track my projects and show to clients</p>
                             <h3>Challenges faced</h3>
                             <ul>
                                 <li>Darkening an image to lay text on top</li>
@@ -61,7 +61,7 @@ function Projects() {
                                 <li>Creating responsive layouts</li>
                             </ul>
                             <h3>Technologies used:</h3>
-                            <p><FaReact /> <IoLogoJavascript /> <FaHtml5 /> <FaCss3 /></p>
+                            <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
                             <div className={styles.links}>
                                 <button><a href='https://rad-meringue-4511ee.netlify.app/'>Link</a></button>
                                 <button><a href='https://github.com/Matt-LaRochelle/matt-personal'>Code</a></button>

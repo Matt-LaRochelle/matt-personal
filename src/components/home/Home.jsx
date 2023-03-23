@@ -10,8 +10,8 @@ function Home() {
     return (
         <div className={styles.container}>
             <Title />
-            <Tech />
             <Projects />
+            <Tech />
             <Pricing />
             <Footer />
         </div>

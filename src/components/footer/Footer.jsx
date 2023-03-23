@@ -3,6 +3,10 @@ import styles from './Footer.module.css';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Footer() {
+
+    const d = new Date();
+    let year = d.getFullYear();
+
     return (
         <div className={styles.container}>
             <div className={styles.icons}>
@@ -10,7 +14,7 @@ function Footer() {
                 <a href='https://www.linkedin.com/in/matthew-la-rochelle-565b41245/'><FaLinkedin className={styles.icon} /></a>
             </div>
             <p>larochelle.matthew@gmail.com</p>
-            <p>Copyright 2023</p>
+            <p>Copyright {year}</p>
         </div>
     );
 }

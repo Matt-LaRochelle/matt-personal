@@ -5,13 +5,22 @@
     height: auto;
     color: #444;
     padding: 80px;
-    text-align: left;
+    text-align: center;
 }
 
 .pricing > h1 {
     margin-bottom: 40px;
     font-size: 3rem;
+    text-align: center;
 }
 .pricing p {
     padding: 10px;
+}
+
+.container {
+    text-align: left;
+    margin: auto;
+    /* border: 1px solid blue; */
+    width: 190px;
+    padding-left: 10px;
 }

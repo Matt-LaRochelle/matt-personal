@@ -12,20 +12,20 @@ function Tech() {
                 <div className={styles.stack}>
                     <div className={styles.row1}>
                         <div className={styles.item}>
-                            <FaReact />
-                            <p>React</p>
-                        </div>
-                        <div className={styles.item}>
-                            <IoLogoJavascript />
-                            <p>JavaScript</p>
-                        </div>
-                        <div className={styles.item}>
                             <FaHtml5 />
                             <p>HTML</p>
                         </div>
                         <div className={styles.item}>
                             <FaCss3 />
                             <p>CSS</p>
+                        </div>
+                        <div className={styles.item}>
+                            <IoLogoJavascript />
+                            <p>JavaScript</p>
+                        </div>
+                        <div className={styles.item}>
+                            <FaReact />
+                            <p>React</p>
                         </div>
                     {/* </div> */}
                     {/* <div className={styles.row2}> */}
@@ -42,8 +42,8 @@ function Tech() {
                             <p>MySQL</p>
                         </div>
                         <div className={styles.item}>
-                            <FaPython />
-                            <p>Python</p>
+                            <FaNodeJs />
+                            <p>NodeJS</p>
                         </div>
                     {/* </div>
                     <div className={styles.row3}> */}
@@ -56,8 +56,8 @@ function Tech() {
                             <p>Docker</p>
                         </div>
                         <div className={styles.item}>
-                            <FaNodeJs />
-                            <p>NodeJS</p>
+                            <FaPython />
+                            <p>Python</p>
                         </div>
                     </div>
                 </div>

@@ -5,9 +5,12 @@ function Pricing() {
     return (
         <div className={styles.pricing}>
                 <h1>Pricing</h1>
-                <p>$500/website starting price</p>
-                <p>Includes one week of revisions after completion of website</p>
-                <p>40$/hour for updates and adjustments</p>
+                <div className={styles.container}>
+                    <p>10$ Consultation</p>
+                    <p>100$ Wireframe</p>
+                    <p>500$ Website</p>
+                    <p>40$/hour for updates</p>
+                </div>
             </div>
     );
 }
