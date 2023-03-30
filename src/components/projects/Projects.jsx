@@ -6,7 +6,8 @@ import 'swiper/css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import ImgCarriage from '../images/carriage_pic.png';
-import Personal from '../images/personal.png'
+import Personal from '../images/personal.png';
+import Norman from '../images/Norman.png';
 import { FaReact, FaHtml5, FaCss3 } from 'react-icons/fa';
 import {IoLogoJavascript} from 'react-icons/io';
 
@@ -69,6 +70,31 @@ function Projects() {
                         </div>
                         <div className={styles.project_image}>
                             <img src={Personal} alt="my personal website" />
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className={styles.project}>
+                        <div className={styles.project_content}>
+                            <h3>Norman Espinoza</h3>
+                            <p>A website for marketing as an opera singer</p>
+                            <h3>Challenges faced</h3>
+                            <ul>
+                                <li>Getting an image to fill a full page</li>
+                                <li>Practice with CSS grid</li>
+                                <li>Absolute and relative positioning</li>
+                                <li>Using borders to debug CSS styling</li>
+                                <li>Creating responsive layouts</li>
+                            </ul>
+                            <h3>Technologies used:</h3>
+                            <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
+                            <div className={styles.links}>
+                                <a href='https://stellular-cheesecake-af5f51.netlify.app'><button>Link</button></a>
+                                <a href='https://github.com/Matt-LaRochelle/norman-sings'><button>Code</button></a>
+                            </div>
+                        </div>
+                        <div className={styles.project_image}>
+                            <img src={Norman} alt="my personal website" />
                         </div>
                     </div>
                 </SwiperSlide>
