@@ -29,6 +29,10 @@
     border: none;
 }
 
+.input:focus {
+    outline: none;
+}
+
 .btn {
     display: block;
     margin: 0 auto;
