@@ -13,7 +13,6 @@ function Footer() {
                 <a href='https://github.com/Matt-LaRochelle'><FaGithub className={styles.icon} /></a>
                 <a href='https://www.linkedin.com/in/matthew-la-rochelle-565b41245/'><FaLinkedin className={styles.icon} /></a>
             </div>
-            <p>larochelle.matthew@gmail.com</p>
             <p>Copyright {year}</p>
         </div>
     );

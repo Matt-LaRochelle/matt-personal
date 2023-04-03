@@ -1,7 +1,7 @@
 .container {
     background-color: #f8f8f8;
     width: 100%;
-    height: auto;
+    height: 700px;
 }
 
 
@@ -24,6 +24,9 @@
     margin: 5px auto 20px;
     width: 380px;
     font-size: 1.2rem;
+    padding: 4px 10px;
+    box-shadow: rgba(0,0,0,0.2) 0px 4px 10px;
+    border: none;
 }
 
 .btn {
@@ -33,5 +36,8 @@
     font-size: 1.2rem;
     padding: 4px 10px;
     border-radius: 8px;
+    margin-bottom: 80px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.2) 0px 4px 10px;
 }
 
