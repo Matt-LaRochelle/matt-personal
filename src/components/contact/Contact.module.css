@@ -45,3 +45,11 @@
     box-shadow: rgba(0,0,0,0.2) 0px 4px 10px;
 }
 
+.btn:hover {
+    cursor: pointer;
+    background-image: linear-gradient(rgb(127, 255, 144), rgb(46, 253, 74));
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
