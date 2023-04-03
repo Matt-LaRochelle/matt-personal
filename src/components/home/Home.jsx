@@ -4,6 +4,7 @@ import Title from '../title/Title';
 import Tech from '../tech/Tech';
 import Projects from '../projects/Projects';
 import Pricing from '../pricing/Pricing';
+import Contact from '../contact/Contact';
 import Footer from '../footer/Footer';
 
 function Home() {
@@ -12,7 +13,8 @@ function Home() {
             <Title />
             <Projects />
             <Tech />
-            <Pricing />
+            {/* <Pricing /> */}
+            <Contact />
             <Footer />
         </div>
     );
