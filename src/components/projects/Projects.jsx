@@ -30,7 +30,7 @@ function Projects() {
                             <p>A website I built for a horse drawn carriage service</p>
                             <h3>Challenges faced:</h3>
                             <ul>
-                                <li>Learning sliderJS</li>
+                                <li>Learning swiperJS</li>
                                 <li>Understanding CSS modules</li>
                                 <li>Practice with flexbox</li>
                                 <li>Creating Hero sections</li>
