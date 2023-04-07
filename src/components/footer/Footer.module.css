@@ -26,9 +26,20 @@
 
 .icon:hover {
     color: rgb(46, 253, 74);
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
     cursor: pointer;
 }
 a:visited {
     color: inherit;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(46, 253, 74);
+    cursor: pointer;
+}
+
+
