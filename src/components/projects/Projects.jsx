@@ -20,6 +20,8 @@ function Projects() {
             style={{
                     "--swiper-navigation-color": "rgb(136, 229, 252)",
                     "--swiper-pagination-color": "rgb(136, 229, 252)",
+                    // "--swiper-navigation-color": "#333",
+                    // "--swiper-pagination-color": "#333",
                     
                 }}
                 spaceBetween={10}
@@ -35,13 +37,14 @@ function Projects() {
                         <div className={styles.project_content}>
                             <h3>Norman Espinoza</h3>
                             <p>A website for marketing as an opera singer</p>
-                            <h3>Challenges faced</h3>
+                            <h3>Design and Features</h3>
                             <ul>
-                                <li>Getting an image to fill a full page</li>
-                                <li>Practice with CSS grid</li>
-                                <li>Mapping data</li>
-                                <li>Creating a simple but professional design</li>
-                                <li>Working with altering lists by every other entry</li>
+                                <li>Navbar transitions to hamburger icon on smaller screens</li>
+                                <li>Navbar UI highlights which page user is on</li>
+                                <li>Front page includes a picture stretched fully across page</li>
+                                <li>Upcoming performances are mapped using JavaScript</li>
+                                <li>Grid layouts keep page organized</li>
+                                <li>List alters style every other point</li>
                             </ul>
                             <h3>Technologies used:</h3>
                             <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
@@ -60,13 +63,13 @@ function Projects() {
                         <div className={styles.project_content}>
                             <h3>Windmill Equestrian</h3>
                             <p>A website for a horse back riding school</p>
-                            <h3>Challenges faced</h3>
+                            <h3>Design and Features</h3>
                             <ul>
-                                <li>Limiting line length to 75 characters</li>
-                                <li>Creating dynamic CSS for viewport size</li>
-                                <li>Experimenting with different navbar styles</li>
-                                <li>Creating a simple but professional design</li>
-                                <li>Finding other solutions for contact functionality</li>
+                                <li>Line length limited to 75 characters</li>
+                                <li>CSS written efficiently for dynamic viewport size</li>
+                                <li>Professional design in black and white</li>
+                                <li>Functional contact form</li>
+                                <li>Grids update on smaller screens</li>
                             </ul>
                             <h3>Technologies used:</h3>
                             <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
@@ -85,13 +88,13 @@ function Projects() {
                         <div className={styles.project_content}>
                             <h3>Brandywine Carriage Tours</h3>
                             <p>A website I built for a horse drawn carriage service</p>
-                            <h3>Challenges faced:</h3>
+                            <h3>Design and Features</h3>
                             <ul>
-                                <li>Learning swiperJS</li>
-                                <li>Understanding CSS modules</li>
-                                <li>Practice with flexbox</li>
-                                <li>Creating Hero sections</li>
-                                <li>Creating a custom contact form</li>
+                                <li>Swiper function for gallery of pictures</li>
+                                <li>CSS modules used to reuse common classes in different ways</li>
+                                <li>Hero sections with dynamic background image</li>
+                                <li>Color gradients for backgrounds</li>
+                                <li>Custom contact form</li>
                             </ul>
                             <h3>Technologies used:</h3>
                             <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
@@ -110,13 +113,13 @@ function Projects() {
                         <div className={styles.project_content}>
                             <h3>Portfolio website</h3>
                             <p>A website built to track my projects and show to clients</p>
-                            <h3>Challenges faced</h3>
+                            <h3>Design and Features</h3>
                             <ul>
-                                <li>Darkening an image to lay text on top</li>
-                                <li>Practice with CSS grid</li>
-                                <li>Absolute and relative positioning</li>
-                                <li>Using borders to debug CSS styling</li>
-                                <li>Creating responsive layouts</li>
+                                <li>Simple hero design</li>
+                                <li>Grids grow and shrink according to screen size</li>
+                                <li>Buttons change colors when hovered over</li>
+                                <li>Swiper displays most recent projects</li>
+                                <li>Use box shadows to create depth</li>
                             </ul>
                             <h3>Technologies used:</h3>
                             <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
