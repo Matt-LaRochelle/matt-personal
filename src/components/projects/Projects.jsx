@@ -17,10 +17,16 @@ function Projects() {
         <div className={styles.portfolio}>
         <h1>Projects</h1>
             <Swiper
+            style={{
+                    "--swiper-navigation-color": "rgb(136, 229, 252)",
+                    "--swiper-pagination-color": "rgb(136, 229, 252)",
+                    
+                }}
                 spaceBetween={10}
                 slidesPerView={1}
                 loop={true}
                 pagination={{clickable: true}}
+                navigation={true}
                 modules={[Pagination, Navigation]}
                 className={styles.container}
             >
@@ -45,7 +51,7 @@ function Projects() {
                             </div>
                         </div>
                         <div className={styles.project_image}>
-                            <img src={Norman} alt="my personal website" />
+                            <a href='https://stellular-cheesecake-af5f51.netlify.app'><img src={Norman} alt="Norman's website" /></a>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -70,7 +76,7 @@ function Projects() {
                             </div>
                         </div>
                         <div className={styles.project_image}>
-                            <img src={l2} alt="my personal website" />
+                            <a href='https://gregarious-gumption-b9353e.netlify.app/'><img src={l2} alt="Windmill Equestrian web logo" /></a>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -95,7 +101,7 @@ function Projects() {
                             </div>
                         </div>
                         <div className={styles.project_image}>
-                            <img src={ImgCarriage} alt='horse-carriage website' />
+                            <a href='https://moonlit-shortbread-27d65b.netlify.app'><img src={ImgCarriage} alt='horse-carriage website' /></a>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -120,7 +126,7 @@ function Projects() {
                             </div>
                         </div>
                         <div className={styles.project_image}>
-                            <img src={Personal} alt="my personal website" />
+                            <a href='https://rad-meringue-4511ee.netlify.app/'><img src={Personal} alt="my personal website" /></a>
                         </div>
                     </div>
                 </SwiperSlide>
