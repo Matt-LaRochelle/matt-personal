@@ -36,7 +36,7 @@ function Projects() {
                     <div className={styles.project}>
                         <div className={styles.project_content}>
                             <h3>Norman Espinoza</h3>
-                            <p>A website for marketing as an opera singer</p>
+                            <p>A website for marketing an opera singer</p>
                             <h3>Design and Features</h3>
                             <ul>
                                 <li>Navbar transitions to hamburger icon on smaller screens</li>
@@ -44,7 +44,7 @@ function Projects() {
                                 <li>Front page includes a picture stretched fully across page</li>
                                 <li>Upcoming performances are mapped using JavaScript</li>
                                 <li>Grid layouts keep page organized</li>
-                                <li>List alters style every other point</li>
+                                <li>List alters background style for every other list item</li>
                             </ul>
                             <h3>Technologies used:</h3>
                             <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
@@ -83,15 +83,15 @@ function Projects() {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide>
+                {/* <SwiperSlide>
                     <div className={styles.project}>
                         <div className={styles.project_content}>
                             <h3>Brandywine Carriage Tours</h3>
-                            <p>A website I built for a horse drawn carriage service</p>
+                            <p>A marketing website for a horse drawn carriage service</p>
                             <h3>Design and Features</h3>
                             <ul>
                                 <li>Swiper function for gallery of pictures</li>
-                                <li>CSS modules used to reuse common classes in different ways</li>
+                                <li>CSS modules used for common classes across pages</li>
                                 <li>Hero sections with dynamic background image</li>
                                 <li>Color gradients for backgrounds</li>
                                 <li>Custom contact form</li>
@@ -107,19 +107,19 @@ function Projects() {
                             <a href='https://moonlit-shortbread-27d65b.netlify.app'><img src={ImgCarriage} alt='horse-carriage website' /></a>
                         </div>
                     </div>
-                </SwiperSlide>
+                </SwiperSlide> */}
                 <SwiperSlide>
                     <div className={styles.project}>
                         <div className={styles.project_content}>
                             <h3>Portfolio website</h3>
-                            <p>A website built to track my projects and show to clients</p>
+                            <p>A website built to track my projects and to showcase to clients</p>
                             <h3>Design and Features</h3>
                             <ul>
                                 <li>Simple hero design</li>
                                 <li>Grids grow and shrink according to screen size</li>
-                                <li>Buttons change colors when hovered over</li>
+                                <li>Buttons change color when hovered over</li>
                                 <li>Swiper displays most recent projects</li>
-                                <li>Use box shadows to create depth</li>
+                                <li>Use of box shadows to create depth</li>
                             </ul>
                             <h3>Technologies used:</h3>
                             <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
