@@ -74,12 +74,12 @@ function Projects() {
                             <h3>Technologies used:</h3>
                             <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
                             <div className={styles.links}>
-                                <a href='https://gregarious-gumption-b9353e.netlify.app/'><button>Link</button></a>
+                                <a href='https://windmill-equestrian.com/'><button>Link</button></a>
                                 <a href='https://github.com/Matt-LaRochelle/horses'><button>Code</button></a>
                             </div>
                         </div>
                         <div className={styles.project_image}>
-                            <a href='https://gregarious-gumption-b9353e.netlify.app/'><img src={l2} alt="Windmill Equestrian web logo" /></a>
+                            <a href='https://windmill-equestrian.com/'><img src={l2} alt="Windmill Equestrian web logo" /></a>
                         </div>
                     </div>
                 </SwiperSlide>
