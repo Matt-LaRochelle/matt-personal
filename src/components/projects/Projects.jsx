@@ -35,19 +35,21 @@ function Projects() {
                 <SwiperSlide>
                     <div className={styles.project}>
                         <div className={styles.project_content}>
-                            <h3>Norman Espinoza</h3>
-                            <p>A website for marketing an opera singer</p>
-                            <h3>Design and Features</h3>
-                            <ul>
-                                <li>Navbar transitions to hamburger icon on smaller screens</li>
-                                <li>Navbar UI highlights which page user is on</li>
-                                <li>Front page includes a picture stretched fully across page</li>
-                                <li>Upcoming performances are mapped using JavaScript</li>
-                                <li>Grid layouts keep page organized</li>
-                                <li>List alters background style for every other list item</li>
-                            </ul>
-                            <h3>Technologies used:</h3>
-                            <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
+                            <div className={styles.text}>
+                                <h3>Norman Espinoza</h3>
+                                <p>A website for marketing an opera singer</p>
+                                <h3>Design and Features</h3>
+                                <ul>
+                                    <li>Navbar transitions to hamburger icon on smaller screens</li>
+                                    <li>Navbar UI highlights which page user is on</li>
+                                    <li>Front page includes a picture stretched fully across page</li>
+                                    <li>Upcoming performances are mapped using JavaScript</li>
+                                    <li>Grid layouts keep page organized</li>
+                                    <li>List alters background style for every other list item</li>
+                                </ul>
+                                <h3>Technologies used:</h3>
+                                <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
+                            </div>
                             <div className={styles.links}>
                                 <a href='https://stellular-cheesecake-af5f51.netlify.app'><button>Link</button></a>
                                 <a href='https://github.com/Matt-LaRochelle/norman-sings'><button>Code</button></a>
@@ -61,18 +63,20 @@ function Projects() {
                 <SwiperSlide>
                     <div className={styles.project}>
                         <div className={styles.project_content}>
-                            <h3>Windmill Equestrian</h3>
-                            <p>A website for a horse back riding school</p>
-                            <h3>Design and Features</h3>
-                            <ul>
-                                <li>Line length limited to 75 characters</li>
-                                <li>CSS written efficiently for dynamic viewport size</li>
-                                <li>Professional design in black and white</li>
-                                <li>Functional contact form</li>
-                                <li>Grids update on smaller screens</li>
-                            </ul>
-                            <h3>Technologies used:</h3>
-                            <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
+                            <div className={styles.text}>
+                                <h3>Windmill Equestrian</h3>
+                                <p>A website for a horse back riding school</p>
+                                <h3>Design and Features</h3>
+                                <ul>
+                                    <li>Line length limited to 75 characters</li>
+                                    <li>CSS written efficiently for dynamic viewport size</li>
+                                    <li>Professional design in black and white</li>
+                                    <li>Functional contact form</li>
+                                    <li>Grids update on smaller screens</li>
+                                </ul>
+                                <h3>Technologies used:</h3>
+                                <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
+                            </div>
                             <div className={styles.links}>
                                 <a href='https://windmill-equestrian.com/'><button>Link</button></a>
                                 <a href='https://github.com/Matt-LaRochelle/horses'><button>Code</button></a>
@@ -86,18 +90,20 @@ function Projects() {
                 <SwiperSlide>
                     <div className={styles.project}>
                         <div className={styles.project_content}>
-                            <h3>Guitar Paths</h3>
-                            <p>A website designed for guitarists learning ear training </p>
-                            <h3>Design and Features</h3>
-                            <ul>
-                                <li>Clear UX for different sections</li>
-                                <li>Games designed for unlimited practice</li>
-                                <li>Sound files chosen at random to build musicianship</li>
-                                <li>Diagrams expand for more information</li>
-                                <li>Help menus fade in and out</li>
-                            </ul>
-                            <h3>Technologies used:</h3>
-                            <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
+                            <div className={styles.text}>
+                                <h3>Guitar Paths</h3>
+                                <p>A website designed for guitarists learning ear training </p>
+                                <h3>Design and Features</h3>
+                                <ul>
+                                    <li>Clear UX for different sections</li>
+                                    <li>Games designed for unlimited practice</li>
+                                    <li>Sound files chosen at random to build musicianship</li>
+                                    <li>Diagrams expand for more information</li>
+                                    <li>Help menus fade in and out</li>
+                                </ul>
+                                <h3>Technologies used:</h3>
+                                <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
+                            </div>
                             <div className={styles.links}>
                                 <a href='https://papaya-treacle-3a3d03.netlify.app/'><button>Link</button></a>
                                 <a href='https://github.com/Matt-LaRochelle/guitar-paths'><button>Code</button></a>
@@ -136,18 +142,20 @@ function Projects() {
                 <SwiperSlide>
                     <div className={styles.project}>
                         <div className={styles.project_content}>
-                            <h3>Portfolio website</h3>
-                            <p>A website built to track my projects and to showcase to clients</p>
-                            <h3>Design and Features</h3>
-                            <ul>
-                                <li>Simple hero design</li>
-                                <li>Grids grow and shrink according to screen size</li>
-                                <li>Buttons change color when hovered over</li>
-                                <li>Swiper displays most recent projects</li>
-                                <li>Use of box shadows to create depth</li>
-                            </ul>
-                            <h3>Technologies used:</h3>
-                            <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
+                            <div className={styles.text}>
+                                <h3>Portfolio website</h3>
+                                <p>A website built to track my projects and to showcase to clients</p>
+                                <h3>Design and Features</h3>
+                                <ul>
+                                    <li>Simple hero design</li>
+                                    <li>Grids grow and shrink according to screen size</li>
+                                    <li>Buttons change color when hovered over</li>
+                                    <li>Swiper displays most recent projects</li>
+                                    <li>Use of box shadows to create depth</li>
+                                </ul>
+                                <h3>Technologies used:</h3>
+                                <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
+                            </div>
                             <div className={styles.links}>
                                 <a href='https://rad-meringue-4511ee.netlify.app/'><button>Link</button></a>
                                 <a href='https://github.com/Matt-LaRochelle/matt-personal'><button>Code</button></a>

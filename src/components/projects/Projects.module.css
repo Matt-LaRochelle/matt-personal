@@ -66,6 +66,12 @@
     margin-right: 20px;
 }
 
+.text {
+    height: 350px;
+    overflow-y: scroll;
+    border: 2px solid lime;
+}
+
 ul {
     list-style: none;
 }

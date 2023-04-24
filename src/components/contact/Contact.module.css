@@ -54,3 +54,10 @@
 .btn:active {
     transform: translateY(2px);
 }
+
+
+@media screen and (max-width: 500px) {
+    .input {
+        width: 300px;
+    }
+}
