@@ -67,10 +67,30 @@
 }
 
 .text {
-    height: 350px;
+    height: 310px;
     overflow-y: scroll;
-    border: 2px solid lime;
+    /* width */
 }
+
+.text::-webkit-scrollbar {
+    width: 10px;
+    margin-right: 2px;
+  }
+  
+  /* Track */
+  .text::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+.text::-webkit-scrollbar-thumb {
+    background: #00ff22;
+  }
+  
+  /* Handle on hover */
+  .text::-webkit-scrollbar-thumb:hover {
+    background: #49e103;
+  }
 
 ul {
     list-style: none;
