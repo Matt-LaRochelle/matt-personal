@@ -89,7 +89,7 @@
   
   /* Handle on hover */
   .text::-webkit-scrollbar-thumb:hover {
-    background: rgb(96, 215, 245);
+    background: rgb(46, 253, 74);
   }
 
 ul {
