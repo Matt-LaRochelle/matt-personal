@@ -10,6 +10,7 @@ import Norman from '../images/norman.png';
 import GuitarPaths from '../images/guitar.png';
 import gp2 from '../images/gp2.png';
 import l2 from '../images/l2.png';
+import ImgCarriage from '../images/carriage_pic.png';
 import { FaReact, FaHtml5, FaCss3, FaNodeJs } from 'react-icons/fa';
 import {IoLogoJavascript} from 'react-icons/io';
 import {SiMongodb} from 'react-icons/si';
@@ -38,34 +39,6 @@ function Projects() {
                     <div className={styles.project}>
                         <div className={styles.project_content}>
                             <div className={styles.text}>
-                                <h3>Norman Espinoza</h3>
-                                <p>A website for marketing an opera singer</p>
-                                <h3>Design and Features</h3>
-                                <ul>
-                                    <li>Navbar transitions to hamburger icon on smaller screens</li>
-                                    <li>Navbar UI highlights which page user is on</li>
-                                    <li>Front page includes a picture stretched fully across page</li>
-                                    <li>Upcoming performances are mapped using JavaScript</li>
-                                    <li>Grid layouts keep page organized</li>
-                                    <li>List alters background style for every other list item</li>
-                                </ul>
-                                <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
-                            </div>
-                            <div className={styles.links}>
-                                <a href='https://stellular-cheesecake-af5f51.netlify.app'><button>Link</button></a>
-                                <a href='https://github.com/Matt-LaRochelle/norman-sings'><button>Code</button></a>
-                            </div>
-                        </div>
-                        <div className={styles.project_image}>
-                            <a href='https://stellular-cheesecake-af5f51.netlify.app'><img src={Norman} alt="Norman's website" /></a>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.project}>
-                        <div className={styles.project_content}>
-                            <div className={styles.text}>
                                 <h3>Windmill Equestrian</h3>
                                 <p>A website for a horse back riding school</p>
                                 <h3>Design and Features</h3>
@@ -77,7 +50,10 @@ function Projects() {
                                     <li>Grids update on smaller screens</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
+                                <p><FaHtml5 /> HTML</p>
+                                <p><FaCss3 /> CSS</p>
+                                <p><IoLogoJavascript /> JavaScript</p>
+                                <p><FaReact /> React</p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://windmill-equestrian.com/'><button>Link</button></a>
@@ -104,7 +80,12 @@ function Projects() {
                                     <li>Help menus are expandable</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /> <FaNodeJs /> <SiMongodb /></p>
+                                <p><FaHtml5 /> HTML</p>
+                                <p><FaCss3 /> CSS</p>
+                                <p><IoLogoJavascript /> JavaScript</p>
+                                <p><FaReact /> React</p>
+                                <p><FaNodeJs /> NodeJS</p>
+                                <p><SiMongodb /> MongoDB</p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://guitar-paths.onrender.com/'><button>Link</button></a>
@@ -113,6 +94,37 @@ function Projects() {
                         </div>
                         <div className={styles.project_image}>
                             <a href='https://guitar-paths.onrender.com/'><img src={gp2} alt="Guitar Paths" /></a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className={styles.project}>
+                        <div className={styles.project_content}>
+                            <div className={styles.text}>
+                                <h3>Norman Espinoza</h3>
+                                <p>A website for marketing an opera singer</p>
+                                <h3>Design and Features</h3>
+                                <ul>
+                                    <li>Navbar transitions to hamburger icon on smaller screens</li>
+                                    <li>Navbar UI highlights which page user is on</li>
+                                    <li>Front page includes a picture stretched fully across page</li>
+                                    <li>Upcoming performances are mapped using JavaScript</li>
+                                    <li>Grid layouts keep page organized</li>
+                                    <li>List alters background style for every other list item</li>
+                                </ul>
+                                <h3>Technologies used:</h3>
+                                <p><FaHtml5 /> HTML</p>
+                                <p><FaCss3 /> CSS</p>
+                                <p><IoLogoJavascript /> JavaScript</p>
+                                <p><FaReact /> React</p>
+                            </div>
+                            <div className={styles.links}>
+                                <a href='https://stellular-cheesecake-af5f51.netlify.app'><button>Link</button></a>
+                                <a href='https://github.com/Matt-LaRochelle/norman-sings'><button>Code</button></a>
+                            </div>
+                        </div>
+                        <div className={styles.project_image}>
+                            <a href='https://stellular-cheesecake-af5f51.netlify.app'><img src={Norman} alt="Norman's website" /></a>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -131,7 +143,10 @@ function Projects() {
                                     <li>Help menus fade in and out</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
+                                <p><FaHtml5 /> HTML</p>
+                                <p><FaCss3 /> CSS</p>
+                                <p><IoLogoJavascript /> JavaScript</p>
+                                <p><FaReact /> React</p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://papaya-treacle-3a3d03.netlify.app/'><button>Link</button></a>
@@ -143,21 +158,26 @@ function Projects() {
                         </div>
                     </div>
                 </SwiperSlide>
-                {/* <SwiperSlide>
+                <SwiperSlide>
                     <div className={styles.project}>
                         <div className={styles.project_content}>
-                            <h3>Brandywine Carriage Tours</h3>
-                            <p>A marketing website for a horse drawn carriage service</p>
-                            <h3>Design and Features</h3>
-                            <ul>
-                                <li>Swiper function for gallery of pictures</li>
-                                <li>CSS modules used for common classes across pages</li>
-                                <li>Hero sections with dynamic background image</li>
-                                <li>Color gradients for backgrounds</li>
-                                <li>Custom contact form</li>
-                            </ul>
-                            <h3>Technologies used:</h3>
-                            <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
+                            <div className={styles.text}>
+                                <h3>Brandywine Carriage Tours</h3>
+                                <p>A marketing website for a horse drawn carriage service</p>
+                                <h3>Design and Features</h3>
+                                <ul>
+                                    <li>Swiper function for gallery of pictures</li>
+                                    <li>CSS modules used for common classes across pages</li>
+                                    <li>Hero sections with dynamic background image</li>
+                                    <li>Color gradients for backgrounds</li>
+                                    <li>Custom contact form</li>
+                                </ul>
+                                <h3>Technologies used:</h3>
+                                <p><FaHtml5 /> HTML</p>
+                                <p><FaCss3 /> CSS</p>
+                                <p><IoLogoJavascript /> JavaScript</p>
+                                <p><FaReact /> React</p>
+                            </div>
                             <div className={styles.links}>
                                 <a href='https://moonlit-shortbread-27d65b.netlify.app'><button>Link</button></a>
                                 <a href='https://github.com/Matt-LaRochelle/carriage'><button>Code</button></a>
@@ -167,7 +187,7 @@ function Projects() {
                             <a href='https://moonlit-shortbread-27d65b.netlify.app'><img src={ImgCarriage} alt='horse-carriage website' /></a>
                         </div>
                     </div>
-                </SwiperSlide> */}
+                </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.project}>
                         <div className={styles.project_content}>
@@ -183,7 +203,10 @@ function Projects() {
                                     <li>Use of box shadows to create depth</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /></p>
+                                <p><FaHtml5 /> HTML</p>
+                                <p><FaCss3 /> CSS</p>
+                                <p><IoLogoJavascript /> JavaScript</p>
+                                <p><FaReact /> React</p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://rad-meringue-4511ee.netlify.app/'><button>Link</button></a>

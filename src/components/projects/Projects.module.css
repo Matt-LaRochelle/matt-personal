@@ -1,6 +1,6 @@
 .portfolio {
     background-color: #f8f8f8; 
-    color: lightblue;
+    color: rgb(173, 216, 230);
     padding: 80px;
     text-align: center;
     /* border-style: solid;
@@ -84,12 +84,12 @@
   
   /* Handle */
 .text::-webkit-scrollbar-thumb {
-    background: #00ff22;
+    background: rgb(96, 215, 245);
   }
   
   /* Handle on hover */
   .text::-webkit-scrollbar-thumb:hover {
-    background: #49e103;
+    background: rgb(96, 215, 245);
   }
 
 ul {
