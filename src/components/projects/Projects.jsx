@@ -8,9 +8,11 @@ import "swiper/css/navigation";
 import Personal from '../images/personal.png';
 import Norman from '../images/norman.png';
 import GuitarPaths from '../images/guitar.png';
+import gp2 from '../images/gp2.png';
 import l2 from '../images/l2.png';
-import { FaReact, FaHtml5, FaCss3 } from 'react-icons/fa';
+import { FaReact, FaHtml5, FaCss3, FaNodeJs } from 'react-icons/fa';
 import {IoLogoJavascript} from 'react-icons/io';
+import {SiMongodb} from 'react-icons/si';
 
 function Projects() {
     return (
@@ -84,6 +86,33 @@ function Projects() {
                         </div>
                         <div className={styles.project_image}>
                             <a href='https://windmill-equestrian.com/'><img src={l2} alt="Windmill Equestrian web logo" /></a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className={styles.project}>
+                        <div className={styles.project_content}>
+                            <div className={styles.text}>
+                                <h3>Guitar Paths 2.0</h3>
+                                <p>A website designed for guitarists learning ear training </p>
+                                <h3>Design and Features</h3>
+                                <ul>
+                                    <li>Login authentication blocks access for unregistered users</li>
+                                    <li>Reset password functionality</li>
+                                    <li>Sound files chosen at random to build musicianship</li>
+                                    <li>Clean, single-page design</li>
+                                    <li>Help menus are expandable</li>
+                                </ul>
+                                <h3>Technologies used:</h3>
+                                <p><FaHtml5 /> <FaCss3 /> <IoLogoJavascript /> <FaReact /> <FaNodeJs /> <SiMongodb /></p>
+                            </div>
+                            <div className={styles.links}>
+                                <a href='https://guitar-paths.onrender.com/'><button>Link</button></a>
+                                <a href='https://github.com/Matt-LaRochelle/gp2'><button>Code</button></a>
+                            </div>
+                        </div>
+                        <div className={styles.project_image}>
+                            <a href='https://guitar-paths.onrender.com/'><img src={gp2} alt="Guitar Paths" /></a>
                         </div>
                     </div>
                 </SwiperSlide>
