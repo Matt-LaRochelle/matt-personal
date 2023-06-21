@@ -63,10 +63,10 @@ function Projects() {
                                     <li>Grids update on smaller screens</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> HTML</p>
-                                <p><FaCss3 /> CSS</p>
-                                <p><IoLogoJavascript /> JavaScript</p>
-                                <p><FaReact /> React</p>
+                                <p><FaHtml5 /> <span>HTML</span></p>
+                                <p><FaCss3 /> <span>CSS</span></p>
+                                <p><IoLogoJavascript /> <span>JavaScript</span></p>
+                                <p><FaReact /> <span>React</span></p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://windmill-equestrian.com/'><button>Link</button></a>
@@ -98,13 +98,13 @@ function Projects() {
                                     <li>Help menus are expandable and scroll to menu when clicked</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> HTML</p>
-                                <p><FaCss3 /> CSS</p>
-                                <p><IoLogoJavascript /> JavaScript</p>
-                                <p><SiMongodb /> MongoDB</p>
-                                <p><SiExpress /> Express.js</p>
-                                <p><FaReact /> React</p>
-                                <p><FaNodeJs /> Node.js</p>
+                                <p><FaHtml5 /> <span>HTML</span></p>
+                                <p><FaCss3 /> <span>CSS</span></p>
+                                <p><IoLogoJavascript /> <span>JavaScript</span></p>
+                                <p><SiMongodb /> <span>MongoDB</span></p>
+                                <p><SiExpress /> <span>Express.js</span></p>
+                                <p><FaReact /> <span>React</span></p>
+                                <p><FaNodeJs /> <span>Node.js</span></p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://guitar-paths.onrender.com/'><button>Link</button></a>
@@ -132,10 +132,10 @@ function Projects() {
                                     <li>List alters background style for every other list item</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> HTML</p>
-                                <p><FaCss3 /> CSS</p>
-                                <p><IoLogoJavascript /> JavaScript</p>
-                                <p><FaReact /> React</p>
+                                <p><FaHtml5 /> <span>HTML</span></p>
+                                <p><FaCss3 /> <span>CSS</span></p>
+                                <p><IoLogoJavascript /> <span>JavaScript</span></p>
+                                <p><FaReact /> <span>React</span></p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://stellular-cheesecake-af5f51.netlify.app'><button>Link</button></a>
@@ -189,10 +189,10 @@ function Projects() {
                                     <li>Grids update on smaller screens</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> HTML</p>
-                                <p><FaCss3 /> CSS</p>
-                                <p><IoLogoJavascript /> JavaScript</p>
-                                <p><FaReact /> React</p>
+                                <p><FaHtml5 /> <span>HTML</span></p>
+                                <p><FaCss3 /> <span>CSS</span></p>
+                                <p><IoLogoJavascript /> <span>JavaScript</span></p>
+                                <p><FaReact /> <span>React</span></p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://windmill-equestrian.com/'><button>Link</button></a>
@@ -224,13 +224,13 @@ function Projects() {
                                     <li>Help menus are expandable and scroll to menu when clicked</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> HTML</p>
-                                <p><FaCss3 /> CSS</p>
-                                <p><IoLogoJavascript /> JavaScript</p>
-                                <p><SiMongodb /> MongoDB</p>
-                                <p><SiExpress /> Express.js</p>
-                                <p><FaReact /> React</p>
-                                <p><FaNodeJs /> Node.js</p>
+                                <p><FaHtml5 /> <span>HTML</span></p>
+                                <p><FaCss3 /> <span>CSS</span></p>
+                                <p><IoLogoJavascript /> <span>JavaScript</span></p>
+                                <p><SiMongodb /> <span>MongoDB</span></p>
+                                <p><SiExpress /> <span>Express.js</span></p>
+                                <p><FaReact /> <span>React</span></p>
+                                <p><FaNodeJs /> <span>Node.js</span></p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://guitar-paths.onrender.com/'><button>Link</button></a>
@@ -258,10 +258,10 @@ function Projects() {
                                     <li>List alters background style for every other list item</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> HTML</p>
-                                <p><FaCss3 /> CSS</p>
-                                <p><IoLogoJavascript /> JavaScript</p>
-                                <p><FaReact /> React</p>
+                                <p><FaHtml5 /> <span>HTML</span></p>
+                                <p><FaCss3 /> <span>CSS</span></p>
+                                <p><IoLogoJavascript /> <span>JavaScript</span></p>
+                                <p><FaReact /> <span>React</span></p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://stellular-cheesecake-af5f51.netlify.app'><button>Link</button></a>
@@ -288,10 +288,10 @@ function Projects() {
                                     <li>Help menus fade in and out</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> HTML</p>
-                                <p><FaCss3 /> CSS</p>
-                                <p><IoLogoJavascript /> JavaScript</p>
-                                <p><FaReact /> React</p>
+                                <p><FaHtml5 /> <span>HTML</span></p>
+                                <p><FaCss3 /> <span>CSS</span></p>
+                                <p><IoLogoJavascript /> <span>JavaScript</span></p>
+                                <p><FaReact /> <span>React</span></p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://papaya-treacle-3a3d03.netlify.app/'><button>Link</button></a>
@@ -318,10 +318,10 @@ function Projects() {
                                     <li>Custom contact form</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> HTML</p>
-                                <p><FaCss3 /> CSS</p>
-                                <p><IoLogoJavascript /> JavaScript</p>
-                                <p><FaReact /> React</p>
+                                <p><FaHtml5 /> <span>HTML</span></p>
+                                <p><FaCss3 /> <span>CSS</span></p>
+                                <p><IoLogoJavascript /> <span>JavaScript</span></p>
+                                <p><FaReact /> <span>React</span></p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://moonlit-shortbread-27d65b.netlify.app'><button>Link</button></a>
@@ -348,10 +348,10 @@ function Projects() {
                                     <li>Use of box shadows to create depth</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
-                                <p><FaHtml5 /> HTML</p>
-                                <p><FaCss3 /> CSS</p>
-                                <p><IoLogoJavascript /> JavaScript</p>
-                                <p><FaReact /> React</p>
+                                <p><FaHtml5 /> <span>HTML</span></p>
+                                <p><FaCss3 /> <span>CSS</span></p>
+                                <p><IoLogoJavascript /> <span>JavaScript</span></p>
+                                <p><FaReact /> <span>React</span></p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://rad-meringue-4511ee.netlify.app/'><button>Link</button></a>
