@@ -71,6 +71,16 @@
     overflow-y: scroll;
     /* width */
 }
+.login {
+    margin: 30px auto;
+}
+.login span {
+    color: rgb(173, 216, 230);
+    font-size: 1rem;
+}
+.login h3 {
+    line-height: 0px;
+}
 
 .text::-webkit-scrollbar {
     width: 10px;
@@ -128,6 +138,25 @@ ul {
     height: 60px;
     width: 100%;
     padding-left: 10px;
+}
+
+.show h1 {
+    color: rgb(62, 135, 214);
+    margin: 50px;
+}
+.show button {
+    background-image: linear-gradient(rgb(136, 229, 252), rgb(96, 215, 245));
+    border: none;
+    color: #333;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    padding: 12px;
+    margin: 10px;
+}
+
+.show button:hover {
+    background-image: linear-gradient(rgb(127, 255, 144), rgb(48, 220, 71));
+    cursor: pointer;
 }
 
 

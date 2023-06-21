@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from './Projects.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper';
@@ -13,12 +13,25 @@ import l2 from '../images/l2.png';
 import ImgCarriage from '../images/carriage_pic.png';
 import { FaReact, FaHtml5, FaCss3, FaNodeJs } from 'react-icons/fa';
 import {IoLogoJavascript} from 'react-icons/io';
-import {SiMongodb} from 'react-icons/si';
+import {SiMongodb, SiExpress} from 'react-icons/si';
 
 function Projects() {
+    const [allProjects, setAllProjects] = useState(false)
+
+    const handleClick = () => {
+        if (allProjects === false) {
+            setAllProjects(true)
+        }
+        if (allProjects === true) {
+            setAllProjects(false)
+        }
+
+    }
+
     return (
         <div className={styles.portfolio}>
         <h1>Projects</h1>
+        {!allProjects ? 
             <Swiper
             style={{
                     "--swiper-navigation-color": "rgb(136, 229, 252)",
@@ -71,21 +84,153 @@ function Projects() {
                             <div className={styles.text}>
                                 <h3>Guitar Paths 2.0</h3>
                                 <p>A website designed for guitarists learning ear training </p>
+                                <div className={styles.login}>
+                                    <h3>Login: <span>testuser@testing.user</span></h3>
+                                    <h3>Password: <span>ABCabc123!</span></h3>
+                                </div>
+                                
                                 <h3>Design and Features</h3>
                                 <ul>
                                     <li>Login authentication blocks access for unregistered users</li>
                                     <li>Reset password functionality</li>
                                     <li>Sound files chosen at random to build musicianship</li>
                                     <li>Clean, single-page design</li>
-                                    <li>Help menus are expandable</li>
+                                    <li>Help menus are expandable and scroll to menu when clicked</li>
+                                </ul>
+                                <h3>Technologies used:</h3>
+                                <p><FaHtml5 /> HTML</p>
+                                <p><FaCss3 /> CSS</p>
+                                <p><IoLogoJavascript /> JavaScript</p>
+                                <p><SiMongodb /> MongoDB</p>
+                                <p><SiExpress /> Express.js</p>
+                                <p><FaReact /> React</p>
+                                <p><FaNodeJs /> Node.js</p>
+                            </div>
+                            <div className={styles.links}>
+                                <a href='https://guitar-paths.onrender.com/'><button>Link</button></a>
+                                <a href='https://github.com/Matt-LaRochelle/gp2'><button>Code</button></a>
+                            </div>
+                        </div>
+                        <div className={styles.project_image}>
+                            <a href='https://guitar-paths.onrender.com/'><img src={gp2} alt="Guitar Paths" /></a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className={styles.project}>
+                        <div className={styles.project_content}>
+                            <div className={styles.text}>
+                                <h3>Norman Espinoza</h3>
+                                <p>A website for marketing an opera singer</p>
+                                <h3>Design and Features</h3>
+                                <ul>
+                                    <li>Navbar transitions to hamburger icon on smaller screens</li>
+                                    <li>Navbar UI highlights which page user is on</li>
+                                    <li>Front page includes a picture stretched fully across page</li>
+                                    <li>Upcoming performances are mapped using JavaScript</li>
+                                    <li>Grid layouts keep page organized</li>
+                                    <li>List alters background style for every other list item</li>
                                 </ul>
                                 <h3>Technologies used:</h3>
                                 <p><FaHtml5 /> HTML</p>
                                 <p><FaCss3 /> CSS</p>
                                 <p><IoLogoJavascript /> JavaScript</p>
                                 <p><FaReact /> React</p>
-                                <p><FaNodeJs /> NodeJS</p>
+                            </div>
+                            <div className={styles.links}>
+                                <a href='https://stellular-cheesecake-af5f51.netlify.app'><button>Link</button></a>
+                                <a href='https://github.com/Matt-LaRochelle/norman-sings'><button>Code</button></a>
+                            </div>
+                        </div>
+                        <div className={styles.project_image}>
+                            <a href='https://stellular-cheesecake-af5f51.netlify.app'><img src={Norman} alt="Norman's website" /></a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className={styles.show}>
+                    <h1>Want to see more?</h1>
+                    <p>Click here:</p>
+                    <button onClick={handleClick}>Show all projects</button>
+                    </div>
+                </SwiperSlide>
+            </Swiper>
+            : null}
+
+            {allProjects ? 
+            <Swiper
+            style={{
+                    "--swiper-navigation-color": "rgb(136, 229, 252)",
+                    "--swiper-pagination-color": "rgb(136, 229, 252)",
+                    // "--swiper-navigation-color": "#333",
+                    // "--swiper-pagination-color": "#333",
+                    
+                }}
+                spaceBetween={10}
+                slidesPerView={1}
+                loop={true}
+                pagination={{clickable: true}}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className={styles.container}
+            >
+                <SwiperSlide>
+                    <div className={styles.project}>
+                        <div className={styles.project_content}>
+                            <div className={styles.text}>
+                                <h3>Windmill Equestrian</h3>
+                                <p>A website for a horse back riding school</p>
+                                <h3>Design and Features</h3>
+                                <ul>
+                                    <li>Line length limited to 75 characters</li>
+                                    <li>CSS written efficiently for dynamic viewport size</li>
+                                    <li>Professional design in black and white</li>
+                                    <li>Functional contact form</li>
+                                    <li>Grids update on smaller screens</li>
+                                </ul>
+                                <h3>Technologies used:</h3>
+                                <p><FaHtml5 /> HTML</p>
+                                <p><FaCss3 /> CSS</p>
+                                <p><IoLogoJavascript /> JavaScript</p>
+                                <p><FaReact /> React</p>
+                            </div>
+                            <div className={styles.links}>
+                                <a href='https://windmill-equestrian.com/'><button>Link</button></a>
+                                <a href='https://github.com/Matt-LaRochelle/horses'><button>Code</button></a>
+                            </div>
+                        </div>
+                        <div className={styles.project_image}>
+                            <a href='https://windmill-equestrian.com/'><img src={l2} alt="Windmill Equestrian web logo" /></a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className={styles.project}>
+                        <div className={styles.project_content}>
+                            <div className={styles.text}>
+                                <h3>Guitar Paths 2.0</h3>
+                                <p>A website designed for guitarists learning ear training </p>
+                                <div className={styles.login}>
+                                    <h3>Login: <span>testuser@testing.user</span></h3>
+                                    <h3>Password: <span>ABCabc123!</span></h3>
+                                </div>
+                                
+                                <h3>Design and Features</h3>
+                                <ul>
+                                    <li>Login authentication blocks access for unregistered users</li>
+                                    <li>Reset password functionality</li>
+                                    <li>Sound files chosen at random to build musicianship</li>
+                                    <li>Clean, single-page design</li>
+                                    <li>Help menus are expandable and scroll to menu when clicked</li>
+                                </ul>
+                                <h3>Technologies used:</h3>
+                                <p><FaHtml5 /> HTML</p>
+                                <p><FaCss3 /> CSS</p>
+                                <p><IoLogoJavascript /> JavaScript</p>
                                 <p><SiMongodb /> MongoDB</p>
+                                <p><SiExpress /> Express.js</p>
+                                <p><FaReact /> React</p>
+                                <p><FaNodeJs /> Node.js</p>
                             </div>
                             <div className={styles.links}>
                                 <a href='https://guitar-paths.onrender.com/'><button>Link</button></a>
@@ -218,7 +363,15 @@ function Projects() {
                         </div>
                     </div>
                 </SwiperSlide>
+                <SwiperSlide>
+                    <div className={styles.show}>
+                    <h1>Go back to top three projects?</h1>
+                    <p>Click here:</p>
+                    <button onClick={handleClick}>Show top three projects</button>
+                    </div>
+                </SwiperSlide>
             </Swiper>
+            : null}
             </div>
     );
 }

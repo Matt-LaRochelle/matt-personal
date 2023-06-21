@@ -2,7 +2,7 @@ import React from "react";
 import styles from './Tech.module.css'
 import {FaReact, FaHtml5, FaCss3, FaBootstrap, FaGithub, FaDocker, FaNodeJs, FaPython} from 'react-icons/fa';
 import {IoLogoJavascript} from 'react-icons/io';
-import {SiMongodb, SiMysql} from 'react-icons/si';
+import {SiMongodb, SiMysql, SiExpress} from 'react-icons/si';
 
 function Tech() {
     return (
@@ -24,29 +24,33 @@ function Tech() {
                             <p>JavaScript</p>
                         </div>
                         <div className={styles.item}>
-                            <FaReact />
-                            <p>React</p>
-                        </div>
-                    {/* </div> */}
-                    {/* <div className={styles.row2}> */}
-                        <div className={styles.item}>
-                            <FaBootstrap />
-                            <p>Bootstrap</p>
+                            <FaPython />
+                            <p>Python</p>
                         </div>
                         <div className={styles.item}>
                             <SiMongodb />
                             <p>MongoDB</p>
                         </div>
                         <div className={styles.item}>
+                            <SiExpress />
+                            <p>Express.js</p>
+                        </div>
+                        <div className={styles.item}>
+                            <FaNodeJs />
+                            <p>Node.js</p>
+                        </div>
+                        <div className={styles.item}>
+                            <FaReact />
+                            <p>React</p>
+                        </div>
+                        <div className={styles.item}>
                             <SiMysql />
                             <p>MySQL</p>
                         </div>
                         <div className={styles.item}>
-                            <FaNodeJs />
-                            <p>NodeJS</p>
+                            <FaBootstrap />
+                            <p>Bootstrap</p>
                         </div>
-                    {/* </div>
-                    <div className={styles.row3}> */}
                         <div className={styles.item}>
                             <FaGithub />
                             <p>GitHub</p>
@@ -55,10 +59,7 @@ function Tech() {
                             <FaDocker />
                             <p>Docker</p>
                         </div>
-                        <div className={styles.item}>
-                            <FaPython />
-                            <p>Python</p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
