@@ -25,12 +25,12 @@ const Portfolio = () => {
                     <p><FaReact /> <span>React</span></p>
                 </div>
                 <div className={styles.links}>
-                    <a href='https://rad-meringue-4511ee.netlify.app/'><button>Link</button></a>
+                    <a href='https://mattsdevprojects.com'><button>Link</button></a>
                     <a href='https://github.com/Matt-LaRochelle/matt-personal'><button>Code</button></a>
                 </div>
             </div>
             <div className={styles.project_image}>
-                <a href='https://rad-meringue-4511ee.netlify.app/'><img src={Personal} alt="my personal website" /></a>
+                <a href='https://mattsdevprojects.com'><img src={Personal} alt="my personal website" /></a>
             </div>
         </div>
     )

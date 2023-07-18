@@ -72,8 +72,10 @@
 .text {
     height: 310px;
     overflow-y: scroll;
-    border: 2px solid rgba(62, 135, 214, 0.356);
+    background-color: #333;
+    border: 2px solid #f8f8f8;
     margin-top: 20px;
+    box-shadow: rgba(0,0,0,0.8) 0px 6px 14px;
     /* width */
 }
 .text span {
@@ -126,7 +128,7 @@ ul {
   }
 
 .project_image img:hover {
-    border: 3px dotted rgb(20, 247, 51);
+    border: 2px solid rgb(20, 247, 51);
     cursor: pointer;
 }
 
@@ -149,6 +151,7 @@ ul {
     font-size: 1.6rem;
     padding: 12px;
     margin: 10px;
+    box-shadow: rgba(0,0,0,0.8) 0px 6px 14px;
 }
 
 .show button:hover {
@@ -169,6 +172,7 @@ ul {
     font-size: 1.6rem;
     padding: 12px;
     margin: 10px;
+    box-shadow: rgba(0,0,0,0.8) 0px 6px 14px;
 }
 
 .links button:hover {
