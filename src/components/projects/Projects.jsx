@@ -38,9 +38,6 @@ function Projects() {
             style={{
                     "--swiper-navigation-color": "rgb(136, 229, 252)",
                     "--swiper-pagination-color": "rgb(136, 229, 252)",
-                    // "--swiper-navigation-color": "#333",
-                    // "--swiper-pagination-color": "#333",
-                    
                 }}
                 spaceBetween={10}
                 slidesPerView={1}
