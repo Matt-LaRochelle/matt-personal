@@ -24,7 +24,7 @@ a {
     color: rgb(136, 229, 252);
 }
 a:visited {
-    color: inherit;
+    color: rgb(136, 229, 252);
 }
 a:hover {
     color: rgb(46, 253, 74);
