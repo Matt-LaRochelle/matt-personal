@@ -125,11 +125,14 @@ ul {
     object-fit: fill;
     box-shadow: rgba(0,0,0,0.8) 0px 6px 14px;
     padding: -20px;
+    border-radius: 20px;
   }
 
 .project_image img:hover {
-    border: 2px solid rgb(20, 247, 51);
+    /* border: 2px solid rgb(20, 247, 51); */
+    box-shadow: rgba(20, 247, 51, 0.7) 0px 0px 24px 8px;
     cursor: pointer;
+    transition: .3s;
 }
 
 .links {
