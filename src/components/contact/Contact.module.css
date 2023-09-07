@@ -24,10 +24,15 @@
     margin: 5px auto 20px;
     width: 380px;
     font-size: 1.2rem;
+    color: #333;
     padding: 4px 10px;
     background-color: rgb(213, 236, 241);
     box-shadow: rgba(236, 236, 236, 0.2) 0px 4px 10px;
     border: none;
+}
+
+.input::placeholder {
+    color: #444;
 }
 
 .input:focus {
