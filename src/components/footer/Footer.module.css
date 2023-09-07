@@ -1,46 +1,47 @@
 .container {
-    height: 200px;
+    height: max-content;
     width: 100%;
     background-color: #333;
-    color: rgb(136, 229, 252);
-    text-align: center;
-    padding: 40px;
+    padding: 30px 0 8px;
 }
 
-.container p {
-    padding-bottom: 20px;
-}
-
-.container .icon {
-    font-size: 2rem;
-}
 
 .icons {
     margin: auto;
-    margin-bottom: 40px;
-    width: 50%;
-    color: rgb(136, 229, 252);
+    margin-bottom: 10px;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
+.icon {
+    font-size: 3rem;
+    display: block;
+    margin: auto;
+}
+
 .icon:hover {
-    color: rgb(46, 253, 74);
-    /* font-size: 2.2rem; */
     cursor: pointer;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(136, 229, 252);
 }
 a:visited {
     color: inherit;
 }
-
-a {
-    text-decoration: none;
-}
-
 a:hover {
     color: rgb(46, 253, 74);
     cursor: pointer;
 }
 
-
+.copyright {
+    text-align: right;
+    padding-right: 10px;
+    font-size: .8rem;
+    color:rgb(136, 229, 252);
+}
