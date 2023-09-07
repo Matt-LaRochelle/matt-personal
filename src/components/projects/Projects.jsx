@@ -61,9 +61,9 @@ function Projects() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.show}>
-                    <h1>Want to see more?</h1>
-                    <p>Click here:</p>
-                    <button onClick={handleClick}>Show all projects</button>
+                        <h1>Want to see more?</h1>
+                        <p>Click here:</p>
+                        <button onClick={handleClick}>Show all projects</button>
                     </div>
                 </SwiperSlide>
             </Swiper>

@@ -1,66 +1,68 @@
+/* -------Projects Section styles------- */
+
 .portfolio {
-    background-color: #f8f8f8; 
-    color: rgb(173, 216, 230);
-    padding: 80px;
+    background: linear-gradient(115deg, rgb(21, 30, 57), rgb(20, 44, 59) 60%);
+    padding: 80px 20px;
     text-align: center;
-    /* border-style: solid;
-    border-color: red; */
 }
 
 .portfolio h1 {
     font-size: 3rem;
     margin-bottom: 40px;
-    color: #333;
+    color: #f8f8f8;
 }
 
 .container {
     width: 100%;
+    /* max-width: 1000px; */
     height: 500px;
-    background: linear-gradient(115deg, rgb(21, 30, 57), rgb(20, 44, 59) 60%);
-    /* border: 2px solid; */
-    box-shadow: rgba(0,0,0,0.5) 0px 4px 10px;
-    /* border-image-slice: 1; */
-    /* border-image: conic-gradient(from var(--angle),lime, aqua, blue, aqua, lime) 1;
-	animation: 10s rotate linear infinite; */
-    /* border-style: solid;
-    border-color: orange; */
+    /* border: 2px solid red; */
 }
 
-/* @keyframes rotate {
-	to {
-		--angle: 360deg;
-	}
-} */
-/* 
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-} */
+
+.show h1 {
+    color: rgb(62, 135, 214);
+    margin: 50px;
+}
+.show p {
+    color: #f8f8f8;
+}
+.show button {
+    background-image: linear-gradient(rgb(136, 229, 252), rgb(96, 215, 245));
+    border: none;
+    color: #333;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    padding: 12px;
+    margin: 10px;
+    box-shadow: rgba(0,0,0,0.8) 0px 6px 14px;
+}
+.show button:hover {
+    background-image: linear-gradient(rgb(127, 255, 144), rgb(48, 220, 71));
+    cursor: pointer;
+}
+
+/* -----Individual Project styles----- */
 
 .project {
-    /* border-style: solid;
-    border-color: yellow; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     height: 90%;
     width: 90%;
+    max-width: 1000px;
     margin: auto;
 }
 
 .project_content {
-    /* border-style: solid;
-    border-color: green; */
     text-align: left;
     position: relative;
 }
 
 .project_content h3 {
     margin: 20px;
-    color:rgb(62, 135, 214)
+    color:rgb(25, 89, 158);
 }
-
 .project_content p, .project_content li {
     margin-left: 20px;
     margin-right: 20px;
@@ -72,21 +74,42 @@
 .text {
     height: 310px;
     overflow-y: scroll;
-    background-color: #333;
-    border: 2px solid #f8f8f8;
-    margin-top: 20px;
+    background-color: #d6f2f6;
+    border: 4px solid #cdcdcd45;
+    margin-top: 40px;
     box-shadow: rgba(0,0,0,0.8) 0px 6px 14px;
     /* width */
 }
 .text span {
     vertical-align: 3px;
-    color: rgb(46, 253, 74)
+    color: hsl(122, 73%, 36%);
+    font-weight: 500;
 }
+
+
+
+.text::-webkit-scrollbar {
+    width: 10px;
+    margin-right: 2px;
+  }
+/* Track */
+.text::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  /* Handle */
+.text::-webkit-scrollbar-thumb {
+    background: rgb(25, 89, 158);
+  }
+  /* Handle on hover */
+.text::-webkit-scrollbar-thumb:hover {
+    background: hsl(122, 73%, 36%);
+}
+
 .login {
     margin: 30px auto;
 }
 .login span {
-    color: rgb(173, 216, 230);
+    color: #333;
     font-size: 1rem;
     vertical-align: 0px;
 }
@@ -94,35 +117,42 @@
     line-height: 0px;
 }
 
-.text::-webkit-scrollbar {
-    width: 10px;
-    margin-right: 2px;
-  }
-  
-  /* Track */
-  .text::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle */
-.text::-webkit-scrollbar-thumb {
-    background: rgb(96, 215, 245);
-  }
-  
-  /* Handle on hover */
-  .text::-webkit-scrollbar-thumb:hover {
-    background: rgb(46, 253, 74);
-  }
+.links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.links button {
+    background-image: linear-gradient(rgb(136, 229, 252), rgb(96, 215, 245));
+    border: none;
+    color: #333;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    padding: 12px;
+    margin: 10px;
+    box-shadow: rgba(0,0,0,0.8) 0px 6px 14px;
+}
+.links button:hover {
+    background-image: linear-gradient(rgb(127, 255, 144), rgb(48, 220, 71));
+    cursor: pointer;
+}
+.links a {
+    text-decoration: none;
+}
+.links a:visited {
+    color: inherit;
+}
 
 ul {
     list-style: none;
 }
 
 .project_image img {
-    margin-top: 20px;
+    margin-top: 40px;
     height: 400px;
     width: 300px;
-    object-fit: fill;
+    object-fit: cover;
     box-shadow: rgba(0,0,0,0.8) 0px 6px 14px;
     padding: -20px;
     border-radius: 20px;
@@ -135,60 +165,6 @@ ul {
     transition: .3s;
 }
 
-.links {
-    margin-top: 25px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.show h1 {
-    color: rgb(62, 135, 214);
-    margin: 50px;
-}
-.show button {
-    background-image: linear-gradient(rgb(136, 229, 252), rgb(96, 215, 245));
-    border: none;
-    color: #333;
-    border-radius: 8px;
-    font-size: 1.6rem;
-    padding: 12px;
-    margin: 10px;
-    box-shadow: rgba(0,0,0,0.8) 0px 6px 14px;
-}
-
-.show button:hover {
-    background-image: linear-gradient(rgb(127, 255, 144), rgb(48, 220, 71));
-    cursor: pointer;
-}
-
-
-
-
-
-
-.links button {
-    background-image: linear-gradient(rgb(136, 229, 252), rgb(96, 215, 245));
-    border: none;
-    color: #333;
-    border-radius: 8px;
-    font-size: 1.6rem;
-    padding: 12px;
-    margin: 10px;
-    box-shadow: rgba(0,0,0,0.8) 0px 6px 14px;
-}
-
-.links button:hover {
-    background-image: linear-gradient(rgb(127, 255, 144), rgb(48, 220, 71));
-    cursor: pointer;
-}
-.links a {
-    text-decoration: none;
-}
-
-.links a:visited {
-    color: inherit;
-}
 
 
 @media screen and (max-width: 970px) {
@@ -198,9 +174,23 @@ ul {
     }
 
     .project {
-        display: contents;
-        /* border-style: solid;
-        border-color: yellow; */
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .project_image {
+        order: -1;
+        display: block;
+        margin: auto;
+        height: 100px;
+        width: 100px;
+        border: 2px solid lime;
+    }
+
+    .project_image img {
+        width: 100px;
+        height: 150px;
+        object-fit: fill;
     }
 
     .project_content {
@@ -227,12 +217,6 @@ ul {
         width: 100%;
         /* height: 900px; */
         /* border: 1px solid white; */
-    }
-
-    .project {
-        display: contents;
-        /* border-style: solid;
-        border-color: white; */
     }
 
     .links {
