@@ -19,28 +19,28 @@
 }
 
 .t1, .t2 {
-    width: 50%;
-    width: 100%;
-    margin: auto;
-    padding: 6px 15px;
-    text-align: center;
     font-family: 'Dancing Script', cursive;
     color: #333;
 }
 
 .t1 {
+    position: absolute;
+    right: 5rem;
+    top: 250px;
+    max-width: 450px;
     font-size: 4rem;
-    padding-top: 3rem;
 }
 
 .t2 {
+    max-width: 350px;
     font-size: 2rem;
     position: absolute;
     bottom: 2.5rem;
+    right: 2rem;
 }
 
 .t2 span {
-    color: rgb(220, 0, 0);
+    color: rgb(98, 158, 190);
     font-family: 'Dancing Script', cursive;
 }
 
