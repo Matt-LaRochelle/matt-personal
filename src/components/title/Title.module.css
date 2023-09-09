@@ -1,5 +1,5 @@
 .top {
-    background-color: rgba(0, 0, 0, 0.420);
+    background-color: rgba(181, 247, 238, 0.1);
     color: #fff;
     height: 80vh;
     width: 100%;
@@ -9,7 +9,7 @@
 
 .top::before {
     content: '';
-    background: url('../images2/p2.jpg') no-repeat center center/cover;
+    background: url('../images/keyboard.jpg') no-repeat center center/cover;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -19,28 +19,29 @@
 }
 
 .t1, .t2 {
-    width: 50%;
-    width: 100%;
-    margin: auto;
-    padding: 6px 15px;
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    color: #505a4d;
 }
 
 .t1 {
+    position: absolute;
+    right: 5rem;
+    top: 250px;
+    max-width: 450px;
     font-size: 4rem;
-    padding-top: 3rem;
 }
 
 .t2 {
+    max-width: 350px;
     font-size: 2rem;
     position: absolute;
     bottom: 2.5rem;
+    right: 2rem;
 }
 
 .t2 span {
-    color: rgb(220, 0, 0);
-    font-family: 'Dancing Script', cursive;
+    color: rgb(98, 158, 190);
+    /* font-family: 'Dancing Script', cursive; */
 }
 
 
