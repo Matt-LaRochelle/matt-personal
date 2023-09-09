@@ -19,8 +19,8 @@
 }
 
 .t1, .t2 {
-    font-family: 'Dancing Script', cursive;
-    color: #333;
+    /* font-family: 'Dancing Script', cursive; */
+    color: #505a4d;
 }
 
 .t1 {
@@ -41,7 +41,7 @@
 
 .t2 span {
     color: rgb(98, 158, 190);
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
 }
 
 
