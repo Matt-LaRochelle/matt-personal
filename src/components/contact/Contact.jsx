@@ -16,6 +16,7 @@ function Contact() {
     return (
         <div className="container">
             <div className="box">
+                <span className="borderLine"></span>
                 <form onSubmit={sendEmail}>
                     <h2>Contact</h2>
                     <div className="inputBox">
@@ -33,7 +34,7 @@ function Contact() {
                         <i></i>
                     </div>
 
-                    <textarea name="message" placeholder="Message" rows="12" required />
+                    <textarea name="message" placeholder="Message" rows="12" cols="20" required />
                     <input type="submit" value="Send"></input>
                 
                 </form>
