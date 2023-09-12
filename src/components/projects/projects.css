@@ -24,11 +24,18 @@
     transform: translate(0%, -50%);
 }
 
+.image-track p {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 56vmin;
+}
+
 .portfolioContainer img {
     height: 48vmin;
     width: 56vmin;
     object-fit: cover;
-    object-position: center;
+    object-position: 100% 50%;
 }
 
 .stateVariables {
@@ -36,4 +43,14 @@
     position: absolute;
     top: 5px;
     left: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .portfolioContainer {
+        padding: 20px 0;
+    }
+
+    .portfolioContainer h1 {
+        margin: 20px;
+    }
 }

@@ -2,31 +2,34 @@ import React, {useState, useEffect} from "react"
 import './projects.css'
 
 // Components
-import Bingo from '../images/bingo2.png'
-import Windmill from '../images/l2.png'
+import Bingo from '../images/bingo2.0.png'
+import Windmill from '../images/windmill2.0.png'
 import GuitarPaths2 from '../images/gp2.0.png'
 
 function Projects() {
+    const [maxWidth, setMaxWidth] = useState(null);
     const [startX, setStartX] = useState(null);
     const [currentX, setCurrentX] = useState(null);
-    const [relativePosition, setRelativePosition] = useState(null)
     const [isDragging, setIsDragging] = useState(false);
     const [percentage, setPercentage] = useState(0)
-    const [maxWidth, setMaxWidth] = useState(null);
+    
 
 
     const handleMouseDown = (event) => {
         setStartX(event.clientX);
-        setCurrentX(event.clientX);
         setIsDragging(true);
     };
 
     const handleMouseMove = (event) => {
         if (isDragging) {
-            setCurrentX(event.clientX);
-            setRelativePosition(startX - currentX)
-            const nextPercentage = (event.clientX / maxWidth) * -100
-            setPercentage(nextPercentage);
+            const distanceDragged = startX - event.clientX
+
+
+            setCurrentX(distanceDragged)
+            const percent = (distanceDragged / maxWidth) * 100
+            const limitedUpperPercent = Math.min(0, percent + percentage)
+            const limitedLowerPercent = Math.max(-100, limitedUpperPercent)
+            setPercentage(limitedLowerPercent)
         }
     };
 
@@ -66,19 +69,41 @@ function Projects() {
             <h1>Projects</h1>
             <div 
                 className="image-track"
-                style={{transform: `translate(${percentage}%, -50%)`}}
+                style={{
+                    transform: `translate(${percentage}%, -50%)`,
+                    }}
                 >
-                <img src={Windmill} alt="Windmill Equestrian Website" draggable="false" />
-                <img src={GuitarPaths2} alt="Ear Training Web Application" draggable="false" />
-                <img src={Bingo} alt="Bingo Card Generator Web Application" draggable="false" />
+                <div>
+                    <img 
+                        src={Windmill} 
+                        alt="Windmill Equestrian Website" 
+                        draggable="false"
+                        style={{objectPosition: `${percentage + 100}% 50%`}} />
+                    <p>Windmill Equestrian</p>               
+                </div>
+                <div>
+                    <img 
+                        src={GuitarPaths2} 
+                        alt="Ear Training Web Application" 
+                        draggable="false"
+                        style={{objectPosition: `${percentage + 100}% 50%`}} />
+                    <p>Ear Training Web App</p>
+                </div>
+                <div>
+                    <img 
+                        src={Bingo} 
+                        alt="Bingo Card Generator Web Application" 
+                        draggable="false"
+                        style={{objectPosition: `${percentage + 100}% 50%`}} />
+                    <p>Custom Bingo Cards Web App</p>
+                </div>
             </div>
-            <div className="stateVariables">
+            {/* <div className="stateVariables">
                 <p>Start X = {startX}</p>
-                <p>Current X = {currentX}</p>
-                <p>Relative position = {relativePosition}</p>
+                <p>Amount slid = {currentX}</p>
                 <p>Percentage = {percentage}</p>
-                <p>maxWidth = {maxWidth}</p> 
-            </div>
+                <p>maxWidth = {maxWidth}</p>
+            </div> */}
         </div>
     );
 }
