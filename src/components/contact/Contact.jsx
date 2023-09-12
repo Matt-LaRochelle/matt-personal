@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Contact.module.css';
+import './contact.css';
 import emailjs from 'emailjs-com';
 
 function Contact() {
@@ -14,14 +14,39 @@ function Contact() {
     }
 
     return (
-        <div className={styles.container}>
-            <h1 className={styles.h1}>Contact</h1>
-            <form className={styles.form} onSubmit={sendEmail}>
-                <input className={styles.input} type="text" placeholder="Name" name="name" required />
-                <input className={styles.input} type="email" placeholder="Email" name="email" required />
-                <textarea className={styles.input} name="message" placeholder="Message" rows="12" required />
-                <button className={styles.btn} type="submit">Send</button>
-            </form>
+        <div className="container">
+            <div className="box">
+                <span className="borderLine"></span>
+                <form onSubmit={sendEmail}>
+                    <h2>Contact</h2>
+                    <div className="inputBox">
+                        <input  
+                            type="text" 
+                            name="name" 
+                            required="required" />
+                        <span>Name</span>
+                        <i></i>
+                    </div>
+                    <div className="inputBox">
+                        <input  
+                            type="email" 
+                            name="email" 
+                            required="required" />
+                        <span>Email</span>
+                        <i></i>
+                    </div>
+                    <div className="inputBox">
+                        <textarea 
+                            name="message"
+                            required="required" />
+                        <span>Message</span>
+                        <i></i>
+                    </div>
+                    
+                    <input type="submit" value="Send"></input>
+                
+                </form>
+            </div>
         </div>
     );
 }
