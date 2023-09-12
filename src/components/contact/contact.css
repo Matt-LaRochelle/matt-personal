@@ -186,15 +186,46 @@
     margin-top: 10px;
 }
 
-.box form input[type="submit"]:active
+.box form input[type="submit"]:active,
+.box form input[type="submit"]:hover
 {
     opacity: 0.8;
 }
 
 
-.box form textarea
+.box form .inputBox textarea
 {
-    margin: 10px 0;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+    resize: none;
+}
+
+
+
+.box form .inputBox textarea:valid ~ span,
+.box form .inputBox textarea:focus ~ span
+{
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+
+
+.box form .inputBox textarea:valid ~ i,
+.box form .inputBox textarea:focus ~ i
+{
+    height: 150px;
 }
 
 

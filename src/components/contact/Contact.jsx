@@ -22,19 +22,27 @@ function Contact() {
                     <div className="inputBox">
                         <input  
                             type="text" 
-                            name="name" required="required" />
+                            name="name" 
+                            required="required" />
                         <span>Name</span>
                         <i></i>
                     </div>
                     <div className="inputBox">
                         <input  
                             type="email" 
-                            name="email" required="required" />
+                            name="email" 
+                            required="required" />
                         <span>Email</span>
                         <i></i>
                     </div>
-
-                    <textarea name="message" placeholder="Message" rows="12" cols="20" required />
+                    <div className="inputBox">
+                        <textarea 
+                            name="message"
+                            required="required" />
+                        <span>Message</span>
+                        <i></i>
+                    </div>
+                    
                     <input type="submit" value="Send"></input>
                 
                 </form>
