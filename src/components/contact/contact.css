@@ -3,14 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 110vh;
     background: #23242a;
 }
 
 .box {
     position: relative;
     width: 480px;
-    height: 500px;
+    height: 530px;
     background: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
@@ -21,7 +21,7 @@
     top: -50%;
     left: -50%;
     width: 480px;
-    height: 500px;
+    height: 530px;
     background: linear-gradient(0deg, transparent,
     transparent, #45f3ff, #45f3ff, #45f3ff);
     z-index: 1;
@@ -34,7 +34,7 @@
     top: -50%;
     left: -50%;
     width: 480px;
-    height: 500px;
+    height: 530px;
     background: linear-gradient(0deg, transparent,
     transparent, #45f3ff, #45f3ff, #45f3ff);
     z-index: 1;
@@ -54,9 +54,9 @@
     top: -50%;
     left: -50%;
     width: 480px;
-    height: 500px;
+    height: 530px;
     background: linear-gradient(0deg, transparent,
-    transparent, #ff2770, #ff2770, #ff2770);
+    transparent, #12f312, #12f312, #12f312);
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
@@ -68,9 +68,9 @@
     top: -50%;
     left: -50%;
     width: 480px;
-    height: 500px;
+    height: 530px;
     background: linear-gradient(0deg, transparent,
-    transparent, #ff2770, #ff2770, #ff2770);
+    transparent, #12f312, #12f312, #12f312);
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
@@ -93,7 +93,7 @@
     position: absolute;
     inset: 4px;
     background: #222;
-    padding: 40px 30px;
+    padding: 50px 40px;
     border-radius: 8px;
     z-index: 2;
     display: flex;
