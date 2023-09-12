@@ -1,6 +1,9 @@
 import './navbar.css'
+import { NavLink } from 'react-router-dom';
+// import { useState } from 'react';
 
 const Navbar = () => {
+
     return (
         <header className="navbar">
             <div className='logo'>
@@ -9,16 +12,16 @@ const Navbar = () => {
             <nav>
                 <ul>
                     <li>
-                        Home
+                    <NavLink to="/">Home</NavLink>
                     </li>
                     <li>
-                        About
+                    <NavLink to="/about">About</NavLink>
                     </li>
                     <li>
-                        Portfolio
+                    <NavLink to="/projects">Portfolio</NavLink>
                     </li>
                     <li>
-                        Contact
+                    <NavLink to="/contact">Contact</NavLink>
                     </li>
                 </ul>
             </nav>

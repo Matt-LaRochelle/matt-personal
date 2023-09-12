@@ -11,13 +11,7 @@ import Navbar from "../navbar/Navbar";
 function Home() {
     return (
         <div className={styles.container}>
-            <Navbar />
             <Title />
-            <Projects />
-            <Tech />
-            {/* <Pricing /> */}
-            <Contact />
-            <Footer />
         </div>
     );
 }
