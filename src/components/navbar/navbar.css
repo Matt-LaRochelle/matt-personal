@@ -1,0 +1,16 @@
+.navbar {
+    background-color: rgba(142, 142, 142, 0);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 6px 10px;
+}
+
+.navbar ul {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    list-style-type: none;
+}

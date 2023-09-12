@@ -16,15 +16,15 @@ function Projects() {
 
 
     const handleMouseDown = (event) => {
-        setStartX(event.clientX);
+        const clientX = event.touches ? event.touches[0].clientX : event.clientX;
+        setStartX(clientX);
         setIsDragging(true);
     };
 
     const handleMouseMove = (event) => {
+        const clientX = event.touches ? event.touches[0].clientX : event.clientX;
         if (isDragging) {
-            const distanceDragged = startX - event.clientX
-
-
+            const distanceDragged = startX - clientX
             setCurrentX(distanceDragged)
             const percent = (distanceDragged / maxWidth) * 100
             const limitedUpperPercent = Math.min(0, percent + percentage)
@@ -41,10 +41,14 @@ function Projects() {
     useEffect(() => {
         document.addEventListener('mousemove', handleMouseMove);
         document.addEventListener('mouseup', handleMouseUp);
-    
+        document.addEventListener('touchmove', handleMouseMove)
+        document.addEventListener('touchend', handleMouseUp)
+        
         return () => {
           document.removeEventListener('mousemove', handleMouseMove);
           document.removeEventListener('mouseup', handleMouseUp);
+          document.removeEventListener('touchmove', handleMouseMove)
+          document.removeEventListener('touchend', handleMouseUp)
         };
     }, [isDragging]);
 
@@ -65,7 +69,7 @@ function Projects() {
       }, []);
 
     return (
-        <div className="portfolioContainer" onMouseDown={handleMouseDown}>
+        <div className="portfolioContainer" ontouchStart={handleMouseDown} onMouseDown={handleMouseDown}>
             <h1>Projects</h1>
             <div 
                 className="image-track"

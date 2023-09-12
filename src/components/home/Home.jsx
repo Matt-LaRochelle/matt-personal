@@ -6,10 +6,12 @@ import Projects from '../projects/Projects';
 import Pricing from '../pricing/Pricing';
 import Contact from '../contact/Contact';
 import Footer from '../footer/Footer';
+import Navbar from "../navbar/Navbar";
 
 function Home() {
     return (
         <div className={styles.container}>
+            <Navbar />
             <Title />
             <Projects />
             <Tech />
