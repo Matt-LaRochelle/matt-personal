@@ -1,120 +1,85 @@
-import React, {useState} from "react";
-import styles from './Projects.module.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper';
-import 'swiper/css';
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import React, {useState, useEffect} from "react"
+import './projects.css'
 
 // Components
-import Bingo from './Bingo'
-import Windmill from './Windmill'
-import GuitarPaths2 from './GuitarPaths2'
-import Norman from './Norman'
-import GuitarPaths from './GuitarPaths'
-import Brandywine from "./Brandywine";
-import Portfolio from "./Portfolio";
+import Bingo from '../images/bingo2.png'
+import Windmill from '../images/l2.png'
+import GuitarPaths2 from '../images/gp2.0.png'
 
 function Projects() {
-    const [allProjects, setAllProjects] = useState(false)
+    const [startX, setStartX] = useState(null);
+    const [currentX, setCurrentX] = useState(null);
+    const [relativePosition, setRelativePosition] = useState(null)
+    const [isDragging, setIsDragging] = useState(false);
+    const [percentage, setPercentage] = useState(0)
+    const [maxWidth, setMaxWidth] = useState(null);
 
-    // Toggle between 3 projects and all projects
-    const handleClick = () => {
-        if (allProjects === false) {
-            setAllProjects(true)
+
+    const handleMouseDown = (event) => {
+        setStartX(event.clientX);
+        setCurrentX(event.clientX);
+        setIsDragging(true);
+    };
+
+    const handleMouseMove = (event) => {
+        if (isDragging) {
+            setCurrentX(event.clientX);
+            setRelativePosition(startX - currentX)
+            const nextPercentage = (event.clientX / maxWidth) * -100
+            setPercentage(nextPercentage);
         }
-        if (allProjects === true) {
-            setAllProjects(false)
-        }
-    }
+    };
+
+    const handleMouseUp = () => {
+        setIsDragging(false);
+    };
+
+    // Handle mouse movements
+    useEffect(() => {
+        document.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('mouseup', handleMouseUp);
+    
+        return () => {
+          document.removeEventListener('mousemove', handleMouseMove);
+          document.removeEventListener('mouseup', handleMouseUp);
+        };
+    }, [isDragging]);
+
+    // Handle the screen width variable
+    useEffect(() => {
+        const handleResize = () => {
+          setMaxWidth(window.innerWidth / 2);
+        };
+    
+        // Initial screen width
+        setMaxWidth(window.innerWidth / 2);
+    
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
 
     return (
-        <div className={styles.portfolio}>
-        <h1>Projects</h1>
-
-        {/* Three projects */}
-        {!allProjects ? 
-            <Swiper
-            style={{
-                    "--swiper-navigation-color": "rgb(136, 229, 252)",
-                    "--swiper-pagination-color": "rgb(136, 229, 252)",
-                }}
-                spaceBetween={10}
-                slidesPerView={1}
-                loop={true}
-                pagination={{clickable: true}}
-                navigation={true}
-                modules={[Pagination, Navigation]}
-                className={styles.container}
-            >
-                <SwiperSlide>
-                    <Windmill />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <GuitarPaths2 />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Bingo />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.show}>
-                        <h1>Want to see more?</h1>
-                        <p>Click here:</p>
-                        <button onClick={handleClick}>Show all projects</button>
-                    </div>
-                </SwiperSlide>
-            </Swiper>
-            : null}
-
-            {/* All projects */}
-            {allProjects ? 
-            <Swiper
-            style={{
-                    "--swiper-navigation-color": "rgb(136, 229, 252)",
-                    "--swiper-pagination-color": "rgb(136, 229, 252)",
-                    // "--swiper-navigation-color": "#333",
-                    // "--swiper-pagination-color": "#333",
-                    
-                }}
-                spaceBetween={10}
-                slidesPerView={1}
-                loop={true}
-                pagination={{clickable: true}}
-                navigation={true}
-                modules={[Pagination, Navigation]}
-                className={styles.container}
-            >
-                <SwiperSlide>
-                    <Windmill />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <GuitarPaths2 />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Bingo />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Norman />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <GuitarPaths />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Brandywine />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Portfolio />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.show}>
-                    <h1>Go back to top three projects?</h1>
-                    <p>Click here:</p>
-                    <button onClick={handleClick}>Show top three projects</button>
-                    </div>
-                </SwiperSlide>
-            </Swiper>
-            : null}
+        <div className="portfolioContainer" onMouseDown={handleMouseDown}>
+            <h1>Projects</h1>
+            <div 
+                className="image-track"
+                style={{transform: `translate(${percentage}%, -50%)`}}
+                >
+                <img src={Windmill} alt="Windmill Equestrian Website" draggable="false" />
+                <img src={GuitarPaths2} alt="Ear Training Web Application" draggable="false" />
+                <img src={Bingo} alt="Bingo Card Generator Web Application" draggable="false" />
             </div>
+            <div className="stateVariables">
+                <p>Start X = {startX}</p>
+                <p>Current X = {currentX}</p>
+                <p>Relative position = {relativePosition}</p>
+                <p>Percentage = {percentage}</p>
+                <p>maxWidth = {maxWidth}</p> 
+            </div>
+        </div>
     );
 }
 
