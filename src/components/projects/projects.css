@@ -19,15 +19,8 @@
     gap: 6vmin;
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 53%;
     transform: translate(0%, -50%);
-}
-
-.image-track p {
-    color: #fff;
-    position: absolute;
-    text-align: center;
-    width: 36vmin;
 }
 
 .portfolioContainer img {
@@ -37,6 +30,21 @@
     object-position: 100% 50%;
 }
 
+.portfolioContainer img:hover {
+    filter: opacity(.8);
+}
+
+.image-track p {
+    color: #f8f8f8;
+    position: absolute;
+    text-align: center;
+    width: 36vmin;
+    font-weight: 500;
+}
+
+
+
+/* only for debugging */
 .stateVariables {
     color: #fff;
     position: absolute;

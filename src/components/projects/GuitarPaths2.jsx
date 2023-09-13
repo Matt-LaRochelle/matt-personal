@@ -1,17 +1,17 @@
-import styles from './Projects.module.css'
 import { FaReact, FaHtml5, FaCss3, FaNodeJs } from 'react-icons/fa';
 import {IoLogoJavascript} from 'react-icons/io';
 import {SiMongodb, SiExpress} from 'react-icons/si';
 import gp2 from '../images/gp22.png'
+import './project.css'
 
 const GuitarPaths2 = () => {
     return (
-        <div className={styles.project}>
-            <div className={styles.project_content}>
-                <div className={styles.text}>
+        <div>
+            <div>
+                <div>
                     <h3>Guitar Paths 2.0</h3>
                     <p>A website designed for guitarists learning ear training </p>
-                    <div className={styles.login}>
+                    <div>
                         <h3>Login: <span>testuser@testing.user</span></h3>
                         <h3>Password: <span>ABCabc123!</span></h3>
                     </div>
@@ -33,12 +33,12 @@ const GuitarPaths2 = () => {
                     <p><FaReact /> <span>React</span></p>
                     <p><FaNodeJs /> <span>Node.js</span></p>
                 </div>
-                <div className={styles.links}>
+                <div>
                     <a href='https://guitar-paths.onrender.com/'><button>Link</button></a>
                     <a href='https://github.com/Matt-LaRochelle/gp2'><button>Code</button></a>
                 </div>
             </div>
-            <div className={styles.project_image}>
+            <div>
                 <a href='https://guitar-paths.onrender.com/'><img src={gp2} alt="Guitar Paths" /></a>
             </div>
         </div>
