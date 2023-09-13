@@ -1,20 +1,23 @@
-.container {
+.footerContainer {
     height: max-content;
     width: 100%;
     background: hsl(231, 9%, 10%);
     /* background: linear-gradient(175deg, #444 1%, #333 60%, #222); */
     padding: 10px 0 5px;
-    position: sticky;
-    bottom: 0;
     border-top: 1px solid rgb(187, 243, 206);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .icons {
-    margin: auto;
+    /* margin: auto; */
     margin-bottom: 4px;
-    width: 70%;
+    margin-left: 35px;
+    width: 170px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .icon {
@@ -35,9 +38,9 @@ a:hover {
     cursor: pointer;
 }
 
-.copyright {
+.year {
     text-align: right;
-    padding-right: 10px;
+    padding: 4px;
     font-size: .8rem;
     color:rgb(136, 229, 252);
 }
