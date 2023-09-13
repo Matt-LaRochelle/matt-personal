@@ -5,6 +5,12 @@
     background: #23242a;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolioPage {
+    flex-grow: 1;
 }
 
 .portfolioContainer h1 {

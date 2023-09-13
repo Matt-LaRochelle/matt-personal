@@ -74,44 +74,47 @@ function Projects() {
     return (
         <div className="portfolioContainer" ontouchStart={handleMouseDown} onMouseDown={handleMouseDown}>
             <Navbar />
-            <h1>Projects</h1>
-            <div 
-                className="image-track"
-                style={{
-                    transform: `translate(${percentage}%, -50%)`,
-                    }}
-                >
-                <Link to="/windmill">
-                    <img 
-                        src={Windmill} 
-                        alt="Windmill Equestrian Website" 
-                        draggable="false"
-                        style={{objectPosition: `${percentage + 100}% 50%`}} />
-                    <p>Windmill Equestrian</p>               
-                </Link>
-                <Link to ="/gp2">
-                    <img 
-                        src={GuitarPaths2} 
-                        alt="Ear Training Web Application" 
-                        draggable="false"
-                        style={{objectPosition: `${percentage + 100}% 50%`}} />
-                    <p>Ear Training Web App</p>
-                </Link>
-                <Link to="/bingo">
-                    <img 
-                        src={Bingo} 
-                        alt="Bingo Card Generator Web Application" 
-                        draggable="false"
-                        style={{objectPosition: `${percentage + 100}% 50%`}} />
-                    <p>Custom Bingo Cards Web App</p>
-                </Link>
+            <div className="portfolioPage">
+
+                <h1>Projects</h1>
+                <div 
+                    className="image-track"
+                    style={{
+                        transform: `translate(${percentage}%, -50%)`,
+                        }}
+                    >
+                    <Link to="/windmill">
+                        <img 
+                            src={Windmill} 
+                            alt="Windmill Equestrian Website" 
+                            draggable="false"
+                            style={{objectPosition: `${percentage + 100}% 50%`}} />
+                        <p>Windmill Equestrian</p>               
+                    </Link>
+                    <Link to ="/gp2">
+                        <img 
+                            src={GuitarPaths2} 
+                            alt="Ear Training Web Application" 
+                            draggable="false"
+                            style={{objectPosition: `${percentage + 100}% 50%`}} />
+                        <p>Ear Training Web App</p>
+                    </Link>
+                    <Link to="/bingo">
+                        <img 
+                            src={Bingo} 
+                            alt="Bingo Card Generator Web Application" 
+                            draggable="false"
+                            style={{objectPosition: `${percentage + 100}% 50%`}} />
+                        <p>Custom Bingo Cards Web App</p>
+                    </Link>
+                </div>
+                {/* <div className="stateVariables">
+                    <p>Start X = {startX}</p>
+                    <p>Amount slid = {currentX}</p>
+                    <p>Percentage = {percentage}</p>
+                    <p>maxWidth = {maxWidth}</p>
+                </div> */}
             </div>
-            {/* <div className="stateVariables">
-                <p>Start X = {startX}</p>
-                <p>Amount slid = {currentX}</p>
-                <p>Percentage = {percentage}</p>
-                <p>maxWidth = {maxWidth}</p>
-            </div> */}
             <Footer />
         </div>
     );

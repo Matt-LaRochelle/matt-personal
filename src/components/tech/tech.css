@@ -7,12 +7,10 @@
     background: #23242a;
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
 }
 
 .techContainer {
     flex-grow: 1;
-    border: 2px solid orange;
 }
 
 .techContainer h3 {
