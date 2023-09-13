@@ -1,6 +1,8 @@
 import React from "react";
 import './contact.css';
 import emailjs from 'emailjs-com';
+import Navbar from '../navbar/Navbar'
+import Footer from '../footer/Footer'
 
 function Contact() {
     function sendEmail(e) {
@@ -14,39 +16,43 @@ function Contact() {
     }
 
     return (
-        <div className="container">
-            <div className="box">
-                <span className="borderLine"></span>
-                <form onSubmit={sendEmail}>
-                    <h2>Contact</h2>
-                    <div className="inputBox">
-                        <input  
-                            type="text" 
-                            name="name" 
-                            required="required" />
-                        <span>Name</span>
-                        <i></i>
-                    </div>
-                    <div className="inputBox">
-                        <input  
-                            type="email" 
-                            name="email" 
-                            required="required" />
-                        <span>Email</span>
-                        <i></i>
-                    </div>
-                    <div className="inputBox">
-                        <textarea 
-                            name="message"
-                            required="required" />
-                        <span>Message</span>
-                        <i></i>
-                    </div>
+        <div className="fullContainer">
+            <Navbar />
+            <div className="container">
+                <div className="box">
+                    <span className="borderLine"></span>
+                    <form onSubmit={sendEmail}>
+                        <h2>Contact</h2>
+                        <div className="inputBox">
+                            <input  
+                                type="text" 
+                                name="name" 
+                                required="required" />
+                            <span>Name</span>
+                            <i></i>
+                        </div>
+                        <div className="inputBox">
+                            <input  
+                                type="email" 
+                                name="email" 
+                                required="required" />
+                            <span>Email</span>
+                            <i></i>
+                        </div>
+                        <div className="inputBox">
+                            <textarea 
+                                name="message"
+                                required="required" />
+                            <span>Message</span>
+                            <i></i>
+                        </div>
+                        
+                        <input type="submit" value="Send"></input>
                     
-                    <input type="submit" value="Send"></input>
-                
-                </form>
+                    </form>
+                </div>
             </div>
+            <Footer />
         </div>
     );
 }

@@ -1,9 +1,15 @@
-
+.fullContainer {
+    min-height: 100vh;
+    background: #23242a;
+    display: flex;
+    flex-direction: column;
+}
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 101.5px);
+    flex-grow: .7;
+    /* min-height: 100vh; */
     background: #23242a;
 }
 
