@@ -3,11 +3,14 @@ import styles from './Tech.module.css'
 import {FaReact, FaHtml5, FaCss3, FaBootstrap, FaGithub, FaDocker, FaNodeJs, FaPython} from 'react-icons/fa';
 import {IoLogoJavascript} from 'react-icons/io';
 import {SiMongodb, SiMysql, SiExpress} from 'react-icons/si';
+import Navbar from "../navbar/Navbar";
+import Footer from "../footer/Footer";
 
 function Tech() {
     return (
         <div>
             <div className={styles.tech}>
+            <Navbar />
                 <h3 className={styles.title}>Skills</h3>
                 <div className={styles.stack}>
                     <div className={styles.row1}>
@@ -63,6 +66,7 @@ function Tech() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

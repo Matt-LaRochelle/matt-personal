@@ -5,6 +5,8 @@ import './projects.css'
 import Bingo from '../images/bingo2.0.png'
 import Windmill from '../images/windmill2.0.png'
 import GuitarPaths2 from '../images/gp2.0.png'
+import Navbar from "../navbar/Navbar"
+import Footer from "../footer/Footer"
 
 function Projects() {
     const [maxWidth, setMaxWidth] = useState(null);
@@ -70,6 +72,7 @@ function Projects() {
 
     return (
         <div className="portfolioContainer" ontouchStart={handleMouseDown} onMouseDown={handleMouseDown}>
+            <Navbar />
             <h1>Projects</h1>
             <div 
                 className="image-track"
@@ -108,6 +111,7 @@ function Projects() {
                 <p>Percentage = {percentage}</p>
                 <p>maxWidth = {maxWidth}</p>
             </div> */}
+            <Footer />
         </div>
     );
 }
