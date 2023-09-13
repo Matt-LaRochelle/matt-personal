@@ -4,13 +4,18 @@
     width: 100%;
     color: #fff;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .home .text {
-    position: absolute;
-    bottom: 150px;
-    left: 40px;
     font-size: 1.6rem;
+    flex-grow: 1;
+    padding-top: 60vh;
+    padding-left: 40px;
+}
+
+.home .text h1 {
 }
 
 .home .text p:nth-child(2) {

@@ -3,6 +3,7 @@
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    background-color: #23232a;
 }
 
 .footerContainer .icons {
@@ -34,4 +35,5 @@
     font-size: .8rem;
     color: #fff;
     width: 100px;
+    white-space: nowrap;
 }

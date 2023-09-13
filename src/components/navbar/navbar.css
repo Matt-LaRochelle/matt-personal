@@ -20,3 +20,15 @@
 .navbar li {
     color: #fff;
 }
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar a:visited {
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: rgb(46, 253, 74);
+}

@@ -85,6 +85,12 @@
     margin: 5vw auto;
 }
 
+.imageLink img:hover {
+    box-shadow: rgb(28, 254, 32) 0px 0px 40px 5px;
+    filter: blur(1px);
+    transition: box-shadow 2s, filter 1s;
+}
+
 
 @media screen and (max-width: 800px) {
     .textContent {
