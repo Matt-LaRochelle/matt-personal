@@ -3,14 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 110vh;
+    min-height: calc(100vh - 101.5px);
     background: #23242a;
 }
 
 .box {
     position: relative;
-    width: 480px;
-    height: 530px;
+    width: 380px;
+    height: 430px;
     background: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
@@ -20,8 +20,8 @@
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 480px;
-    height: 530px;
+    width: 380px;
+    height: 430px;
     background: linear-gradient(0deg, transparent,
     transparent, #45f3ff, #45f3ff, #45f3ff);
     z-index: 1;
@@ -33,8 +33,8 @@
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 480px;
-    height: 530px;
+    width: 380px;
+    height: 430px;
     background: linear-gradient(0deg, transparent,
     transparent, #45f3ff, #45f3ff, #45f3ff);
     z-index: 1;
@@ -53,8 +53,8 @@
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 480px;
-    height: 530px;
+    width: 380px;
+    height: 430px;
     background: linear-gradient(0deg, transparent,
     transparent, #12f312, #12f312, #12f312);
     z-index: 1;
@@ -67,8 +67,8 @@
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 480px;
-    height: 530px;
+    width: 380px;
+    height: 430px;
     background: linear-gradient(0deg, transparent,
     transparent, #12f312, #12f312, #12f312);
     z-index: 1;
@@ -93,7 +93,7 @@
     position: absolute;
     inset: 4px;
     background: #222;
-    padding: 50px 40px;
+    padding: 20px 10px;
     border-radius: 8px;
     z-index: 2;
     display: flex;
@@ -112,7 +112,7 @@
 {
     position: relative;
     width: 100%;
-    margin-top: 35px;
+    margin-top: 20px;
 }
 
 .box form .inputBox input 

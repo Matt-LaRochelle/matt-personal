@@ -1,7 +1,7 @@
 .container {
     height: max-content;
     width: 100%;
-    background: #232321;
+    background: hsl(231, 9%, 10%);
     /* background: linear-gradient(175deg, #444 1%, #333 60%, #222); */
     padding: 10px 0 5px;
     position: sticky;

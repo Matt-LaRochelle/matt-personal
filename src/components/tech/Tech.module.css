@@ -1,6 +1,6 @@
 .tech {
     width: 100%;
-    padding: 80px;
+    min-height: calc(100vh - 101.5px);
     /* background-color: rgb(136, 229, 252); */
     /* background-color: #333; */
     /* background: linear-gradient(279deg, #b4dbf5 40%, #aebbe3 60%); */
@@ -9,11 +9,10 @@
 }
 
 .title {
-    padding: 30px 0;
+    padding: 50px 0 10px;
     text-align: center;
     font-size: 3rem;
-    margin-left: 10%;
-    color: #333;
+    color: #fff;
 }
 
 .stack {
