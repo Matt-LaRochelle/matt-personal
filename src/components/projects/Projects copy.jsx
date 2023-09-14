@@ -29,7 +29,7 @@ function Projects() {
         if (isDragging) {
             const distanceDragged = startX - clientX
             setCurrentX(distanceDragged)
-            const percent = (distanceDragged / 300) * 100
+            const percent = (distanceDragged / maxWidth) * 100
             const limitedUpperPercent = Math.min(0, percent + percentage)
             const limitedLowerPercent = Math.max(-100, limitedUpperPercent)
             setPercentage(limitedLowerPercent)
@@ -72,17 +72,13 @@ function Projects() {
       }, []);
 
     return (
-        <div className="portfolioContainer">
+        <div className="portfolioContainer" ontouchStart={handleMouseDown} onMouseDown={handleMouseDown}>
             <Navbar />
             <div className="portfolioPage">
 
                 <h1>Projects</h1>
                 <div className="scrollbar">
-                    <div 
-                        className="scroll" 
-                        style={{transform: `translateX(${percentage * -3}px)`}}
-                        ontouchStart={handleMouseDown} 
-                        onMouseDown={handleMouseDown}>+</div>
+                    <div className="scroll"></div>
                 </div>
                 <div 
                     className="image-track"
@@ -133,4 +129,4 @@ function Projects() {
     );
 }
 
-export default Projects;
+// export default Projects;

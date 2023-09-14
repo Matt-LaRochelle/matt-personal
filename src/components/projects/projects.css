@@ -20,13 +20,14 @@
 }
 
 .scrollbar {
-    width: 300px;
+    width: 325px;
     height: 25px;
-    background: linear-gradient(to right, rgba(0, 255, 0, 0.186), rgba(122, 227, 122, 0.38));
-    border: 1px solid rgb(164, 250, 164);
+    background: linear-gradient(to right, hsla(120, 93%, 84%, 0.056), rgba(134, 189, 134, 0.207));
+    border: 1px solid hsla(120, 90%, 81%, 0.761);
     border-radius: 48px;
     position: relative;
     margin: 0 auto 30px;
+    box-shadow: rgba(128, 212, 153, 0.819) 0px 14px 50px -7px;
 }
 
 .scroll {
@@ -36,6 +37,12 @@
     border-radius: 50%;
     color: transparent;
     position: absolute;
+    box-shadow: rgba(6, 6, 66, 0.466) 0px 0px 3px 1px;
+    cursor:grab
+}
+
+.scroll::selection {
+    background: transparent;
 }
 
 .image-track {
@@ -64,20 +71,6 @@
 .portfolioContainer img:hover {
     filter: opacity(.1);
     border: 2px solid rgb(167, 251, 167);
-}
-
-.portfolioContainer img::after:hover {
-    content: '';
-    border: 2px solid lime;
-    filter: opacity(1)
-}
-
-.portfolioContainer img::after {
-    content: '';
-    background-color: white;
-    height: 400px;
-    width: 400px;
-    z-index: 20;
 }
 
 .projectTitle {
