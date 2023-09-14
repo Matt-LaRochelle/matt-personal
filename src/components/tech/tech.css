@@ -1,19 +1,23 @@
 .tech {
     width: 100%;
-    padding: 80px;
+    min-height: 100vh;
     /* background-color: rgb(136, 229, 252); */
     /* background-color: #333; */
     /* background: linear-gradient(279deg, #b4dbf5 40%, #aebbe3 60%); */
     background: #23242a;
-
+    display: flex;
+    flex-direction: column;
 }
 
-.title {
-    padding: 30px 0;
+.techContainer {
+    flex-grow: 1;
+}
+
+.techContainer h3 {
+    padding: 50px 0 10px;
     text-align: center;
     font-size: 3rem;
-    margin-left: 10%;
-    color: #333;
+    color: #fff;
 }
 
 .stack {
@@ -45,6 +49,9 @@
 }
 
 @media screen and (max-width: 800px) {
+    .techContainer {
+        flex-grow: 1;
+    }
 
     .title {
         margin-left: 2.5%;
@@ -58,10 +65,6 @@
 
     .stack p {
         font-size: .8rem;
-    }
-
-    .tech {
-        padding: 80px 0px 80px;
     }
 
     .item {

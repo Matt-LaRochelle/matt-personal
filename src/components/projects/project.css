@@ -1,0 +1,118 @@
+.projectContainer {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #23232a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectPage {
+    flex-grow: 1;
+}
+
+.projectContainer h1 {
+    padding: 20px 20px 0;
+}
+
+.projectContainer p {
+    padding: 5px 20px 20px;
+    width: 45vw;
+    font-weight: 400;
+}
+
+.textContent {
+    display: flex;
+    columns: 2;
+    column-gap: 40px;
+    padding: 5px 20px;
+    height: max-content;
+}
+
+.textContent p {
+    width: 45vw;
+    font-weight: 200;
+    margin-bottom: 20px;
+    padding: 5px 0;
+}
+
+.loginCredentials {
+    display: block;
+    width: max-content;
+    margin: auto;
+}
+
+.loginCredentials h4 {
+    color: rgb(46, 253, 74);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.loginCredentials h4 span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.projectButtons {
+    width: 30vw;
+    /* border: 2px solid lime; */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectButtons button {
+    background-image: linear-gradient(rgb(136, 229, 252), rgb(96, 215, 245));
+    border: none;
+    color: #333;
+    border-radius: 16px;
+    font-size: 1.6rem;
+    padding: 12px 20px;
+    margin: 10px;
+    box-shadow: rgba(0,0,0,0.8) 0px 6px 14px;
+    white-space: nowrap;
+}
+
+.projectButtons button:hover {
+    background-image: linear-gradient(rgb(127, 255, 144), rgb(48, 220, 71));
+    cursor: pointer;
+}
+
+.imageLink img {
+    display: block;
+    height: 25vw;
+    width: 25vw;
+    object-fit: cover;
+    margin: 5vw auto;
+    border-radius: 8px;
+    transition: box-shadow 6s, filter 2.3s;
+}
+
+.imageLink img:hover {
+    box-shadow: rgb(28, 254, 32) 0px 0px 120px 15px;
+    filter: blur(1px);
+    /* transition: box-shadow 6s, filter 3s; */
+}
+
+
+@media screen and (max-width: 800px) {
+    .textContent {
+        columns: 1;
+        display: block;
+    }
+
+    .textContent p,
+    .projectContainer p {
+        width: 90vw;;
+    }
+
+    .textContent img {
+        width: min(95vw, 400px);
+        height: min(95vw, 400px);
+    }
+
+    .projectButtons {
+        width: 80vw;
+    }
+}

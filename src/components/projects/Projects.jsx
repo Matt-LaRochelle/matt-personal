@@ -1,10 +1,13 @@
 import React, {useState, useEffect} from "react"
 import './projects.css'
+import { Link } from "react-router-dom"
 
 // Components
 import Bingo from '../images/bingo2.0.png'
 import Windmill from '../images/windmill2.0.png'
 import GuitarPaths2 from '../images/gp2.0.png'
+import Navbar from "../navbar/Navbar"
+import Footer from "../footer/Footer"
 
 function Projects() {
     const [maxWidth, setMaxWidth] = useState(null);
@@ -70,44 +73,55 @@ function Projects() {
 
     return (
         <div className="portfolioContainer" ontouchStart={handleMouseDown} onMouseDown={handleMouseDown}>
-            <h1>Projects</h1>
-            <div 
-                className="image-track"
-                style={{
-                    transform: `translate(${percentage}%, -50%)`,
-                    }}
-                >
-                <div>
-                    <img 
-                        src={Windmill} 
-                        alt="Windmill Equestrian Website" 
-                        draggable="false"
-                        style={{objectPosition: `${percentage + 100}% 50%`}} />
-                    <p>Windmill Equestrian</p>               
+            <Navbar />
+            <div className="portfolioPage">
+
+                <h1>Projects</h1>
+                <div 
+                    className="image-track"
+                    style={{
+                        transform: `translate(${percentage}%, -50%)`,
+                        }}
+                    >
+                    <Link to="/windmill">
+                        <div className="projectCard">
+                            <img 
+                                src={Windmill} 
+                                alt="Windmill Equestrian Website" 
+                                draggable="false"
+                                style={{objectPosition: `${percentage + 100}% 50%`}} />
+                            <p className="projectTitle">Windmill Equestrian Website</p>               
+                        </div>
+                    </Link>
+                    <Link to ="/gp2">
+                        <div className="projectCard">
+                            <img 
+                                src={GuitarPaths2} 
+                                alt="Ear Training Web Application" 
+                                draggable="false"
+                                style={{objectPosition: `${percentage + 100}% 50%`}} />
+                            <p className="projectTitle">Ear Training Web App</p>
+                        </div>
+                    </Link>
+                    <Link to="/bingo">
+                        <div className="projectCard">
+                            <img 
+                                src={Bingo} 
+                                alt="Bingo Card Generator Web Application" 
+                                draggable="false"
+                                style={{objectPosition: `${percentage + 100}% 50%`}} />
+                            <p className="projectTitle">Custom Bingo Cards Web App</p>
+                        </div>
+                    </Link>
                 </div>
-                <div>
-                    <img 
-                        src={GuitarPaths2} 
-                        alt="Ear Training Web Application" 
-                        draggable="false"
-                        style={{objectPosition: `${percentage + 100}% 50%`}} />
-                    <p>Ear Training Web App</p>
-                </div>
-                <div>
-                    <img 
-                        src={Bingo} 
-                        alt="Bingo Card Generator Web Application" 
-                        draggable="false"
-                        style={{objectPosition: `${percentage + 100}% 50%`}} />
-                    <p>Custom Bingo Cards Web App</p>
-                </div>
+                {/* <div className="stateVariables">
+                    <p>Start X = {startX}</p>
+                    <p>Amount slid = {currentX}</p>
+                    <p>Percentage = {percentage}</p>
+                    <p>maxWidth = {maxWidth}</p>
+                </div> */}
             </div>
-            {/* <div className="stateVariables">
-                <p>Start X = {startX}</p>
-                <p>Amount slid = {currentX}</p>
-                <p>Percentage = {percentage}</p>
-                <p>maxWidth = {maxWidth}</p>
-            </div> */}
+            <Footer />
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import styles from './Footer.module.css';
-import { AiFillGithub, AiOutlineLinkedin } from 'react-icons/ai'
+import './footer.css'
+// import { AiFillGithub, AiOutlineLinkedin } from 'react-icons/ai'
 
 function Footer() {
 
@@ -8,13 +8,15 @@ function Footer() {
     let year = d.getFullYear();
 
     return (
-        <div className={styles.container}>
-            <div className={styles.icons}>
-                <a href='https://github.com/Matt-LaRochelle'><AiFillGithub className={styles.icon} /><p className={styles.p}>GitHub</p></a>
-                <a href='https://www.linkedin.com/in/matthew-la-rochelle-565b41245/'><AiOutlineLinkedin className={styles.icon} /><p className={styles.p}>LinkedIn</p></a>
+        <footer className="footerContainer">
+            <p className="year">Copyright {year}</p>
+            <div id="icons">
+                <a href='https://github.com/Matt-LaRochelle'><p id="p">GitHub</p></a>
+                <a href='https://www.linkedin.com/in/matthew-la-rochelle-565b41245/'><p id="p">LinkedIn</p></a>
+                {/* <a href='https://github.com/Matt-LaRochelle'><AiFillGithub className={styles.icon} /><p className={styles.p}>GitHub</p></a>
+                <a href='https://www.linkedin.com/in/matthew-la-rochelle-565b41245/'><AiOutlineLinkedin className={styles.icon} /><p className={styles.p}>LinkedIn</p></a> */}
             </div>
-            <p className={styles.copyright}>Copyright {year}</p>
-        </div>
+        </footer>
     );
 }
 

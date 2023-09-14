@@ -1,17 +1,18 @@
 import React from "react";
-import styles from './Home.module.css';
-import Title from '../title/Title';
-import Tech from '../tech/Tech';
-import Projects from '../projects/Projects';
-import Pricing from '../pricing/Pricing';
-import Contact from '../contact/Contact';
-import Footer from '../footer/Footer';
-import Navbar from "../navbar/Navbar";
+import './home.css'
+import Navbar from '../navbar/Navbar'
+import Footer from '../footer/Footer'
 
 function Home() {
     return (
-        <div className={styles.container}>
-            <Title />
+        <div className="home">
+            <Navbar />
+            <div className="text">
+                <h1>Hello,</h1>
+                <p>my name is Matt</p>
+                <p>I develop <span>websites</span> and <span>web applications</span></p>
+            </div>
+            <Footer />
         </div>
     );
 }
