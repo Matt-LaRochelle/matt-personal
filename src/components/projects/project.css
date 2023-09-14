@@ -79,21 +79,20 @@
     cursor: pointer;
 }
 
-
-
-
 .imageLink img {
     display: block;
     height: 25vw;
     width: 25vw;
     object-fit: cover;
     margin: 5vw auto;
+    border-radius: 8px;
+    transition: box-shadow 6s, filter 2.3s;
 }
 
 .imageLink img:hover {
-    box-shadow: rgb(28, 254, 32) 0px 0px 40px 5px;
+    box-shadow: rgb(28, 254, 32) 0px 0px 120px 15px;
     filter: blur(1px);
-    transition: box-shadow 2s, filter 1s;
+    /* transition: box-shadow 6s, filter 3s; */
 }
 
 

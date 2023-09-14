@@ -84,28 +84,34 @@ function Projects() {
                         }}
                     >
                     <Link to="/windmill">
-                        <img 
-                            src={Windmill} 
-                            alt="Windmill Equestrian Website" 
-                            draggable="false"
-                            style={{objectPosition: `${percentage + 100}% 50%`}} />
-                        <p>Windmill Equestrian</p>               
+                        <div className="projectCard">
+                            <img 
+                                src={Windmill} 
+                                alt="Windmill Equestrian Website" 
+                                draggable="false"
+                                style={{objectPosition: `${percentage + 100}% 50%`}} />
+                            <p className="projectTitle">Windmill Equestrian Website</p>               
+                        </div>
                     </Link>
                     <Link to ="/gp2">
-                        <img 
-                            src={GuitarPaths2} 
-                            alt="Ear Training Web Application" 
-                            draggable="false"
-                            style={{objectPosition: `${percentage + 100}% 50%`}} />
-                        <p>Ear Training Web App</p>
+                        <div className="projectCard">
+                            <img 
+                                src={GuitarPaths2} 
+                                alt="Ear Training Web Application" 
+                                draggable="false"
+                                style={{objectPosition: `${percentage + 100}% 50%`}} />
+                            <p className="projectTitle">Ear Training Web App</p>
+                        </div>
                     </Link>
                     <Link to="/bingo">
-                        <img 
-                            src={Bingo} 
-                            alt="Bingo Card Generator Web Application" 
-                            draggable="false"
-                            style={{objectPosition: `${percentage + 100}% 50%`}} />
-                        <p>Custom Bingo Cards Web App</p>
+                        <div className="projectCard">
+                            <img 
+                                src={Bingo} 
+                                alt="Bingo Card Generator Web Application" 
+                                draggable="false"
+                                style={{objectPosition: `${percentage + 100}% 50%`}} />
+                            <p className="projectTitle">Custom Bingo Cards Web App</p>
+                        </div>
                     </Link>
                 </div>
                 {/* <div className="stateVariables">

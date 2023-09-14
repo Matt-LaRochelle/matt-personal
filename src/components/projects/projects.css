@@ -34,19 +34,36 @@
     width: 36vmin;
     object-fit: cover;
     object-position: 100% 50%;
+    transition: filter 2s;
 }
+
 
 .portfolioContainer img:hover {
-    filter: opacity(.8);
+    filter: opacity(.1);
+    border: 2px solid rgb(167, 251, 167);
 }
 
-.image-track p {
-    color: #f8f8f8;
+.portfolioContainer img::after:hover {
+    border: 2px solid lime;
+    filter: opacity(1)
+}
+
+.projectTitle {
+    /* color: #f8f8f8; */
+    color: transparent;
     position: absolute;
     text-align: center;
     width: 36vmin;
     font-weight: 500;
+    top: 18px;
+    font-size: 1.4rem;
+    transition: color 3s;
 }
+
+.image-track .projectCard:hover .projectTitle {
+    color: rgb(160, 246, 171);
+}
+
 
 
 

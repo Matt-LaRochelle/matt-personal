@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: .7;
+    flex-grow: 1;
     /* min-height: 100vh; */
     background: #23242a;
 }
@@ -29,10 +29,10 @@
     width: 380px;
     height: 430px;
     background: linear-gradient(0deg, transparent,
-    transparent, #45f3ff, #45f3ff, #45f3ff);
+    transparent, #45f3ff22, #45f3ffa8, #45f3ff);
     z-index: 1;
     transform-origin: bottom right;
-    animation: animate 6s linear infinite;
+    animation: animate 20s linear infinite;
 }
 .box::after {
     content: '';
@@ -42,11 +42,11 @@
     width: 380px;
     height: 430px;
     background: linear-gradient(0deg, transparent,
-    transparent, #45f3ff, #45f3ff, #45f3ff);
+    transparent, #45f3ff22, #45f3ffa8, #45f3ff);
     z-index: 1;
     transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay: -3s;
+    animation: animate 20s linear infinite;
+    animation-delay: -10s;
 }
 
 .borderLine {
@@ -62,11 +62,11 @@
     width: 380px;
     height: 430px;
     background: linear-gradient(0deg, transparent,
-    transparent, #12f312, #12f312, #12f312);
+    transparent, #b9f7b9b5, #57f857e4, #12f312);
     z-index: 1;
     transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay: -1.5s;
+    animation: animate 20s linear infinite;
+    animation-delay: -5s;
 }
 .borderLine::after {
     content: '';
@@ -76,11 +76,11 @@
     width: 380px;
     height: 430px;
     background: linear-gradient(0deg, transparent,
-    transparent, #12f312, #12f312, #12f312);
+    transparent, #b9f7b9b5, #57f857e4, #12f312);
     z-index: 1;
     transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay: -4.5s;
+    animation: animate 20s linear infinite;
+    animation-delay: -15s;
 }
 @keyframes animate
 {
@@ -99,7 +99,7 @@
     position: absolute;
     inset: 4px;
     background: #222;
-    padding: 20px 10px;
+    padding: 20px 20px;
     border-radius: 8px;
     z-index: 2;
     display: flex;
