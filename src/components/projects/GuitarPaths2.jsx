@@ -32,7 +32,7 @@ const GuitarPaths2 = () => {
                             <h4>Password: <span>ABCabc123!</span></h4>
                         </div>
                         <div className="projectButtons">
-                            <a href='https://guitar-paths.onrender.com/'><button>Website</button></a>
+                            <a href='https://guitar-paths.onrender.com/'><button>Web App</button></a>
                             <a href='https://github.com/Matt-LaRochelle/gp2'><button>GitHub Repo</button></a>
                         </div>
                         <div className="imageLink">

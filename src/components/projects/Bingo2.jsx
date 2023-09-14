@@ -16,13 +16,13 @@ const Bingo2 = () => {
                 <div className="textContent">
                     <div>
                         <h3>The problem:</h3>
-                        <p>Practicing ear training is a challenging thing for students because you need someone in the room to play random notes for you and to tell you whether you got them right or not. However doing this during a lesson is really not a great use of time, as there are many other practical skills that need to be developed as well. In order to facilitate in learning an instrument, I built this app so that students could learn ear training without the guide of a teacher.</p>
+                        <p>I play in a dungeons and dragons group online and we have an ongoing gag about playing bingo on the side, according to various things that happen in game. We wanted to create custom bingo cards but found that the current free technology online was not very good, so I decided to build us a web app.</p>
                         <h3>The project:</h3>
-                        <p>I wanted to build an app which would allow students to practice ear training on their own time, in the comfort of their home, or even from anywhere with an internet connection! I wanted the app to be simple, intuitive, and accessible. I wanted the app to be visually pleasing and at a difficulty that was low.</p>
+                        <p>Build a simple, intuitive bingo customization and generation app.</p>
                         <h3>Solutions:</h3>
-                        <p>I made an authentication to track users high scores, I added nice visual animations for the game numbers, I had only the minimal necessary content on each page for the app to function.</p>
+                        <p>I created an authentication process so that users could create as many different collections of cards as they want. Then they can customize the entries and have them randomly generated onto a bingo card. They can generate several bingo cards very quickly, all randomly dispersed. I then made it simple to download those bingo cards for use.</p>
                         <h3>Future vision of the project:</h3>
-                        <p>I would like to transition this app to a mobile or tablet application that does not require internet access so that more people can use it more often. I would like to add interval training, as well as chord recognition.</p>
+                        <p>I would like to make the app interactive, and build a capability for players to join a "room" where the bingo app can play in real time and people can mark entries and things can be logged across the different players games. A winner can be anmounced in the end.</p>
                     </div>
                     <div>
                         <h3>Technologies used:</h3>
@@ -32,7 +32,7 @@ const Bingo2 = () => {
                             <h4>Password: <span>ABCabc123!</span></h4>
                         </div>
                         <div className="projectButtons">
-                            <a href='https://bingo-kncb.onrender.com/'><button>Website</button></a>
+                            <a href='https://bingo-kncb.onrender.com/'><button>Web App</button></a>
                             <a href='https://github.com/Matt-LaRochelle/bingo'><button>GitHub Repo</button></a>
                         </div>
                         <div className="imageLink">
