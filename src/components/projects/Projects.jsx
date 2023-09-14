@@ -77,6 +77,9 @@ function Projects() {
             <div className="portfolioPage">
 
                 <h1>Projects</h1>
+                <div className="scrollbar">
+                    <div className="scroll">+</div>
+                </div>
                 <div 
                     className="image-track"
                     style={{
