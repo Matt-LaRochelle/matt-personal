@@ -27,7 +27,7 @@
 #footer a:visited {
     color: #fff;
 }
-#footer a:hover {
+#footer p:hover {
     color: rgb(46, 253, 74);
     cursor: pointer;
 }

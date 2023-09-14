@@ -37,6 +37,10 @@
     transition: filter 1s;
 }
 
+.portfolioContainer img::selection {
+    background: transparent;
+}
+
 
 .portfolioContainer img:hover {
     filter: opacity(.1);
@@ -44,8 +48,17 @@
 }
 
 .portfolioContainer img::after:hover {
+    content: '';
     border: 2px solid lime;
     filter: opacity(1)
+}
+
+.portfolioContainer img::after {
+    content: '';
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    z-index: 20;
 }
 
 .projectTitle {
@@ -58,6 +71,10 @@
     top: 18px;
     font-size: 1.4rem;
     transition: color 1s;
+}
+
+.projectTitle::selection {
+    background: transparent;
 }
 
 .image-track .projectCard:hover .projectTitle {
