@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
 
     return (
-        <header className="navbar">
+        <header id="navbar">
             <div className='logo'>
                 <h3>Matt's Developer Projects</h3>
             </div>
@@ -20,7 +20,7 @@ const Navbar = () => {
                     <li>
                     <NavLink to="/projects">Portfolio</NavLink>
                     </li>
-                    <li>
+                    <li id="contact">
                     <NavLink to="/contact">Contact</NavLink>
                     </li>
                 </ul>

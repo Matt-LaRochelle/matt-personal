@@ -28,11 +28,11 @@
     left: -50%;
     width: 380px;
     height: 430px;
-    background: linear-gradient(0deg, transparent,
-    transparent, #45f3ff22, #45f3ffa8, #45f3ff);
+    background: linear-gradient(0deg, transparent, transparent,
+    transparent, #1cf0ffc1, #0cefffd7, #00eeff);
     z-index: 1;
     transform-origin: bottom right;
-    animation: animate 20s linear infinite;
+    animation: animate 40s linear infinite;
 }
 .box::after {
     content: '';
@@ -41,12 +41,12 @@
     left: -50%;
     width: 380px;
     height: 430px;
-    background: linear-gradient(0deg, transparent,
-    transparent, #45f3ff22, #45f3ffa8, #45f3ff);
+    background: linear-gradient(0deg, transparent, transparent,
+    transparent, #28dae7cd, #1aeefddc, #00eeff);
     z-index: 1;
     transform-origin: bottom right;
-    animation: animate 20s linear infinite;
-    animation-delay: -10s;
+    animation: animate 40s linear infinite;
+    animation-delay: -20s;
 }
 
 .borderLine {
@@ -61,12 +61,12 @@
     left: -50%;
     width: 380px;
     height: 430px;
-    background: linear-gradient(0deg, transparent,
-    transparent, #b9f7b9b5, #57f857e4, #12f312);
+    background: linear-gradient(0deg, transparent, transparent,
+    transparent, #47fa47d6, #21f921e4, #12f312);
     z-index: 1;
     transform-origin: bottom right;
-    animation: animate 20s linear infinite;
-    animation-delay: -5s;
+    animation: animate 40s linear infinite;
+    animation-delay: -10.9s;
 }
 .borderLine::after {
     content: '';
@@ -75,12 +75,12 @@
     left: -50%;
     width: 380px;
     height: 430px;
-    background: linear-gradient(0deg, transparent,
-    transparent, #b9f7b9b5, #57f857e4, #12f312);
+    background: linear-gradient(0deg, transparent, transparent,
+    transparent, #47fa47d6, #21f921e4, #12f312);
     z-index: 1;
     transform-origin: bottom right;
-    animation: animate 20s linear infinite;
-    animation-delay: -15s;
+    animation: animate 40s linear infinite;
+    animation-delay: -30.9s;
 }
 @keyframes animate
 {
