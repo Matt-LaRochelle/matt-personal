@@ -8,11 +8,11 @@ function Footer() {
     let year = d.getFullYear();
 
     return (
-        <footer className="footerContainer">
+        <footer id="footer">
             <p className="year">Copyright {year}</p>
-            <div id="icons">
-                <a href='https://github.com/Matt-LaRochelle'><p id="p">GitHub</p></a>
-                <a href='https://www.linkedin.com/in/matthew-la-rochelle-565b41245/'><p id="p">LinkedIn</p></a>
+            <div className="icons">
+                <a href='https://github.com/Matt-LaRochelle'><p className="p">GitHub</p></a>
+                <a href='https://www.linkedin.com/in/matthew-la-rochelle-565b41245/'><p className="p">LinkedIn</p></a>
                 {/* <a href='https://github.com/Matt-LaRochelle'><AiFillGithub className={styles.icon} /><p className={styles.p}>GitHub</p></a>
                 <a href='https://www.linkedin.com/in/matthew-la-rochelle-565b41245/'><AiOutlineLinkedin className={styles.icon} /><p className={styles.p}>LinkedIn</p></a> */}
             </div>

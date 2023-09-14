@@ -1,4 +1,4 @@
-.navbar {
+#navbar {
     background-color: rgba(142, 142, 142, 0);
     /* background: hsl(231, 9%, 10%); */
     width: 100%;
@@ -10,25 +10,25 @@
     z-index: 10;
 }
 
-.navbar ul {
+#navbar ul {
     display: flex;
     width: 400px;
     justify-content: space-between;
     list-style-type: none;
 }
 
-.navbar li {
+#navbar li {
     color: #fff;
 }
 
-.navbar a {
+#navbar a {
     text-decoration: none;
 }
 
-.navbar a:visited {
+#navbar a:visited {
     color: #fff;
 }
 
-.navbar a:hover {
+#navbar a:hover {
     color: rgb(46, 253, 74);
 }

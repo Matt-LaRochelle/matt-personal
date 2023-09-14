@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
 
     return (
-        <header className="navbar">
+        <header id="navbar">
             <div className='logo'>
                 <h3>Matt's Developer Projects</h3>
             </div>
