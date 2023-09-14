@@ -34,7 +34,7 @@
     width: 36vmin;
     object-fit: cover;
     object-position: 100% 50%;
-    transition: filter 2s;
+    transition: filter 1s;
 }
 
 
@@ -57,7 +57,7 @@
     font-weight: 500;
     top: 18px;
     font-size: 1.4rem;
-    transition: color 3s;
+    transition: color 1s;
 }
 
 .image-track .projectCard:hover .projectTitle {

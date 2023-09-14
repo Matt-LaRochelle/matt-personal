@@ -8,8 +8,8 @@ function Home() {
         <div className="home">
             <Navbar />
             <div className="text">
-                <h1>Hello,</h1>
-                <p>my name is Matt</p>
+                <h1>Hello</h1>
+                <p>My name is Matt</p>
                 <p>I develop <span>websites</span> and <span>web applications</span></p>
             </div>
             <Footer />
