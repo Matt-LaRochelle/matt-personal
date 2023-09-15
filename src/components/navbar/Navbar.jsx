@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
+    const handleNav = () => {
+        console.log("You clicked me!")
+    }
     return (
         <header id="navbar">
             <div className='logo'>
@@ -24,6 +27,9 @@ const Navbar = () => {
                     <NavLink to="/contact">Contact</NavLink>
                     </li>
                 </ul>
+                <div onClick={handleNav} className="menu">
+                    <div className="bar"></div>
+                </div>
             </nav>
         </header>
     )

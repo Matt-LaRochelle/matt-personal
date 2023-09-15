@@ -47,3 +47,47 @@
 #navbar li:nth-child(4):hover {
     color: red;
 }
+
+#navbar .menu {
+    display: none;
+}
+
+@media screen and (max-width: 713px) {
+    #navbar ul {
+        display: none;
+    }
+
+    #navbar .menu {
+        display: block;
+        width: 40px;
+        height: 26px;
+    }
+
+    .bar {
+        width: 40px;
+        height: 4px;
+        background-color: white;
+        border-radius: 5px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .bar::before,
+    .bar::after {
+        content: "";
+        width: 40px;
+        height: 4px;
+        background-color: white;
+        border-radius: 5px;
+        position: absolute;
+    }
+
+    .bar::before {
+        top: -13px;
+    }
+
+    .bar::after {
+        top: 13px 
+    }
+}

@@ -3,6 +3,7 @@ import './contact.css';
 import emailjs from 'emailjs-com';
 import Navbar from '../navbar/Navbar'
 import Footer from '../footer/Footer'
+import Background from '../background/Background'
 
 function Contact() {
     function sendEmail(e) {
@@ -18,6 +19,7 @@ function Contact() {
     return (
         <div className="fullContainer">
             <Navbar />
+            <Background />
             <div className="container">
                 <div className="box">
                     <span className="borderLine"></span>
