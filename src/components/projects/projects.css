@@ -27,7 +27,7 @@
     border-radius: 48px;
     position: relative;
     margin: 0 auto 30px;
-    box-shadow: rgba(128, 212, 153, 0.819) 0px 14px 50px -7px;
+    /* box-shadow: rgba(128, 212, 153, 0.819) 0px 14px 50px -7px; */
 }
 
 .scroll {
