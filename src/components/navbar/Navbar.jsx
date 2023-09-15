@@ -9,9 +9,12 @@ const Navbar = () => {
     }
     return (
         <header id="navbar">
-            <div className='logo'>
-                <h3>Matt's Developer Projects</h3>
-            </div>
+            <section className='header-title-line'>
+                <h1>Matt's Developer Projects</h1>
+                <button onClick={handleNav} className="menu-button">
+                    <div className="menu-icon"></div>
+                </button>
+            </section>
             <nav>
                 <ul>
                     <li>
@@ -27,9 +30,6 @@ const Navbar = () => {
                     <NavLink to="/contact">Contact</NavLink>
                     </li>
                 </ul>
-                <div onClick={handleNav} className="menu">
-                    <div className="bar"></div>
-                </div>
             </nav>
         </header>
     )
