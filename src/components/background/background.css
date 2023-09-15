@@ -1,0 +1,37 @@
+#background,
+.outerCircle,
+.middleCircle,
+.innerCircle
+ {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+#background {
+    height: 500px;
+    width: 500px;
+    border: 1px double lime;
+}
+
+#background .outerCircle {
+    height: 400px;
+    width: 400px;
+    border: 1px ridge red;
+}
+
+#background .middleCircle {
+    height: 300px;
+    width: 300px;
+    border: 1px dotted aqua;
+    border-image-slice: 1;
+}
+
+#background .innerCircle {
+    height: 200px;
+    width: 200px;
+    border: 1px dashed goldenrod;
+}
