@@ -3,7 +3,7 @@ import './background.css'
 const Background = () => {
     return (
         <div className='background-box'>
-            <div id="background">
+            {/* <div id="background">
                 <div className="outerCircle">
                     <div className="middleCircle">
                         <div className="innerCircle">
@@ -11,7 +11,7 @@ const Background = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

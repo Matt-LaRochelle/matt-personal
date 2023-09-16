@@ -4,7 +4,7 @@ import './App.css';
 import Home from './components/home/Home';
 import Tech from './components/tech/Tech';
 // import Navbar from './components/navbar/Navbar';
-import Projects from './components/projects/Projects';
+import Projects from './components/projects/Projects2';
 import Contact from './components/contact/Contact';
 // import Footer from './components/footer/Footer';
 

@@ -13,12 +13,12 @@
     flex-grow: 1;
 }
 
-.portfolioContainer h1 {
+.portfolioPage h1 {
     color: #f8f8f8;
     text-align: center;
     margin: 40px;
 }
-
+/* 
 .scrollbar {
     width: 325px;
     height: 25px;
@@ -28,8 +28,8 @@
     position: relative;
     margin: 0 auto 30px;
     /* box-shadow: rgba(128, 212, 153, 0.819) 0px 14px 50px -7px; */
-}
 
+/* 
 .scroll {
     background: radial-gradient(rgb(65, 120, 170), navy);
     width: 22px;
@@ -43,7 +43,7 @@
 
 .scroll::selection {
     background: transparent;
-}
+} */
 
 .image-track {
     display: flex;
