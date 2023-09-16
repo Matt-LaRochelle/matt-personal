@@ -6,6 +6,9 @@ import './project.css'
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
 import connections from '../images2/alina-grubnyak-ZiQkhI7417A-unsplash.jpg'
+import projects from '../images2/projects.png'
+import techstack from '../images2/techstack.png'
+import future from '../images2/future.png'
 import { useState } from 'react';
 
 const Windmill2 = () => {
@@ -38,7 +41,7 @@ const Windmill2 = () => {
                         <img src={connections} />
                     </div>
                     <div className="projectProject">
-                        <img src={connections} />
+                        <img src={projects} />
                         <div>
                             <h3>The project</h3>
                             <p>Build a simple, intuitive website which would display relevant and interesting information about the school.</p>
@@ -49,28 +52,37 @@ const Windmill2 = () => {
                             <h3>Solutions</h3>
                             <p>I set about creating a website which had information about the teacher, what to expect at lessons, pricing, location, as well as information on the horses, and some motivational quotes featured on it. I kept the colors to a minimum and made sure that the content was easily digestable and organized coherently.</p>
                         </div>
-                        <div className="imageLink">
-                            <a href='https://windmill-equestrian.com/'><img src={windmill} alt="Guitar Paths" /></a>
-                        </div>
+                        <a href='https://windmill-equestrian.com/'>
+                            <img src={windmill} alt="Guitar Paths" />
+                        </a>
                     </div>
                 </div>
                 }
                 <div className="projectTechnologies">
-                    <img src={connections} />
+                    <img src={techstack} />
                     <div>
                         <h3>Technologies used:</h3>
                         <p>For this project I used HTML, CSS, JavaScript, and React. The project is tracked using Git and GitHub and is hosted on Netlify.com</p>
                     </div>
                 </div>
                 {moreContent &&
+                <div> 
                     <div className="projectFuture">
                         <div>
                             <h3>Future vision of the project:</h3>
                             <p>I am currently implementing a backend and an administrators page to keep track of students, teachers, and horses, as well as give clients the ability to book lessons online.</p>
                         </div>
-                        <img src={connections} />
+                        <img src={future} />
                     </div>
+                    <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
+                    <div className="projectButtons">
+                        <a href='https://windmill-equestrian.com/'><button>Website</button></a>
+                        <a href='https://github.com/Matt-LaRochelle/horses'><button>GitHub Repo</button></a>
+                    </div>
+                </div>
                 }
+                
+
             </div>
             <Footer />
         </div>

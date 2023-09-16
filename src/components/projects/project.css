@@ -11,7 +11,7 @@
 .projectPage {
     flex-grow: 1;
     /* border: 1px solid lime; */
-    padding-top: 50px;
+    padding: 50px 0;
     width: min(800px, 95vw);
     margin: auto;
 }
@@ -98,18 +98,34 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    /* border: 2px solid blue; */
 }
 .projectSolutions div {
+    /* border: 2px solid lime; */
     width: 50%;
 }
-.imageLink img {
+.projectSolutions a img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.projectSolutions a {
+    width: 45%;
+    /* border: 2px solid yellow; */
+}
+
+.projectSolutions p {
+    width: 90%;
+}
+
+/* .imageLink img {
     display: block;
     height: 25vw;
     width: 25vw;
     object-fit: cover;
     margin: 5vw auto;
     border-radius: 8px;
-}
+} */
 
 
 .projectTechnologies {
