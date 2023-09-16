@@ -77,6 +77,7 @@ function Projects() {
             <div className="portfolioPage">
 
                 <h1>Projects</h1>
+                <p className="portfolioDirections">Try scrolling left and right!</p>
                 <div className="scrollbar">
                     <div className="scroll"></div>
                 </div>

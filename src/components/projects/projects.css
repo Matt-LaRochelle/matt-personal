@@ -18,6 +18,16 @@
     text-align: center;
     margin: 40px;
 }
+
+.portfolioDirections {
+    font-size: 1rem;
+    color: #fff;
+    transform: rotate(-13deg);
+    position: absolute;
+    top: 90px;
+    right: 60px;
+
+}
 /* 
 .scrollbar {
     width: 325px;
@@ -55,7 +65,7 @@
     transform: translate(0%, -50%);
 }
 
-.portfolioContainer img {
+.portfolioPage img {
     height: 48vmin;
     width: 36vmin;
     object-fit: cover;
@@ -63,12 +73,12 @@
     transition: filter .3s;
 }
 
-.portfolioContainer img::selection {
+.portfolioPage img::selection {
     background: transparent;
 }
 
 
-.portfolioContainer img:hover {
+.portfolioPage img:hover {
     filter: opacity(.1);
     border: 2px solid rgb(167, 251, 167);
 }
@@ -105,11 +115,11 @@
 }
 
 @media screen and (max-width: 500px) {
-    .portfolioContainer {
+    .portfolioPage {
         padding: 20px 0;
     }
 
-    .portfolioContainer h1 {
+    .portfolioPage h1 {
         margin: 20px;
     }
 }
