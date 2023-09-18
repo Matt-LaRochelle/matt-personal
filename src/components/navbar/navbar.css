@@ -1,5 +1,5 @@
 #navbar {
-    background-color: #23242aed;
+    background-color: #23242a8d;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -11,7 +11,7 @@
     height: 30px;
 }
 
-#navbar .header-title-line h1 {
+.navbar__title h1 {
     margin: -4px;
 }
 
@@ -51,7 +51,7 @@
         border: #fff;
     }
 
-    .header-title-line {
+    .navbar__title {
 
         display: flex;
         flex-flow: row nowrap;

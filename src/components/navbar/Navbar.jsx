@@ -9,7 +9,7 @@ const Navbar = () => {
     }
     return (
         <header id="navbar">
-            <section className='header-title-line'>
+            <section className='navbar__title'>
                 <h1>Matt's Developer Projects</h1>
                 <button onClick={handleNav} className="menu-button">
                     <div className="menu-icon"></div>

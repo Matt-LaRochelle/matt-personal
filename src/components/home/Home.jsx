@@ -9,7 +9,7 @@ function Home() {
         <div className="home">
             <Navbar />
             <Background />
-            <div className="text">
+            <div className="home__text">
                 <h1>Hello</h1>
                 <p>My name is Matt</p>
                 <p>I develop <span>websites</span> and <span>web applications</span></p>

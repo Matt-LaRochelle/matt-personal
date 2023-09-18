@@ -8,7 +8,7 @@
     flex-direction: column;
 }
 
-.home .text {
+.home__text {
     font-size: 1.6rem;
     flex-grow: 1;
     padding-top: 60vh;
@@ -16,16 +16,17 @@
     z-index: 1;
 }
 
-.home .text h1 {
+.home__text h1 {
+    margin-bottom: 6px;
 }
 
-.home .text p:nth-child(2) {
+.home__text p:nth-child(2) {
     font-size: 2.3rem;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.home .text p:nth-child(3) {
+.home__text p:nth-child(3) {
     font-weight: 200;
 }
 
