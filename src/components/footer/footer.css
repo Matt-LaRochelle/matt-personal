@@ -3,7 +3,8 @@
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    background-color: #23232a;
+    background-color: #23232a4e;
+    z-index: 100;
 }
 
 #footer .icons {

@@ -5,11 +5,13 @@ import {IoLogoJavascript} from 'react-icons/io';
 import {SiMongodb, SiMysql, SiExpress} from 'react-icons/si';
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
+import Background from "../background/Background";
 
 function Tech() {
     return (
             <div className="tech">
             <Navbar />
+            <Background />
                 <div className="techContainer">
                     <h3>Skills</h3>
                     <div className="stack">

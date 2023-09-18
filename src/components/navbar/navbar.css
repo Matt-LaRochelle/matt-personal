@@ -1,12 +1,12 @@
 #navbar {
-    background-color: #23242a;
+    background-color: #23242aed;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     color: #fff;
     padding: 0.25rem 0.5rem;
     /* border-bottom: 1px solid #fff; */
-    z-index: 10;
+    z-index: 100;
     position: absolute;
     height: 30px;
 }

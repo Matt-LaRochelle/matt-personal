@@ -20,7 +20,7 @@ function Contact() {
         <div className="fullContainer">
             <Navbar />
             <Background />
-            <div className="container">
+            <div className="contactContainer">
                 <div className="box">
                     <span className="borderLine"></span>
                     <form onSubmit={sendEmail}>
