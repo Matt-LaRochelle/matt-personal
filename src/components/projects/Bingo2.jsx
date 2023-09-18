@@ -10,7 +10,6 @@ import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
 import connections from '../images2/alina-grubnyak-ZiQkhI7417A-unsplash.jpg'
 import projects from '../images2/projects.png'
-import techstack from '../images2/techstack.png'
 import future from '../images2/future.png'
 import { useState } from 'react';
 
@@ -44,7 +43,7 @@ const Bingo = () => {
                     <div className="projectProblem">
                         <div>
                             <h3>The problem</h3>
-                            <p>I play in a dungeons and dragons group online and we have an ongoing gag about playing bingo on the side, according to various things that happen in game. We wanted to create custom bingo cards but found that the current free technology online was not very good, so I decided to build us a web app.</p>
+                            <p>I play in a dungeons and dragons group online and we have an ongoing gag about playing bingo on the side, according to various things that happen in the game. We wanted to create custom bingo cards but found that the current free technology online was not very good, so I decided to build us a web app.</p>
                         </div>
                         <img src={connections} />
                     </div>
@@ -86,7 +85,7 @@ const Bingo = () => {
                             </ul>
                             <h3>Frontend</h3>
                         </div>
-                        <div className="techFrontend">
+                        <div className="techBackend">
                             <ul>
                                 <li>
                                     <span className="icon"><FaNodeJs /></span>Node
@@ -100,7 +99,7 @@ const Bingo = () => {
                             </ul>
                             <h3>Backend</h3>
                         </div>
-                        <div className="techFrontend">
+                        <div className="techUtilities">
                             <ul>
                                 <li>
                                     <span className="icon"><TbBrandVscode /></span>VSCode
@@ -131,7 +130,7 @@ const Bingo = () => {
                     <div className="projectFuture">
                         <div>
                             <h3>Future vision of the project:</h3>
-                            <p>I am currently implementing a backend and an administrators page to keep track of students, teachers, and horses, as well as give clients the ability to book lessons online.</p>
+                            <p>In the future I hope to make the app interactive, and allow users to createa  "room" in which they can invite their friends to play a custom bingo game together.</p>
                         </div>
                         <img src={future} />
                     </div>

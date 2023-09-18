@@ -1,14 +1,17 @@
-// import { FaReact, FaHtml5, FaCss3, FaNodeJs } from 'react-icons/fa';
-// import {IoLogoJavascript} from 'react-icons/io';
-// import {SiMongodb, SiExpress} from 'react-icons/si';
+import { FaReact, FaHtml5, FaFigma, FaNodeJs } from 'react-icons/fa';
+import {IoLogoJavascript, IoLogoCss3} from 'react-icons/io';
+import {SiMongodb, SiExpress, SiJavascript} from 'react-icons/si';
+import { TbBrandVscode } from 'react-icons/tb'
+import { BsGit } from 'react-icons/bs'
+import { AiFillGithub } from 'react-icons/ai'
 import gp2 from '../images/gp2.0.png'
 import './project.css'
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
+import guitarist from '../images/guitarist.png'
 import connections from '../images2/alina-grubnyak-ZiQkhI7417A-unsplash.jpg'
 import projects from '../images2/projects.png'
-import techstack from '../images2/techstack.png'
-import future from '../images2/future.png'
+import future from '../images/future2.jpg'
 import { useState } from 'react';
 
 const GuitarPaths2 = () => {
@@ -25,15 +28,15 @@ const GuitarPaths2 = () => {
                 <div className='projectTitle'>
                     <h1>Guitar Paths</h1>
                     <p>A web application designed for guitarists learning ear training </p>
-                    <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
-                    <div className="loginCredentials">
-                        <h4>Login: <span>testuser@testing.user</span></h4>
-                        <h4>Password: <span>ABCabc123!</span></h4>
-                    </div>
                     <div className="projectButtons">
                         <a href='https://guitar-paths.onrender.com/'><button>Web App</button></a>
                         <a href='https://github.com/Matt-LaRochelle/gp2'><button>GitHub Repo</button></a>
                     </div>
+                    <div className="loginCredentials">
+                        <h4>Login: <span>testuser@testing.user</span></h4>
+                        <h4>Password: <span>ABCabc123!</span></h4>
+                    </div>
+                    <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
                 </div>
                 {moreContent &&
                     <div>
@@ -42,7 +45,7 @@ const GuitarPaths2 = () => {
                             <h3>The problem</h3>
                             <p>Practicing ear training is a challenging thing for students because you need someone in the room to play random notes for you and to tell you whether you got them right or not. However doing this during a lesson is really not a great use of time, as there are many other practical skills that need to be developed as well. In order to facilitate in learning an instrument, I built this app so that students could learn ear training without the guide of a teacher.</p>
                         </div>
-                        <img src={connections} />
+                        <img src={guitarist} />
                     </div>
                     <div className="projectProject">
                         <img src={projects} />
@@ -63,10 +66,63 @@ const GuitarPaths2 = () => {
                 </div>
                 }
                 <div className="projectTechnologies">
-                    <img src={techstack} />
-                    <div>
+                <div className="techStack">
+                        <div className="techFrontend">
+                            <ul>
+                                <li>
+                                    <span className="icon"><FaHtml5 /></span>HTML
+                                </li>
+                                <li>
+                                    <span className="icon"><IoLogoCss3 /></span>CSS
+                                </li>
+                                <li>
+                                    <span className="icon"><SiJavascript /></span>JavaScript
+                                </li>
+                                <li>
+                                    <span className="icon"><FaReact /></span>React
+                                </li>
+                            </ul>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div className="techBackend">
+                            <ul>
+                                <li>
+                                    <span className="icon"><FaNodeJs /></span>Node
+                                </li>
+                                <li>
+                                    <span className="icon"><SiExpress /></span>Express
+                                </li>
+                                <li>
+                                    <span className="icon"><SiMongodb /></span>MongoDB
+                                </li>
+                            </ul>
+                            <h3>Backend</h3>
+                        </div>
+                        <div className="techUtilities">
+                            <ul>
+                                <li>
+                                    <span className="icon"><TbBrandVscode /></span>VSCode
+                                </li>
+                                <li>
+                                    <span className='icon'><BsGit /></span>Git
+                                </li>
+                                <li>
+                                    <span className='icon'><AiFillGithub /></span>GitHub
+                                </li>
+                                <li>
+                                    <span className='icon'><FaFigma /></span>Figma
+                                </li>
+                            </ul>
+                            <h3>Utilities</h3>
+                        </div>
+                    </div>
+                    {moreContent
+                    ?<div className="techTextContent">
                         <h3>Technologies used:</h3>
-                        <p>For this project I used HTML, CSS, JavaScript, and React for the front end of the application. On the backend I used Node, Express, and MongoDB. The project is tracked using Git and GitHub and is hosted on Render.com</p>                    </div>
+                        <p>For this project I used HTML, CSS, JavaScript, and React for the front end of the application. On the backend I used Node, Express, and MongoDB. The project is tracked using Git and GitHub and is hosted on Render.com</p>
+                    </div>
+                    : <img src={gp2} alt="Guitar Paths" />
+                    }
                 </div>
                 {moreContent &&
                 <div> 
@@ -77,11 +133,11 @@ const GuitarPaths2 = () => {
                         </div>
                         <img src={future} />
                     </div>
-                    <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
                     <div className="projectButtons">
                         <a href='https://guitar-paths.onrender.com/'><button>Website</button></a>
                         <a href='https://github.com/Matt-LaRochelle/gp2'><button>GitHub Repo</button></a>
                     </div>
+                    <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
                 </div>
                 }
             </div>

@@ -10,8 +10,7 @@ import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
 import connections from '../images2/alina-grubnyak-ZiQkhI7417A-unsplash.jpg'
 import projects from '../images2/projects.png'
-import techstack from '../images2/techstack.png'
-import future from '../images2/future.png'
+import future from '../images/future3.jpg'
 import { useState } from 'react';
 
 const Windmill2 = () => {
