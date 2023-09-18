@@ -10,7 +10,7 @@ import Contact from './components/contact/Contact';
 
 import Windmill2 from './components/projects/Windmill2'
 import Gp2 from './components/projects/GuitarPaths2'
-import Bingo2 from './components/projects/Bingo2';
+import Bingo from './components/projects/Bingo2';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="windmill" element={<Windmill2 />} />
           <Route path="gp2" element={<Gp2 />} />
-          <Route path="bingo" element={<Bingo2 />} />
+          <Route path="bingo" element={<Bingo />} />
         </Routes>
       </BrowserRouter>
     </div>

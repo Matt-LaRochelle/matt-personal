@@ -78,9 +78,6 @@ function Projects() {
 
                 <h1>Projects</h1>
                 <p className="portfolioDirections">Try scrolling left and right!</p>
-                <div className="scrollbar">
-                    <div className="scroll"></div>
-                </div>
                 <div 
                     className="image-track"
                     style={{
