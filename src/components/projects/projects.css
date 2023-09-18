@@ -1,4 +1,4 @@
-.portfolioContainer {
+.projects {
     min-height: 100vh;
     width: 100vw;
     margin: 0rem;
@@ -9,43 +9,28 @@
     flex-direction: column;
 }
 
-.portfolioPage {
+.projects__container {
     flex-grow: 1;
+    z-index: 10;
 }
 
-.portfolioContainer h1 {
+.projects__container h1 {
     color: #f8f8f8;
     text-align: center;
     margin: 40px;
 }
 
-.scrollbar {
-    width: 325px;
-    height: 25px;
-    background: linear-gradient(to right, hsla(120, 93%, 84%, 0.056), rgba(134, 189, 134, 0.207));
-    border: 1px solid hsla(120, 90%, 81%, 0.761);
-    border-radius: 48px;
-    position: relative;
-    margin: 0 auto 30px;
-    box-shadow: rgba(128, 212, 153, 0.819) 0px 14px 50px -7px;
-}
-
-.scroll {
-    background: radial-gradient(rgb(65, 120, 170), navy);
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    color: transparent;
+.projects__helper {
+    font-size: 1rem;
+    color: #fff;
+    transform: rotate(-13deg);
     position: absolute;
-    box-shadow: rgba(6, 6, 66, 0.466) 0px 0px 3px 1px;
-    cursor:grab
+    top: 90px;
+    right: 60px;
+
 }
 
-.scroll::selection {
-    background: transparent;
-}
-
-.image-track {
+.projects__image-track {
     display: flex;
     justify-content: center;
     gap: 6vmin;
@@ -55,7 +40,7 @@
     transform: translate(0%, -50%);
 }
 
-.portfolioContainer img {
+.projects__container img {
     height: 48vmin;
     width: 36vmin;
     object-fit: cover;
@@ -63,17 +48,17 @@
     transition: filter .3s;
 }
 
-.portfolioContainer img::selection {
+.projects__container img::selection {
     background: transparent;
 }
 
 
-.portfolioContainer img:hover {
+.projects__container img:hover {
     filter: opacity(.1);
     border: 2px solid rgb(167, 251, 167);
 }
 
-.projectTitle {
+.projects__title {
     /* color: #f8f8f8; */
     color: transparent;
     position: absolute;
@@ -85,11 +70,11 @@
     transition: color .3s;
 }
 
-.projectTitle::selection {
+.projects__title::selection {
     background: transparent;
 }
 
-.image-track .projectCard:hover .projectTitle {
+.projects__image-track .projects__card:hover .projects__title {
     color: rgb(160, 246, 171);
 }
 
@@ -105,11 +90,11 @@
 }
 
 @media screen and (max-width: 500px) {
-    .portfolioContainer {
+    .projects__container {
         padding: 20px 0;
     }
 
-    .portfolioContainer h1 {
+    .projects__container h1 {
         margin: 20px;
     }
 }

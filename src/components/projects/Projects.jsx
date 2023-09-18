@@ -8,6 +8,7 @@ import Windmill from '../images/windmill2.0.png'
 import GuitarPaths2 from '../images/gp2.0.png'
 import Navbar from "../navbar/Navbar"
 import Footer from "../footer/Footer"
+import Background from "../background/Background"
 
 function Projects() {
     const [maxWidth, setMaxWidth] = useState(null);
@@ -29,7 +30,7 @@ function Projects() {
         if (isDragging) {
             const distanceDragged = startX - clientX
             setCurrentX(distanceDragged)
-            const percent = (distanceDragged / 300) * 100
+            const percent = (distanceDragged / maxWidth) * 100
             const limitedUpperPercent = Math.min(0, percent + percentage)
             const limitedLowerPercent = Math.max(-100, limitedUpperPercent)
             setPercentage(limitedLowerPercent)
@@ -72,52 +73,46 @@ function Projects() {
       }, []);
 
     return (
-        <div className="portfolioContainer">
+        <div className="projects" ontouchStart={handleMouseDown} onMouseDown={handleMouseDown}>
             <Navbar />
-            <div className="portfolioPage">
+            <div className="projects__container">
 
-                <h1>Projects</h1>
-                <div className="scrollbar">
-                    <div 
-                        className="scroll" 
-                        style={{transform: `translateX(${percentage * -3}px)`}}
-                        ontouchStart={handleMouseDown} 
-                        onMouseDown={handleMouseDown}>+</div>
-                </div>
+                {/* <h1>Projects</h1> */}
+                {/* <p className="projects__helper">Try scrolling left and right!</p> */}
                 <div 
-                    className="image-track"
+                    className="projects__image-track"
                     style={{
                         transform: `translate(${percentage}%, -50%)`,
                         }}
                     >
                     <Link to="/windmill">
-                        <div className="projectCard">
+                        <div className="projects__card">
                             <img 
                                 src={Windmill} 
                                 alt="Windmill Equestrian Website" 
                                 draggable="false"
                                 style={{objectPosition: `${percentage + 100}% 50%`}} />
-                            <p className="projectTitle">Windmill Equestrian Website</p>               
+                            <p className="projects__title">Windmill Equestrian Website</p>               
                         </div>
                     </Link>
                     <Link to ="/gp2">
-                        <div className="projectCard">
+                        <div className="projects__card">
                             <img 
                                 src={GuitarPaths2} 
                                 alt="Ear Training Web Application" 
                                 draggable="false"
                                 style={{objectPosition: `${percentage + 100}% 50%`}} />
-                            <p className="projectTitle">Ear Training Web App</p>
+                            <p className="projects__title">Ear Training Web App</p>
                         </div>
                     </Link>
                     <Link to="/bingo">
-                        <div className="projectCard">
+                        <div className="projects__card">
                             <img 
                                 src={Bingo} 
                                 alt="Bingo Card Generator Web Application" 
                                 draggable="false"
                                 style={{objectPosition: `${percentage + 100}% 50%`}} />
-                            <p className="projectTitle">Custom Bingo Cards Web App</p>
+                            <p className="projects__title">Custom Bingo Cards Web App</p>
                         </div>
                     </Link>
                 </div>

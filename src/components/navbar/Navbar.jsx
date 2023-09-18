@@ -4,11 +4,17 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
+    const handleNav = () => {
+        console.log("You clicked me!")
+    }
     return (
         <header id="navbar">
-            <div className='logo'>
-                <h3>Matt's Developer Projects</h3>
-            </div>
+            <section className='navbar__title'>
+                <h1>Matt's Developer Projects</h1>
+                <button onClick={handleNav} className="menu-button">
+                    <div className="menu-icon"></div>
+                </button>
+            </section>
             <nav>
                 <ul>
                     <li>
