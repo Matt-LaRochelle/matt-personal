@@ -1,6 +1,9 @@
-// import { FaReact, FaHtml5, FaCss3, FaNodeJs } from 'react-icons/fa';
-// import {IoLogoJavascript} from 'react-icons/io';
-// import {SiMongodb, SiExpress} from 'react-icons/si';
+import { FaReact, FaHtml5, FaFigma, FaNodeJs } from 'react-icons/fa';
+import {IoLogoJavascript, IoLogoCss3} from 'react-icons/io';
+import {SiMongodb, SiExpress, SiJavascript} from 'react-icons/si';
+import { TbBrandVscode } from 'react-icons/tb'
+import { BsGit } from 'react-icons/bs'
+import { AiFillGithub } from 'react-icons/ai'
 import bingo from '../images/bingo2.0.png'
 import './project.css'
 import Navbar from '../navbar/Navbar';
@@ -25,15 +28,16 @@ const Bingo = () => {
                 <div className='projectTitle'>
                     <h1>Bingo Cards</h1>
                     <p>A website that allows you to make custom bingo cards</p>
-                    <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
-                    <div className="loginCredentials">
-                        <h4>Login: <span>testuser@testing.user</span></h4>
-                        <h4>Password: <span>ABCabc123!</span></h4>
-                    </div>
                     <div className="projectButtons">
                         <a href='https://bingo-kncb.onrender.com/'><button>Website</button></a>
                         <a href='https://github.com/Matt-LaRochelle/bingo'><button>GitHub Repo</button></a>
                     </div>
+                    <div className="loginCredentials">
+                        <h4>Login: <span>testuser@testing.user</span></h4>
+                        <h4>Password: <span>ABCabc123!</span></h4>
+                    </div>
+                    <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
+                    
                 </div>
                 {moreContent &&
                     <div>
@@ -57,17 +61,70 @@ const Bingo = () => {
                             <p>I created an authentication process so that users could create as many different collections of cards as they want. Then they can customize the entries and have them randomly generated onto a bingo card. They can generate several bingo cards very quickly, all randomly dispersed. I then made it simple to download those bingo cards for use.</p>
                         </div>
                         <a href='https://bingo-kncb.onrender.com/'>
-                            <img src={bingo} alt="Guitar Paths" />
+                            <img src={bingo} alt="Bingo Cards" />
                         </a>
                     </div>
                 </div>
                 }
+                {!moreContent && <h2>Technologies Used</h2>}
                 <div className="projectTechnologies">
-                    <img src={techstack} />
-                    <div>
+                <div className="techStack">
+                        <div className="techFrontend">
+                            <ul>
+                                <li>
+                                    <span className="icon"><FaHtml5 /></span>HTML
+                                </li>
+                                <li>
+                                    <span className="icon"><IoLogoCss3 /></span>CSS
+                                </li>
+                                <li>
+                                    <span className="icon"><SiJavascript /></span>JavaScript
+                                </li>
+                                <li>
+                                    <span className="icon"><FaReact /></span>React
+                                </li>
+                            </ul>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div className="techFrontend">
+                            <ul>
+                                <li>
+                                    <span className="icon"><FaNodeJs /></span>Node
+                                </li>
+                                <li>
+                                    <span className="icon"><SiExpress /></span>Express
+                                </li>
+                                <li>
+                                    <span className="icon"><SiMongodb /></span>MongoDB
+                                </li>
+                            </ul>
+                            <h3>Backend</h3>
+                        </div>
+                        <div className="techFrontend">
+                            <ul>
+                                <li>
+                                    <span className="icon"><TbBrandVscode /></span>VSCode
+                                </li>
+                                <li>
+                                    <span className='icon'><BsGit /></span>Git
+                                </li>
+                                <li>
+                                    <span className='icon'><AiFillGithub /></span>GitHub
+                                </li>
+                                <li>
+                                    <span className='icon'><FaFigma /></span>Figma
+                                </li>
+                            </ul>
+                            <h3>Utilities</h3>
+                        </div>
+                    </div>
+                    {moreContent
+                    ?<div className="techTextContent">
                         <h3>Technologies used:</h3>
                         <p>For this project I used HTML, CSS, JavaScript, and React for the front end of the application. On the backend I used Node, Express, and MongoDB. The project is tracked using Git and GitHub and is hosted on Render.com</p>
                     </div>
+                    : <img src={bingo} alt="Bingo Cards" />
+                    }
                 </div>
                 {moreContent &&
                 <div> 
@@ -78,11 +135,11 @@ const Bingo = () => {
                         </div>
                         <img src={future} />
                     </div>
-                    <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
                     <div className="projectButtons">
                         <a href='https://bingo-kncb.onrender.com/'><button>Website</button></a>
                         <a href='https://github.com/Matt-LaRochelle/bingo'><button>GitHub Repo</button></a>
                     </div>
+                    <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
                 </div>
                 }
             </div>
