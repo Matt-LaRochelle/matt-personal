@@ -75,11 +75,10 @@ function Projects() {
     return (
         <div className="projects" ontouchStart={handleMouseDown} onMouseDown={handleMouseDown}>
             <Navbar />
-            <Background />
             <div className="projects__container">
 
-                <h1>Projects</h1>
-                <p className="projects__helper">Try scrolling left and right!</p>
+                {/* <h1>Projects</h1> */}
+                {/* <p className="projects__helper">Try scrolling left and right!</p> */}
                 <div 
                     className="projects__image-track"
                     style={{

@@ -8,7 +8,7 @@ function Home() {
     return (
         <div className="home">
             <Navbar />
-            <Background />
+            {/* <Background /> */}
             <div className="home__text">
                 <h1>Hello</h1>
                 <p>My name is Matt</p>

@@ -24,7 +24,6 @@ const Bingo = () => {
     return (
         <div className="projectContainer">
             <Navbar />
-            <Background />
             <div className="projectPage">
                 <div className='projectTitle'>
                     <h1>Bingo Cards</h1>

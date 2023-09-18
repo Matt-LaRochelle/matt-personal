@@ -19,7 +19,7 @@ function Contact() {
     return (
         <div className="contact">
             <Navbar />
-            <Background />
+            {/* <Background /> */}
             <div className="contact__container">
                 <div className="contact__box">
                     <span className="box__border"></span>
