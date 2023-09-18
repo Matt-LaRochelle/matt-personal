@@ -1,23 +1,24 @@
-.background-box /* He calls it .container */
+.background /* He calls it .container */
 {
     position: absolute;
     min-height: 100vh;
     width: 100%;
     /* background: #0c192c; */
     background: #23242a;
+    /* background: url('../images/forest.jpg') no-repeat center/cover; */
     z-index: 0;
     /* background-color: blue; */
     /* border: 2px solid lime; */
 }
 
-.container {
+.background__container {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
 
-.bubbles {
+.background__bubbles {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -25,7 +26,7 @@
     width: 100%;
 }
 
-.bubbles span {
+.background__bubbles span {
     position: relative;
     width: 4px;
     height: 4px;
@@ -39,7 +40,7 @@
     /* border: 2px solid yellow; */
     animation-duration: calc(300s / var(--i));
 }
-.bubbles span:nth-child(even) {
+.background__bubbles span:nth-child(even) {
     background: #20ea20;
     box-shadow: 0 0 0 4px #2dff2d44,
     0 0 50px 7px #3bb23b,

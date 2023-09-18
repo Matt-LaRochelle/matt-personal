@@ -1,4 +1,4 @@
-#footer {
+.footer {
     height: max-content;
     width: 100vw;
     display: flex;
@@ -7,33 +7,33 @@
     z-index: 100;
 }
 
-#footer .icons {
+.footer__links {
     display: flex;
     justify-content: space-between;
     width: 170px;
     margin-right: 16px;
 }
 
-#footer .p {
+.links__p {
     margin: 4px 20px;
     width: 50px;
     color: #fff;
     padding: 0;
 }
 
-#footer a {
+.footer__links a {
     text-decoration: none;
     color: #fff;
 }
-#footer a:visited {
+.footer__links a:visited {
     color: #fff;
 }
-#footer p:hover {
+.footer__links p:hover {
     color: rgb(46, 253, 74);
     cursor: pointer;
 }
 
-#footer .year {
+.footer__year {
     padding: 4px 10px;
     font-size: .8rem;
     color: #fff;

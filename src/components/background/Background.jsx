@@ -2,9 +2,9 @@ import './background.css'
 
 const Background = () => {
     return (
-        <div className='background-box'>
-            <div className='container'>
-                <div className='bubbles'>
+        <div className='background'>
+            <div className='background__container'>
+                <div className='background__bubbles'>
                 <span style={{ "--i": 11 }}></span>
                     <span style={{ "--i": 12 }}></span>
                     <span style={{ "--i": 24 }}></span>

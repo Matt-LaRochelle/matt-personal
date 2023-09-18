@@ -17,15 +17,15 @@ function Contact() {
     }
 
     return (
-        <div className="fullContainer">
+        <div className="contact">
             <Navbar />
             <Background />
-            <div className="contactContainer">
-                <div className="box">
-                    <span className="borderLine"></span>
+            <div className="contact__container">
+                <div className="contact__box">
+                    <span className="box__border"></span>
                     <form onSubmit={sendEmail}>
                         <h2>Contact</h2>
-                        <div className="inputBox">
+                        <div className="box__input">
                             <input  
                                 type="text" 
                                 name="name" 
@@ -33,7 +33,7 @@ function Contact() {
                             <span>Name</span>
                             <i></i>
                         </div>
-                        <div className="inputBox">
+                        <div className="box__input">
                             <input  
                                 type="email" 
                                 name="email" 
@@ -41,7 +41,7 @@ function Contact() {
                             <span>Email</span>
                             <i></i>
                         </div>
-                        <div className="inputBox">
+                        <div className="box__input">
                             <textarea 
                                 name="message"
                                 required="required" />
