@@ -3,7 +3,7 @@
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    color: #fff;
+    color: #eee;
     padding: 0.25rem 0.5rem;
     /* border-bottom: 1px solid #fff; */
     z-index: 100;
@@ -28,14 +28,14 @@
 }
 
 #navbar li {
-    color: #fff;
+    color: #eee;
 }
 
 #navbar a {
     text-decoration: none;
 }
 #navbar a:visited {
-    color: #fff;
+    color: #eee;
 }
 #navbar a:hover, #navbar a:focus {
     color: rgb(46, 253, 74);
@@ -48,7 +48,7 @@
 @media screen and (max-width: 713px) {
     #navbar {
         display: block;
-        border: #fff;
+        border: #eee;
     }
 
     .navbar__title {
