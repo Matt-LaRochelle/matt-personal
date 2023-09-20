@@ -52,6 +52,7 @@
 }
 .project__header img {
     width: 45%;
+    height: clamp(250px, 35vw, 370px);
     object-fit: cover;
     /* border: 2px solid lime; */
     /* margin-right: 10px; */
