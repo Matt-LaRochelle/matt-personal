@@ -12,6 +12,7 @@
 .projects__container {
     flex-grow: 1;
     z-index: 10;
+    /* padding: 50px; */
 }
 
 .projects__container h1 {
@@ -21,13 +22,19 @@
 }
 
 .projects__helper {
-    font-size: 1rem;
     color: #fff;
-    transform: rotate(-13deg);
+    /* transform: rotate(-13deg); */
     position: absolute;
-    top: 90px;
-    right: 60px;
+    top: 10%;
+    left: 60px;
+}
+.projects__helper h4 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
 
+.projects__helper p {
+    font-size: .9rem;
 }
 
 .projects__image-track {

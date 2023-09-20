@@ -78,7 +78,10 @@ function Projects() {
             <div className="projects__container">
 
                 {/* <h1>Projects</h1> */}
-                {/* <p className="projects__helper">Try scrolling left and right!</p> */}
+                <div className="projects__helper">
+                    <h4>Welcome to my portfolio!</h4>
+                    <p>Tap, click, or drag left and right to view projects</p>
+                </div>
                 <div 
                     className="projects__image-track"
                     style={{

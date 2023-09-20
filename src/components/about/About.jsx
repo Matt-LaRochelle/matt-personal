@@ -22,10 +22,10 @@ function About() {
             <Navbar />
                 <div className="about__container">
                     <h3>About</h3>
-                    <p>I am a full stack developer who builds websites and web applications using the <span>MERN</span> stack.</p>
+                    <p>I am a full stack developer based in San Jose, California. I have a passion for frontend development and I build websites and web applications using the <span>MERN</span> stack.</p>
                     <div className="about__tech-stack">
                         <div className="tech-stack__current">
-                            <h4>Current tech</h4>
+                            <h4>Current</h4>
                             <div className="item"><FaHtml5 /><p>HTML</p></div>
                             <div className="item"><FaCss3 /><p>CSS</p></div>
                             <div className="item"><SiJavascript /><p>JavaScript</p></div>
@@ -40,7 +40,7 @@ function About() {
                             <div className="item"><img src={chatgpt} alt="chatgpt" /><p>Chat GPT</p></div>  
                         </div>
                         <div className="tech-stack__past">
-                            <h4>Tech I've used before</h4>
+                            <h4>Past</h4>
                             <div className="item"><FaPython /><p>Python</p></div>
                             <div className="item"><TbBrandDjango /><p>Django</p></div>
                             <div className="item"><SiFlask /><p>Flask</p></div>

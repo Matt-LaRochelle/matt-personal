@@ -86,6 +86,11 @@
     margin-top: 50px;
 }
 
+.about__education h3 {
+    margin-left: 10%;
+    font-size: 2rem;
+}
+
 .education__container {
     display: flex;
     justify-content: space-between;
