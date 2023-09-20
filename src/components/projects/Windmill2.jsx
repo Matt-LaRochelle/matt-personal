@@ -21,18 +21,78 @@ const Windmill2 = () => {
     }
 
     return (
-        <div className="projectContainer">
+        <div className="project__container">
             <Navbar />
-            <div className="projectPage">
-                <div className='projectTitle'>
+            <div className="project__page">
+                <div className='project__title'>
                     <h1>Windmill Equestrian</h1>
                     <p>A website for a horse back riding school</p>
+                   {/* <span onClick={openContent} className="more__content">{moreContent ? "More Details" : "Less Details"}</span> */}
+
                     <div className="projectButtons">
-                        <a href='https://windmill-equestrian.com/'><button>Website</button></a>
-                        <a href='https://github.com/Matt-LaRochelle/horses'><button>GitHub Repo</button></a>
+
                     </div>
-                    <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
+
+
+                    <div className='project__header'>
+                        <div className="cta__container">
+                            <div className="cta__credentials">
+                                <p>Want to check it out?</p>
+                            </div>
+                            <div className="cta__links">
+                                <a href='https://windmill-equestrian.com/'><button>Website</button></a>
+                                <a href='https://github.com/Matt-LaRochelle/horses'><button>GitHub Repo</button></a>
+                            </div>
+                        </div>
+                        
+                        <img src={windmill} alt="Windmill Equestrian" />
+                    </div>
                 </div>
+
+                <div className="tech-stack__container">
+                    <div className="tech-stack__frontend">
+                        <ul>
+                            <li>
+                                <span className="icon"><FaHtml5 /></span>HTML
+                            </li>
+                            <li>
+                                <span className="icon"><IoLogoCss3 /></span>CSS
+                            </li>
+                            <li>
+                                <span className="icon"><SiJavascript /></span>JavaScript
+                            </li>
+                            <li>
+                                <span className="icon"><FaReact /></span>React
+                            </li>
+                        </ul>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div className="tech-stack__utilities">
+                        <ul>
+                            <li>
+                                <span className="icon"><TbBrandVscode /></span>VSCode
+                            </li>
+                            <li>
+                                <span className='icon'><BsGit /></span>Git
+                            </li>
+                            <li>
+                                <span className='icon'><AiFillGithub /></span>GitHub
+                            </li>
+                            <li>
+                                <span className='icon'><FaFigma /></span>Figma
+                            </li>
+                        </ul>
+                        <h3>Utilities</h3>
+                    </div>
+                </div>
+
+
+
+{/* 
+
+
+
+
                 {moreContent &&
                     <div>
                     <div className="projectProblem">
@@ -123,6 +183,11 @@ const Windmill2 = () => {
                     <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
                 </div>
                 }
+                
+ */}
+
+
+ 
             </div>
             <Footer />
         </div>
