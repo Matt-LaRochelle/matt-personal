@@ -25,22 +25,84 @@ const GuitarPaths2 = () => {
     }
 
     return (
-        <div className="projectContainer">
+        <div className="project__container">
             <Navbar />
-            <div className="projectPage">
-                <div className='projectTitle'>
+            <div className="project__page">
+                <div className='project__title'>
                     <h1>Guitar Paths</h1>
                     <p>A web application designed for guitarists learning ear training </p>
-                    <div className="projectButtons">
-                        <a href='https://guitar-paths.onrender.com/'><button>Web App</button></a>
-                        <a href='https://github.com/Matt-LaRochelle/gp2'><button>GitHub Repo</button></a>
+                    {/* <span onClick={openContent} className="more__content">{moreContent ? "More Details" : "Less Details"}</span> */}
+
+                    <div className='project__header'>
+                        <div className="cta__container">
+                            <div className="cta__credentials">
+                                <p>Want to check it out?</p><p>Use these credentials to try it</p>
+                                <h4>Login: <span>testuser@testing.user</span></h4>
+                                <h4>Password: <span>ABCabc123!</span></h4>
+                            </div>
+                            <div className="cta__links">
+                                <a href='https://guitar-paths.onrender.com/'><button>Web App</button></a>
+                                <a href='https://github.com/Matt-LaRochelle/gp2'><button>GitHub Repo</button></a>
+                            </div>
+                        </div>
+                        
+                        <img src={gp2} alt="Guitar Paths" />
+                    </div> 
+                </div>
+
+                <div className="tech-stack__container">
+                    <div className="tech-stack__frontend">
+                        <ul>
+                            <li>
+                                <span className="icon"><FaHtml5 /></span>HTML
+                            </li>
+                            <li>
+                                <span className="icon"><IoLogoCss3 /></span>CSS
+                            </li>
+                            <li>
+                                <span className="icon"><SiJavascript /></span>JavaScript
+                            </li>
+                            <li>
+                                <span className="icon"><FaReact /></span>React
+                            </li>
+                        </ul>
+                        <h3>Frontend</h3>
                     </div>
-                    <img src={gp2} alt="Guitar Paths" />
-                    
-                    <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
+                    <div className="tech-stack__backend">
+                        <ul>
+                            <li>
+                                <span className="icon"><FaNodeJs /></span>Node
+                            </li>
+                            <li>
+                                <span className="icon"><SiExpress /></span>Express
+                            </li>
+                            <li>
+                                <span className="icon"><SiMongodb /></span>MongoDB
+                            </li>
+                        </ul>
+                        <h3>Backend</h3>
+                    </div>
+                    <div className="tech-stack__utilities">
+                        <ul>
+                            <li>
+                                <span className="icon"><TbBrandVscode /></span>VSCode
+                            </li>
+                            <li>
+                                <span className='icon'><BsGit /></span>Git
+                            </li>
+                            <li>
+                                <span className='icon'><AiFillGithub /></span>GitHub
+                            </li>
+                            <li>
+                                <span className='icon'><FaFigma /></span>Figma
+                            </li>
+                        </ul>
+                        <h3>Utilities</h3>
+                    </div>
                 </div>
 
 
+{/* 
                 {moreContent &&
                     <div>
                     <div className="projectProblem">
@@ -155,7 +217,7 @@ const GuitarPaths2 = () => {
                     <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
                 </div>
                 }
-
+ */}
 
             </div>
             <Footer />

@@ -1,4 +1,4 @@
-.projectContainer {
+.project__container {
     min-height: 100vh;
     width: 100%;
     background-color: #23232a;
@@ -8,64 +8,181 @@
     border: 1px solid white;
 }
 
-.projectPage {
+.project__page {
     flex-grow: 1;
-    border: 1px solid lime;
+    /* border: 1px solid lime; */
     padding: 50px 0;
     width: min(900px, 95vw);
     margin: auto;
     z-index: 10;
 }
 
-.projectTitle {
+.project__title {
     width: 100%;
     color: #fff;
     position: static;
     text-align: left;
     padding-bottom: 30px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
-.projectTitle p {
+.project__title p {
     padding: 5px 0 20px;
     font-weight: 400;
 }
-.projectTitle img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
 
-.moreContent {
+
+.more__content {
+    margin-top: 30px;
     color: palegreen;
     border: 1px solid rgba(152, 251, 152, 0.411);
     padding: 4px 10px;
     border-radius: 4px;
 }
-.moreContent:hover {
+.more__content:hover {
     filter: brightness(1.3);
     cursor: pointer;
 }
 
-.projectButtons {
+
+.project__header {
+    display: flex;
+    justify-content: space-between;;
+    /* border: 2px solid yellow; */
+    padding: 30px 0;
+}
+.project__header img {
+    width: 45%;
+    object-fit: cover;
+    /* border: 2px solid lime; */
+    /* margin-right: 10px; */
+}
+
+.cta__container {
+    /* border: 1px solid aqua; */
+    width: 50%;
+    height: max-content;
+    padding: 20px;
+    background: rgba(8, 49, 64, 0.838);
+    box-shadow: 5px 5px 1px 0px rgba(17, 190, 60, 0.4)
+}
+
+.cta__credentials {
+    display: block;
+    width: max-content;
+    margin: 10px 0 30px;
+    /* border: 2px solid green; */
+}
+.cta__credentials p {
+    padding: 4px 0;
+    font-size: 1.2rem;
+    width: 300px;
+    /* border: 2px solid red; */
+}
+.cta__credentials p:nth-child(2) {
+    font-size: 1.05rem;
     margin-bottom: 30px;
+}
+.cta__credentials h4 {
+    color: rgb(46, 253, 74);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+.cta__credentials h4 span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.cta__links {
+    margin-bottom: 0px;
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 300px;
+    /* border: 2px solid red; */
 }
-.projectButtons button {
+.cta__links button {
     color: palegreen;
     border: 1px solid rgba(152, 251, 152, 0.411);
-    padding: 4px 10px;
+    padding: 18px 25px;
     border-radius: 4px;
     white-space: nowrap;
     background-color: #23232a;
+
 }
-.projectButtons button:hover {
+.cta__links button:hover {
     cursor: pointer;
     filter: brightness(1.3);
 }
 
 
+
+.tech-stack__container {
+    display: flex;
+    gap: 10%;
+    /* border: 2px solid blue; */
+}
+
+.tech-stack__frontend,
+.tech-stack__backend,
+.tech-stack__utilities {
+    width: 150px;
+    padding: 12px 22px;
+    height: 210px;
+    border-radius: 20px;
+    background: linear-gradient(140deg, rgba(236, 247, 167, 0.769), rgba(22, 180, 14, 0.76));
+    position: relative;
+    color: #222;
+    /* border: 2px solid yellow; */
+}
+.tech-stack__frontend ul,
+.tech-stack__backend ul,
+.tech-stack__utilities ul {
+    list-style-type: none;
+}
+.tech-stack__frontend li,
+.tech-stack__backend li,
+.tech-stack__utilities li {
+    padding-bottom: 3px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    /* border: 1px solid lime; */
+}
+.tech-stack__frontend .icon,
+.tech-stack__backend .icon,
+.tech-stack__utilities .icon {
+    font-size: 1.3rem;
+    transform: translateY(3px);
+    margin-right: 8px;
+}
+.tech-stack__frontend h3,
+.tech-stack__backend h3,
+.tech-stack__utilities h3 {
+    text-align: center;
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: 900;
+    bottom: 6px;
+    left: 50%;
+    color: #1b1b1b;
+    transform: translateX(-50%);
+}
+
+.tech-stack__backend {
+    background: linear-gradient(140deg, rgba(111, 247, 199, 0.769), rgba(26, 186, 197, 0.769));
+}
+.tech-stack__utilities {
+    background: linear-gradient(140deg, rgba(249, 146, 244, 0.769), rgba(248, 69, 69, 0.769));
+}
+
+
+
+
+
+
+
+/* -------- For more content ---------- */
 .projectProblem {
     /* border: 1px solid orange; */
     display: flex;
@@ -147,74 +264,14 @@
     border: 1px solid yellow;
 }
 
-.techStack {
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    width: 50%;
-    border: 2px solid blue;
-    height: 100%;
-}
 
-.techFrontend,
-.techBackend,
-.techUtilities {
-    /* width: 140px; */
-    width: 130px;
-    padding: 8px 18px;
-    height: 200px;
-    border-radius: 20px;
-    background: linear-gradient(140deg, rgba(236, 247, 167, 0.769), rgba(22, 180, 14, 0.76));
-    position: relative;
-    color: #222;
-}
 
-.techUtilities {
-    background: linear-gradient(140deg, rgba(249, 146, 244, 0.769), rgba(248, 69, 69, 0.769));
-}
-.techBackend {
-    background: linear-gradient(140deg, rgba(111, 247, 199, 0.769), rgba(26, 186, 197, 0.769));
-}
 
-.techFrontend ul,
-.techBackend ul,
-.techUtilities ul {
-    list-style-type: none;
-}
 
-.techFrontend li,
-.techBackend li,
-.techUtilities li {
-    padding-bottom: 3px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-    /* border: 1px solid lime; */
-}
-
-.techFrontend .icon,
-.techBackend .icon,
-.techUtilities .icon {
-    font-size: 1.3rem;
-    transform: translateY(3px);
-    margin-right: 8px;
-}
-
-.techFrontend h3,
-.techBackend h3,
-.techUtilities h3 {
-    text-align: center;
-    position: absolute;
-    font-size: 1.3rem;
-    font-weight: 900;
-    bottom: 4px;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 .techTextContent {
     width: 45%;
+    border: 2px solid blue;
 }
 
 
@@ -270,50 +327,3 @@
     padding: 8px;
     border: 1px solid red;
 }
-
-.loginCredentials {
-    display: block;
-    width: max-content;
-    margin: 10px 0 30px;
-    border: 2px solid green;
-}
-.loginCredentials p {
-    padding: 20px 0;
-    border: 2px solid red;
-}
-
-.loginCredentials h4 {
-    color: rgb(46, 253, 74);
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    font-weight: 900;
-}
-
-.loginCredentials h4 span {
-    color: #fff;
-    font-weight: 300;
-}
-
-/* .projectButtons {
-    width: 30vw;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-}
-
-.projectButtons button {
-    background-image: linear-gradient(rgb(136, 229, 252), rgb(96, 215, 245));
-    border: none;
-    color: #333;
-    border-radius: 16px;
-    font-size: 1.6rem;
-    padding: 12px 20px;
-    margin: 10px;
-    box-shadow: rgba(0,0,0,0.8) 0px 6px 14px;
-    white-space: nowrap;
-}
-
-.projectButtons button:hover {
-    background-image: linear-gradient(rgb(127, 255, 144), rgb(48, 220, 71));
-    cursor: pointer;
-} */
