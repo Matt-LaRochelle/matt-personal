@@ -21,8 +21,8 @@ function About() {
             <div className="about">
             <Navbar />
                 <div className="about__container">
-                    <h3>About</h3>
-                    <p>I am a full stack developer based in San Jose, California. I have a passion for frontend development and I build websites and web applications using the <span>MERN</span> stack.</p>
+                    {/* <h3>About</h3> */}
+                    <p>My name is Matthew La Rochelle. I am a full stack developer based in San Jose, California. I have a passion for frontend development and I build websites and web applications using the <span>MERN</span> stack. I strive to use my skills to create a more equitable future for all human beings.</p>
                     <div className="about__tech-stack">
                         <div className="tech-stack__current">
                             <h4>Current</h4>
@@ -31,8 +31,8 @@ function About() {
                             <div className="item"><SiJavascript /><p>JavaScript</p></div>
                             <div className="item"><FaReact /><p>React</p></div>
                             <div className="item"><SiMongodb /><p>MongoDB</p></div>
-                            <div className="item"><SiExpress /><p>Express.js</p></div>
-                            <div className="item"><FaNodeJs /><p>Node.js</p></div>
+                            <div className="item"><SiExpress /><p>Express</p></div>
+                            <div className="item"><FaNodeJs /><p>Node</p></div>
                             <div className="item"><FaFigma /><p>Figma</p></div>
                             <div className="item"><BsGit /><p>Git</p></div>
                             <div className="item"><FaGithub /><p>GitHub</p></div>      
@@ -44,7 +44,7 @@ function About() {
                             <div className="item"><FaPython /><p>Python</p></div>
                             <div className="item"><TbBrandDjango /><p>Django</p></div>
                             <div className="item"><SiFlask /><p>Flask</p></div>
-                            <div className="item"><SiMysql /><p>MySQL</p></div>
+                            <div className="item"><SiMysql /><p>SQL</p></div>
                             <div className="item"><FaBootstrap /><p>Bootstrap</p></div>  
                             <div className="item"><SiC /><p>C</p></div>      
                             <div className="item"><SiPycharm /><p>PyCharm</p></div>            

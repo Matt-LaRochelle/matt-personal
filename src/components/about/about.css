@@ -110,16 +110,17 @@
 }
 
 .education__school h4 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    padding-top: 15px;
 }
 
 .education__school p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
     margin: 4px 0;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 860px) {
 
     .about__tech-stack {
         display: block;
