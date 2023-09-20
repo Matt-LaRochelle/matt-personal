@@ -1,0 +1,173 @@
+.about {
+    width: 100%;
+    min-height: 100vh;
+    background: #23242a;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__container {
+    flex-grow: 1;
+    z-index: 10;
+    color: #eee;
+    padding: 100px 0 30px;
+}
+.about__container h3 {
+    margin-left: 16%;
+    font-size: 3rem;
+}
+.about__container p {
+    margin: 70px 16% 50px;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+.about__container span {
+    /* color: rgb(46, 253, 74); */
+    color: rgb(46, 239, 253);
+}
+.about__container span:nth-child(2) {
+    color: lime;
+    white-space: nowrap;
+}
+.about__container span:nth-child(3) {
+    color: rgb(201, 121, 240);
+}
+
+.about__tech-stack {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    /* border: 2px solid lime; */
+    display: flex;
+    justify-content: space-between;
+}
+.about__tech-stack p {
+    font-size: 1rem;
+    color: #444;
+    margin: 0;
+}
+
+.tech-stack__current,
+.tech-stack__past {
+    position: relative;
+    width: 48%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 4.5rem 1rem 1rem;
+    border-radius: 0 20px 20px 0;
+    /* border: 1px solid aqua; */
+    background-image: linear-gradient(200deg, rgba(134, 248, 93, 0.888) 1%, rgba(54, 239, 233, 0.911) 99%);
+}
+.tech-stack__current h4,
+.tech-stack__past h4 {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.tech-stack__current img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.item {
+    /* border: 1px solid #333; */
+    /* border-radius: 8px;
+    padding: 10px; */
+    /* box-shadow: rgba(0,0,0,0.5) 0px 4px 10px;
+    background-image: linear-gradient(rgb(136, 229, 252), rgb(96, 215, 245)); */
+}
+
+.tech-stack__past {
+    border-radius: 20px 0 0 20px;
+    /* border: 1px solid aqua; */
+    background-image: linear-gradient(150deg, rgba(36, 230, 175, 0.90) 12%, rgba(204, 159, 232, 0.91));
+}
+
+
+.about__education {
+    margin-top: 50px;
+}
+
+.about__education h3 {
+    margin-left: 38px;
+    font-size: 2rem;
+}
+
+.education__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.education__school {
+    display: flex;
+}
+
+.education__school img {
+    height: 100px;
+    width: 100px;
+    border-radius: 12px;
+    margin: 8px 30px 8px 10px;
+    object-fit: cover;
+}
+
+.education__school h4 {
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+
+.education__school p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 4px 0;
+}
+
+@media screen and (max-width: 860px) {
+
+    .about__tech-stack {
+        display: block;
+        height: 800px;
+        position: relative;
+    }
+
+    .tech-stack__current {
+        width: 90%
+    }
+
+    .tech-stack__past {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        width: 90%
+    }
+/* 
+    .about__tech-stack p {
+        font-size: 1rem;
+    } */
+
+    .item {
+        padding: 4px;
+    }
+
+    .education__container {
+        display: block;
+    }
+
+    .education__school {
+        margin-top: 20px;
+    }
+
+    .education__school h4 {
+        font-size: 1.5rem;
+    }
+
+    .education__school p {
+        font-size: 1rem;
+    }
+}

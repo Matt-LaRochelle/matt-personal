@@ -22,23 +22,84 @@ const Bingo = () => {
     }
 
     return (
-        <div className="projectContainer">
+        <div className="project__container">
             <Navbar />
-            <div className="projectPage">
-                <div className='projectTitle'>
+            <div className="project__page">
+                <div className='project__title'>
                     <h1>Bingo Cards</h1>
                     <p>A website that allows you to make custom bingo cards</p>
-                    <div className="projectButtons">
-                        <a href='https://bingo-kncb.onrender.com/'><button>Website</button></a>
-                        <a href='https://github.com/Matt-LaRochelle/bingo'><button>GitHub Repo</button></a>
-                    </div>
-                    <div className="loginCredentials">
-                        <h4>Login: <span>testuser@testing.user</span></h4>
-                        <h4>Password: <span>ABCabc123!</span></h4>
-                    </div>
-                    <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
-                    
+                    {/* <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span> */}
+
+                    <div className='project__header'>
+                        <div className="cta__container">
+                            <div className="cta__credentials">
+                                <p>Want to check it out?</p><p>Use these credentials to try it</p>
+                                <h4>Login: <span>testuser@testing.user</span></h4>
+                                <h4>Password: <span>ABCabc123!</span></h4>
+                            </div>
+                            <div className="cta__links">
+                                <a href='https://bingo-kncb.onrender.com/'><button>Website</button></a>
+                                <a href='https://github.com/Matt-LaRochelle/bingo'><button>GitHub Repo</button></a>
+                            </div>
+                        </div>
+                        
+                        <img src={bingo} alt="Bingo Cards" />
+                    </div>    
                 </div>
+
+                <div className="tech-stack__container">
+                    <div className="tech-stack__frontend">
+                        <ul>
+                            <li>
+                                <span className="icon"><FaHtml5 /></span>HTML
+                            </li>
+                            <li>
+                                <span className="icon"><IoLogoCss3 /></span>CSS
+                            </li>
+                            <li>
+                                <span className="icon"><SiJavascript /></span>JavaScript
+                            </li>
+                            <li>
+                                <span className="icon"><FaReact /></span>React
+                            </li>
+                        </ul>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div className="tech-stack__backend">
+                        <ul>
+                            <li>
+                                <span className="icon"><FaNodeJs /></span>Node
+                            </li>
+                            <li>
+                                <span className="icon"><SiExpress /></span>Express
+                            </li>
+                            <li>
+                                <span className="icon"><SiMongodb /></span>MongoDB
+                            </li>
+                        </ul>
+                        <h3>Backend</h3>
+                    </div>
+                    <div className="tech-stack__utilities">
+                        <ul>
+                            <li>
+                                <span className="icon"><TbBrandVscode /></span>VSCode
+                            </li>
+                            <li>
+                                <span className='icon'><BsGit /></span>Git
+                            </li>
+                            <li>
+                                <span className='icon'><AiFillGithub /></span>GitHub
+                            </li>
+                            <li>
+                                <span className='icon'><FaFigma /></span>Figma
+                            </li>
+                        </ul>
+                        <h3>Utilities</h3>
+                    </div>
+                </div>
+
+{/* 
+
                 {moreContent &&
                     <div>
                     <div className="projectProblem">
@@ -142,6 +203,13 @@ const Bingo = () => {
                     <span onClick={openContent} className="moreContent">{moreContent ? "See less" : "See more"}</span>
                 </div>
                 }
+                
+                
+ */}
+
+
+
+ 
             </div>
             <Footer />
         </div>

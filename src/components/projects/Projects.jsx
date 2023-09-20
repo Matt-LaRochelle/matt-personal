@@ -78,7 +78,10 @@ function Projects() {
             <div className="projects__container">
 
                 {/* <h1>Projects</h1> */}
-                {/* <p className="projects__helper">Try scrolling left and right!</p> */}
+                <div className="projects__helper">
+                    <h4>Welcome to my portfolio!</h4>
+                    <p>Tap or click and drag right to left to view projects</p>
+                </div>
                 <div 
                     className="projects__image-track"
                     style={{
@@ -92,7 +95,7 @@ function Projects() {
                                 alt="Windmill Equestrian Website" 
                                 draggable="false"
                                 style={{objectPosition: `${percentage + 100}% 50%`}} />
-                            <p className="projects__title">Windmill Equestrian Website</p>               
+                            <p className="projects__title">Windmill Equestrian Website</p>
                         </div>
                     </Link>
                     <Link to ="/gp2">

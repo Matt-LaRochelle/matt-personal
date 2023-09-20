@@ -12,6 +12,7 @@
 .projects__container {
     flex-grow: 1;
     z-index: 10;
+    /* padding: 50px; */
 }
 
 .projects__container h1 {
@@ -21,14 +22,28 @@
 }
 
 .projects__helper {
-    font-size: 1rem;
     color: #fff;
-    transform: rotate(-13deg);
+    /* transform: rotate(-13deg); */
     position: absolute;
-    top: 90px;
-    right: 60px;
-
+    top: 10%;
+    left: 60px;
+    padding: 16px 13px;
+    background: rgb(7, 43, 56);
+    box-shadow: 5px 5px 1px 0px rgba(17, 190, 60, 0.4)
 }
+.projects__helper h4 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.projects__helper p {
+    font-size: .9rem;
+}
+
+
+
+
+
 
 .projects__image-track {
     display: flex;
@@ -40,43 +55,64 @@
     transform: translate(0%, -50%);
 }
 
-.projects__container img {
+.projects__card {
     height: 48vmin;
     width: 36vmin;
+    border-radius: 12px;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.projects__card img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+    position: relative;
     object-position: 100% 50%;
     transition: filter .3s;
-}
-
-.projects__container img::selection {
-    background: transparent;
-}
-
-
-.projects__container img:hover {
-    filter: opacity(.1);
-    border: 2px solid rgb(167, 251, 167);
+    border-radius: 12px;
+    /* box-shadow: 0 35px 80px rgba(185, 227, 166, 0.15); */
 }
 
 .projects__title {
-    /* color: #f8f8f8; */
-    color: transparent;
     position: absolute;
+    top: -40px;
+    left: 0px;
+    color: #fff;
+    width: 100%;
     text-align: center;
-    width: 36vmin;
-    font-weight: 500;
-    top: 22vh;
-    font-size: 1.4rem;
-    transition: color .3s;
+    font-size: .8rem;
 }
 
+
+
+/* .projects__title p, */
+/* .projects__title h4 {
+    text-align: center;
+}
+
+.projects__title p {
+    font-size: 1rem;
+    position: absolute;
+    width: 90%;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+
+
+/*  Since there is clicking and dragging, we don't want to be able to 
+    highlight/select things */
+.projects__helper h4::selection,
+.projects__helper p::selection,
+.projects__card img::selection,
 .projects__title::selection {
     background: transparent;
 }
 
-.projects__image-track .projects__card:hover .projects__title {
-    color: rgb(160, 246, 171);
-}
+
+
 
 
 
@@ -96,5 +132,34 @@
 
     .projects__container h1 {
         margin: 20px;
+    }
+}
+
+@media (hover) {
+    .projects__title {
+        /* color: #f8f8f8; */
+        color: transparent;
+        position: absolute;
+        height: 48vmin;
+        width: 36vmin;
+        border-radius: 12px;
+        overflow: hidden;
+        font-weight: 500;
+        top: 50%;
+        transform: translate(-2px, -50%);
+        font-size: 1.4rem;
+        transition: color .3s;
+        /* border: 2px solid rgb(167, 251, 167); */
+        padding: 10vmin 2vmin;
+        text-align: center;
+    }
+
+    .projects__card:hover :not(.projects__title) {
+        filter: opacity(.05);  
+    }
+    
+    .projects__card:hover .projects__title {
+        color: rgb(160, 246, 171);
+        border: 2px solid rgb(167, 251, 167);
     }
 }
