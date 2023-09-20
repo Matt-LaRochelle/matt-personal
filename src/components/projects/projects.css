@@ -27,6 +27,9 @@
     position: absolute;
     top: 10%;
     left: 60px;
+    padding: 16px 13px;
+    background: rgb(7, 43, 56);
+    box-shadow: 5px 5px 1px 0px rgba(17, 190, 60, 0.4)
 }
 .projects__helper h4 {
     margin-bottom: 12px;
@@ -36,6 +39,11 @@
 .projects__helper p {
     font-size: .9rem;
 }
+
+
+
+
+
 
 .projects__image-track {
     display: flex;
@@ -47,42 +55,65 @@
     transform: translate(0%, -50%);
 }
 
-.projects__container img {
+.projects__card {
     height: 48vmin;
     width: 36vmin;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.projects__card img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+    position: relative;
     object-position: 100% 50%;
     transition: filter .3s;
-}
-
-.projects__container img::selection {
-    background: transparent;
-}
-
-
-.projects__container img:hover {
-    filter: opacity(.1);
-    border: 2px solid rgb(167, 251, 167);
+    /* box-shadow: 0 35px 80px rgba(185, 227, 166, 0.15); */
 }
 
 .projects__title {
     /* color: #f8f8f8; */
     color: transparent;
     position: absolute;
-    text-align: center;
+    height: 48vmin;
     width: 36vmin;
+    border-radius: 12px;
+    overflow: hidden;
     font-weight: 500;
-    top: 22vh;
+    top: 50%;
+    transform: translate(-2px, -50%);
     font-size: 1.4rem;
     transition: color .3s;
+    /* border: 2px solid rgb(167, 251, 167); */
+    padding: 30px 6px;
 }
 
+.projects__title p,
+.projects__title h4 {
+    text-align: center;
+}
+
+
+
+/*  Since there is clicking and dragging, we don't want to be able to 
+    highlight/select things */
 .projects__title::selection {
     background: transparent;
 }
+.projects__card img::selection {
+    background: transparent;
+}
 
-.projects__image-track .projects__card:hover .projects__title {
+
+.projects__card:hover :not(.projects__title) {
+    filter: opacity(.1);
+    
+}
+
+.projects__card:hover .projects__title {
     color: rgb(160, 246, 171);
+    border: 2px solid rgb(167, 251, 167);
 }
 
 

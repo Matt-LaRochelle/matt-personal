@@ -95,7 +95,11 @@ function Projects() {
                                 alt="Windmill Equestrian Website" 
                                 draggable="false"
                                 style={{objectPosition: `${percentage + 100}% 50%`}} />
-                            <p className="projects__title">Windmill Equestrian Website</p>               
+                            <div className="projects__title">
+                                <h4>Windmill Equestrian Website</h4>
+                                <p>A website for a horse back riding school</p>
+               
+                            </div>
                         </div>
                     </Link>
                     <Link to ="/gp2">
