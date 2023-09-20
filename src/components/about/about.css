@@ -10,14 +10,14 @@
     flex-grow: 1;
     z-index: 10;
     color: #fff;
-    padding: 150px 0 30px;
+    padding: 100px 0 30px;
 }
 .about__container h3 {
     margin-left: 16%;
     font-size: 3rem;
 }
 .about__container p {
-    margin: 0 16% 100px;
+    margin: 100px 16% 50px;
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -88,7 +88,7 @@
 }
 
 .about__education h3 {
-    margin-left: 10%;
+    margin-left: 38px;
     font-size: 2rem;
 }
 

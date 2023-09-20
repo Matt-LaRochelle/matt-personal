@@ -22,7 +22,6 @@ function About() {
             <Navbar />
                 <div className="about__container">
                     {/* <h3>About</h3> */}
-                    <p>My name is Matthew La Rochelle. I am a full stack developer based in San Jose, California or remotely in PST. I have a passion for frontend development and I build websites and web applications using the <span>MERN</span> stack. I strive to use my skills to create a more equitable future for all human beings.</p>
                     <div className="about__tech-stack">
                         <div className="tech-stack__current">
                             <h4>Current</h4>
@@ -53,6 +52,8 @@ function About() {
                             <div className="item"><AiOutlineFileExcel /><p>Microsoft Excel</p></div>    
                         </div>
                     </div>
+                    <p>My name is Matthew La Rochelle. I am a full stack developer based in San Jose, California or remotely in PST. I have a passion for frontend development and I build websites and web applications using the <span>MERN</span> stack. I strive to use my skills to create a more equitable future for all human beings.</p>
+
                     <div className="about__education">
                         <h3>Education</h3>
                         <div className="education__container">
