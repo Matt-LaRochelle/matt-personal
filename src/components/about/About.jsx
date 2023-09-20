@@ -13,6 +13,7 @@ import Footer from "../footer/Footer";
 
 import arizona from '../images/arizona.png'
 import sjsu from '../images/sjsu.png'
+import chatgpt from '../images/chatGPT.png'
 
 
 function About() {
@@ -35,7 +36,8 @@ function About() {
                             <div className="item"><FaFigma /><p>Figma</p></div>
                             <div className="item"><BsGit /><p>Git</p></div>
                             <div className="item"><FaGithub /><p>GitHub</p></div>      
-                            <div className="item"><TbBrandVscode /><p>VSCode</p></div>      
+                            <div className="item"><TbBrandVscode /><p>VSCode</p></div>    
+                            <div className="item"><img src={chatgpt} alt="chatgpt" /><p>Chat GPT</p></div>  
                         </div>
                         <div className="tech-stack__past">
                             <h4>Tech I've used before</h4>
