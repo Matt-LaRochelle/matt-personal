@@ -108,7 +108,7 @@
         transform-origin: top center;
         /* width: 100%; */
         /* background-color: rgba(92, 110, 211, 0.887); */
-        background-color: rgba(35, 36, 42, 0.887);
+        background-color: rgba(35, 36, 42, 0.983);
         animation: showMenu 0.5s ease-in-out forwards;
         /* border: 2px solid yellow; */
     }
