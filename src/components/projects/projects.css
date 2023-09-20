@@ -40,6 +40,11 @@
     font-size: .9rem;
 }
 
+.projects__helper h4::selection,
+.projects__helper p::selection {
+
+}
+
 
 
 
@@ -104,10 +109,10 @@
 
 /*  Since there is clicking and dragging, we don't want to be able to 
     highlight/select things */
+.projects__helper h4::selection,
+.projects__helper p::selection,
+.projects__card img::selection,
 .projects__title::selection {
-    background: transparent;
-}
-.projects__card img::selection {
     background: transparent;
 }
 
