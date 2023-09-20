@@ -5,14 +5,14 @@
     color: #fff;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid white; */
+    border: 1px solid white;
 }
 
 .projectPage {
     flex-grow: 1;
-    /* border: 1px solid lime; */
+    border: 1px solid lime;
     padding: 50px 0;
-    width: min(800px, 95vw);
+    width: min(900px, 95vw);
     margin: auto;
     z-index: 10;
 }
@@ -23,10 +23,16 @@
     position: static;
     text-align: left;
     padding-bottom: 30px;
+    border: 1px solid red;
 }
 .projectTitle p {
     padding: 5px 0 20px;
     font-weight: 400;
+}
+.projectTitle img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .moreContent {
@@ -126,47 +132,48 @@
 
 
 .projectTechnologies {
-    /* border: 1px solid violet; */
+    border: 1px solid violet;
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
-    height: 400px;
+    height: 370px;
 }
 .projectTechnologies img {
-    height: 80%;
+    height: 100%;
     width: 45%;
     object-fit: cover;
     filter: brightness(.9);
     cursor: pointer;
+    border: 1px solid yellow;
 }
 
 .techStack {
     display: flex;
-    flex-wrap: wrap;
+    gap: 30px;
     justify-content: space-between;
     width: 50%;
+    border: 2px solid blue;
+    height: 100%;
 }
 
 .techFrontend,
-.techBackend {
-    width: 140px;
+.techBackend,
+.techUtilities {
+    /* width: 140px; */
+    width: 130px;
     padding: 8px 18px;
-    height: 210px;
+    height: 200px;
     border-radius: 20px;
-    background: linear-gradient(140deg, rgba(210, 244, 208, 0.769), rgba(96, 157, 93, 0.769)) rgba(210, 244, 208, 0.769);
+    background: linear-gradient(140deg, rgba(236, 247, 167, 0.769), rgba(22, 180, 14, 0.76));
     position: relative;
-    color: #333;
+    color: #222;
 }
 
 .techUtilities {
-    width: 300px;
-    padding: 8px 18px;
-    height: 110px;
-    border-radius: 20px;
-    background: linear-gradient(140deg, rgba(210, 244, 208, 0.769), rgba(96, 157, 93, 0.769)) rgba(210, 244, 208, 0.769);
-    position: relative;
-    color: #333;
-    columns: 2;
+    background: linear-gradient(140deg, rgba(249, 146, 244, 0.769), rgba(248, 69, 69, 0.769));
+}
+.techBackend {
+    background: linear-gradient(140deg, rgba(111, 247, 199, 0.769), rgba(26, 186, 197, 0.769));
 }
 
 .techFrontend ul,
@@ -268,6 +275,11 @@
     display: block;
     width: max-content;
     margin: 10px 0 30px;
+    border: 2px solid green;
+}
+.loginCredentials p {
+    padding: 20px 0;
+    border: 2px solid red;
 }
 
 .loginCredentials h4 {

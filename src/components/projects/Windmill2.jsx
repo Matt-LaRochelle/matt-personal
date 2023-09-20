@@ -80,7 +80,7 @@ const Windmill2 = () => {
                             </ul>
                             <h3>Frontend</h3>
                         </div>
-                        <div className="techFrontend">
+                        <div className="techUtilities">
                             <ul>
                                 <li>
                                     <span className="icon"><TbBrandVscode /></span>VSCode
