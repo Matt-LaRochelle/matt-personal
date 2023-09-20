@@ -31,5 +31,9 @@
 }
 
 .home__text span {
+    color: rgb(46, 239, 253);
+}
+
+.home__text span:nth-child(2) {
     color: rgb(46, 253, 74);
 }

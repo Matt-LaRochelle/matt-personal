@@ -22,7 +22,8 @@
     font-weight: 300;
 }
 .about__container span {
-    color: rgb(46, 253, 74);
+    /* color: rgb(46, 253, 74); */
+    color: rgb(46, 239, 253);
 }
 
 .about__tech-stack {

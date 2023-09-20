@@ -80,7 +80,7 @@ function Projects() {
                 {/* <h1>Projects</h1> */}
                 <div className="projects__helper">
                     <h4>Welcome to my portfolio!</h4>
-                    <p>Tap, click, or drag left and right to view projects</p>
+                    <p>Tap or click and drag right to left to view projects</p>
                 </div>
                 <div 
                     className="projects__image-track"
@@ -95,11 +95,7 @@ function Projects() {
                                 alt="Windmill Equestrian Website" 
                                 draggable="false"
                                 style={{objectPosition: `${percentage + 100}% 50%`}} />
-                            <div className="projects__title">
-                                <h4>Windmill Equestrian Website</h4>
-                                <p>A website for a horse back riding school</p>
-               
-                            </div>
+                            <p className="projects__title">Windmill Equestrian Website</p>
                         </div>
                     </Link>
                     <Link to ="/gp2">
