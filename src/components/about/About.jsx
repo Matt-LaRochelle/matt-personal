@@ -69,7 +69,7 @@ function About() {
                                 <img src={sjsu} alt="San Jose State University" />
                                 <div>
                                     <h4>San Jose State University</h4>
-                                    <p>Bacherlor of Music</p>
+                                    <p>Bachelor of Music</p>
                                     <p>3.64 GPA - Graduated 2014</p>
                                 </div>
                             </div>
