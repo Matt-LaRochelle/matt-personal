@@ -22,11 +22,11 @@
     color: #fff;
     position: static;
     text-align: left;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     /* border: 1px solid red; */
 }
 .project__title p {
-    padding: 5px 0 20px;
+    padding: 5px 0 10px;
     font-weight: 400;
 }
 
@@ -57,12 +57,19 @@
     width: 60%;
 }
 
+.grid__right {
+    position: relative;
+}
+
 .grid__right img {
+    position: absolute;
+    right: 0;
+    top: 0;
     display: block;
     width: 80%;
     height: clamp(250px, 35vw, 370px);
     object-fit: cover;
-    margin: auto;
+
     /* border: 2px solid lime; */
     /* margin-right: 10px; */
 }
