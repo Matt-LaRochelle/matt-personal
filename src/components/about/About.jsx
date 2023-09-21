@@ -62,7 +62,7 @@ function About() {
                                 <div>
                                     <h4>University of Arizona</h4>
                                     <p>Master of Music</p>
-                                    <p>3.2 GPA - Graduated 2016</p>
+                                    <p>3.88 GPA - Graduated 2016</p>
                                 </div>
                             </div>
                             <div className="education__school">
