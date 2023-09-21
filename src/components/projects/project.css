@@ -11,7 +11,7 @@
 .project__page {
     flex-grow: 1;
     /* border: 1px solid lime; */
-    padding: 50px 0;
+    padding: 50px 0 0;
     width: min(900px, 95vw);
     margin: auto;
     z-index: 10;
