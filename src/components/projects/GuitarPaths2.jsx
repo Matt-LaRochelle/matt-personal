@@ -31,9 +31,12 @@ const GuitarPaths2 = () => {
                 <div className='project__title'>
                     <h1>Guitar Paths</h1>
                     <p>A web application designed for guitarists learning ear training </p>
-                    {/* <span onClick={openContent} className="more__content">{moreContent ? "More Details" : "Less Details"}</span> */}
+                </div>
+                {/* <span onClick={openContent} className="more__content">{moreContent ? "More Details" : "Less Details"}</span> */}
 
-                    <div className='project__header'>
+                <div className="project__grid">
+                    <div className='grid__left'>
+
                         <div className="cta__container">
                             <div className="cta__credentials">
                                 <p>Want to check it out?</p><p>Use these credentials to try it</p>
@@ -45,61 +48,64 @@ const GuitarPaths2 = () => {
                                 <a href='https://github.com/Matt-LaRochelle/gp2'><button>GitHub Repo</button></a>
                             </div>
                         </div>
-                        
+
+                        <div className="tech-stack__container">
+                            <div className="tech-stack__frontend">
+                                <ul>
+                                    <li>
+                                        <span className="icon"><FaHtml5 /></span>HTML
+                                    </li>
+                                    <li>
+                                        <span className="icon"><IoLogoCss3 /></span>CSS
+                                    </li>
+                                    <li>
+                                        <span className="icon"><SiJavascript /></span>JavaScript
+                                    </li>
+                                    <li>
+                                        <span className="icon"><FaReact /></span>React
+                                    </li>
+                                </ul>
+                                <h3>Frontend</h3>
+                            </div>
+                            <div className="tech-stack__backend">
+                                <ul>
+                                    <li>
+                                        <span className="icon"><FaNodeJs /></span>Node
+                                    </li>
+                                    <li>
+                                        <span className="icon"><SiExpress /></span>Express
+                                    </li>
+                                    <li>
+                                        <span className="icon"><SiMongodb /></span>MongoDB
+                                    </li>
+                                </ul>
+                                <h3>Backend</h3>
+                            </div>
+                            <div className="tech-stack__utilities">
+                                <ul>
+                                    <li>
+                                        <span className="icon"><TbBrandVscode /></span>VSCode
+                                    </li>
+                                    <li>
+                                        <span className='icon'><BsGit /></span>Git
+                                    </li>
+                                    <li>
+                                        <span className='icon'><AiFillGithub /></span>GitHub
+                                    </li>
+                                    <li>
+                                        <span className='icon'><FaFigma /></span>Figma
+                                    </li>
+                                </ul>
+                                <h3>Utilities</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='grid__right'>
                         <img src={gp2} alt="Guitar Paths" />
-                    </div> 
+                    </div>
                 </div>
 
-                <div className="tech-stack__container">
-                    <div className="tech-stack__frontend">
-                        <ul>
-                            <li>
-                                <span className="icon"><FaHtml5 /></span>HTML
-                            </li>
-                            <li>
-                                <span className="icon"><IoLogoCss3 /></span>CSS
-                            </li>
-                            <li>
-                                <span className="icon"><SiJavascript /></span>JavaScript
-                            </li>
-                            <li>
-                                <span className="icon"><FaReact /></span>React
-                            </li>
-                        </ul>
-                        <h3>Frontend</h3>
-                    </div>
-                    <div className="tech-stack__backend">
-                        <ul>
-                            <li>
-                                <span className="icon"><FaNodeJs /></span>Node
-                            </li>
-                            <li>
-                                <span className="icon"><SiExpress /></span>Express
-                            </li>
-                            <li>
-                                <span className="icon"><SiMongodb /></span>MongoDB
-                            </li>
-                        </ul>
-                        <h3>Backend</h3>
-                    </div>
-                    <div className="tech-stack__utilities">
-                        <ul>
-                            <li>
-                                <span className="icon"><TbBrandVscode /></span>VSCode
-                            </li>
-                            <li>
-                                <span className='icon'><BsGit /></span>Git
-                            </li>
-                            <li>
-                                <span className='icon'><AiFillGithub /></span>GitHub
-                            </li>
-                            <li>
-                                <span className='icon'><FaFigma /></span>Figma
-                            </li>
-                        </ul>
-                        <h3>Utilities</h3>
-                    </div>
-                </div>
+                
 
 
 {/* 
