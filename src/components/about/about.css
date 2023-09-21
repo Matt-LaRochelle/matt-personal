@@ -137,22 +137,18 @@
     }
 
     .tech-stack__current {
-        width: 90%
+        width: 90%;
+        /* border: 1px solid red; */
+        padding: 4.5rem .2rem .2rem;
     }
 
     .tech-stack__past {
         position: absolute;
         bottom: 20px;
         right: 0;
-        width: 90%
-    }
-/* 
-    .about__tech-stack p {
-        font-size: 1rem;
-    } */
+        width: 90%;
+        /* border: 1px solid blue; */
 
-    .item {
-        padding: 4px;
     }
 
     .education__container {
@@ -169,5 +165,19 @@
 
     .education__school p {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .about__tech-stack {
+        height: 610px;
+    }
+    .about__tech-stack p {
+        font-size: .7rem;
+    }
+
+    .tech-stack__current,
+    .tech-stack__past {
+        gap: .2rem;
     }
 }
