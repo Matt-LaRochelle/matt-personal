@@ -44,23 +44,37 @@
 }
 
 
-.project__header {
+.project__grid {
     display: flex;
     justify-content: space-between;;
     /* border: 2px solid yellow; */
     padding: 30px 0;
 }
-.project__header img {
-    width: 45%;
+
+
+.grid__left {
+    /* border: 2px solid red; */
+    width: 60%;
+}
+
+.grid__right img {
+    display: block;
+    width: 80%;
     height: clamp(250px, 35vw, 370px);
     object-fit: cover;
+    margin: auto;
     /* border: 2px solid lime; */
     /* margin-right: 10px; */
 }
 
+.grid__right {
+    /* border: 2px solid blue; */
+    width: 50%;
+}
+
 .cta__container {
     /* border: 1px solid aqua; */
-    width: 50%;
+    width: min(340px, 100%);
     height: max-content;
     padding: 20px;
     background: rgba(8, 49, 64, 0.838);
@@ -120,6 +134,7 @@
 .tech-stack__container {
     display: flex;
     gap: 10%;
+    margin-top: 50px;
     /* border: 2px solid blue; */
 }
 
