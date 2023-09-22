@@ -52,7 +52,7 @@ function About() {
                             <div className="item"><AiOutlineFileExcel /><p>Microsoft Excel</p></div>    
                         </div>
                     </div>
-                    <p>My name is Matthew La Rochelle, but most people call me Matt. I am a full stack developer based in San Jose, California or remotely in PST. I have a passion for frontend development and I build <span>websites</span> and <span>web applications</span> using the <span>MERN</span> stack. I strive to use my skills to create a more equitable future for all human beings.</p>
+                    <p className="about__paragraph">My name is Matthew La Rochelle, but most people call me Matt. I am a full stack developer based in San Jose, California or remotely in PST. I have a passion for frontend development and I build <span>websites</span> and <span>web applications</span> using the <span>MERN</span> stack. I strive to use my skills to create a more equitable future for all human beings.</p>
 
                     <div className="about__education">
                         <h3>Education</h3>
