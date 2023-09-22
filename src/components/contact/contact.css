@@ -1,8 +1,9 @@
 .contact {
     min-height: 100vh;
-    /* background: #23242a; */
+    background: #23242a;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .contact__container {
     display: flex;

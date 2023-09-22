@@ -117,6 +117,7 @@
     color: rgb(116, 233, 131);
     font-size: 1.3rem;
     margin-bottom: 10px;
+    margin-right: 12px;
     font-weight: 900;
     letter-spacing: 1px;
 }
@@ -124,7 +125,8 @@
     color: #fff;
     font-weight: 300;
     /* border: 2px solid red; */
-    margin-left: 12px;
+    display: block;
+    
     letter-spacing: 1.5px;
 }
 
@@ -243,16 +245,31 @@
     .grid__right img {
         position: static;
         margin: auto;
+        height: min(200px, 50vw);
     }
 
     .cta__container {
         margin: auto;
+        width: 98%;
     }
+    .cta__credentials h4 {
+        font-size: 1rem;
+    }
+    .cta__credentials h4 span {
+        display: block;
+    }
+
     .tech-stack__container {
         margin: 20px auto;
         /* border: 2px solid yellow; */
         /* justify-content: space-around; */
 
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cta__links button {
+        padding: 10px 15px;
     }
 }
 
