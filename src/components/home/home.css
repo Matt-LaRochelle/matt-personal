@@ -33,10 +33,12 @@
 
 .home__text span {
     color: rgb(46, 239, 253);
+    white-space: nowrap;
 }
 
 .home__text span:nth-child(2) {
     color: rgb(46, 253, 74);
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 560px) {
