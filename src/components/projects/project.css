@@ -129,10 +129,11 @@
 }
 
 .cta__links {
-    margin-bottom: 0px;
+    /* margin: auto; */
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: min(100%, 450px);
+
     /* border: 2px solid red; */
 }
 .cta__links button {

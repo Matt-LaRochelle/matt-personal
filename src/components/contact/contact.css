@@ -119,7 +119,7 @@
 .contact__box form input[type="submit"]
 {
     border: none;
-    outline: none;
+    /* outline: none; */
     padding: 9px 25px;
     background: #ffffffc4;
     cursor: pointer;
@@ -134,7 +134,7 @@
 .contact__box form input[type="submit"]:hover
 {
     opacity: 0.8;
-    background: radial-gradient(circle at bottom left, rgb(22, 148, 183), cyan 30%, rgb(0, 255, 170), lime, rgb(183, 255, 0));
+    background: radial-gradient(circle at 20px 60px, rgb(52, 167, 199), rgb(36, 251, 251), rgb(136, 251, 251),  rgb(95, 250, 198), rgb(122, 249, 162), rgb(41, 255, 102) );
 }
 
 
