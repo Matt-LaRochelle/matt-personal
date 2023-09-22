@@ -1,9 +1,12 @@
 .background /* He calls it .container */
 {
     position: absolute;
-    top: 0;
-    min-height: 100vh;
-    width: 100%;
+    top: -1px;
+    right: -1px;
+    left: -1px;
+    bottom: -1px;
+    /* min-height: 100vh;
+    width: 100%; */
     /* background: #0c192c; */
     background: #23242a;
     /* background: url('../images/forest.jpg') no-repeat center/cover; */
@@ -16,14 +19,15 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* background: #23242a; */
+    /* overflow: hidden; */
 }
 
 .background__bubbles {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    top: 70px;
+    top: 0px;
     width: 100%;
     z-index: -100;
 }
@@ -56,13 +60,14 @@
         transform: translateY(100vh) scale(0);
         opacity: 1;
     }
-    90%
+    96%
     {
+        transform: translateY(35px) scale(1);
         opacity: 1;
     }
     100%
     {
-        transform: translateY(-10vh) scale(1);
+        transform: translateY(2px) scale(0);
         opacity: 0;
     }
 }
