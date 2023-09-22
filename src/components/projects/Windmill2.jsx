@@ -24,25 +24,25 @@ const Windmill2 = () => {
         <div className="project__container">
             <Navbar />
             <div className="project__page">
-                <div className='project__title'>
-                    <h1>Windmill Equestrian</h1>
-                    <p>A website for a horse back riding school</p>
-                </div>
+                
                 {/* <span onClick={openContent} className="more__content">{moreContent ? "More Details" : "Less Details"}</span> */}
 
                 <div className='project__grid'>
                     <div className="grid__left">
-
                         <div className="cta__container">
+                            <div className='cta__title'>
+                                <h1>Windmill Equestrian</h1>
+                                <p>A website for a horse back riding school</p>
+                            </div>
                             <div className="cta__credentials">
-                                <p>Want to check it out?</p>
+                                {/* <p>Want to check it out?</p> */}
                             </div>
                             <div className="cta__links">
                                 <a href='https://windmill-equestrian.com/'><button>Website</button></a>
                                 <a href='https://github.com/Matt-LaRochelle/horses'><button>GitHub Repo</button></a>
                             </div>
                         </div>
-
+                        <h1 className="grid__tech-title">Tech</h1>
                         <div className="tech-stack__container">
                             <div className="tech-stack__frontend">
                                 <ul>
