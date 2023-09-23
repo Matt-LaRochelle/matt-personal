@@ -17,18 +17,7 @@
     z-index: 10;
 }
 
-.project__title {
-    width: 100%;
-    color: #fff;
-    position: static;
-    text-align: left;
-    padding-bottom: 10px;
-    /* border: 1px solid red; */
-}
-.project__title p {
-    padding: 5px 0 10px;
-    font-weight: 400;
-}
+
 
 
 .more__content {
@@ -57,6 +46,11 @@
     width: 95%;
 }
 
+.grid__tech-title {
+    margin-top: 50px;
+    border-bottom: 1px solid white;
+}
+
 .grid__right {
     position: relative;
     /* border: 2px solid aqua; */
@@ -71,6 +65,7 @@
     width: 95%;
     height: clamp(250px, 35vw, 370px);
     object-fit: cover;
+    border-radius: 8px;
 
     /* border: 2px solid lime; */
     /* margin-right: 10px; */
@@ -78,11 +73,29 @@
 
 .cta__container {
     /* border: 1px solid aqua; */
-    width: min(340px, 100%);
+    width: max(340px, 100%);
     /* height: max-content; */
     padding: 20px;
     background: rgba(8, 49, 64, 0.838);
     box-shadow: 5px 5px 1px 0px rgba(17, 190, 60, 0.4)
+}
+
+.cta__title {
+    width: 90%;
+    color: #fff;
+    position: static;
+    text-align: left;
+    padding-bottom: 10px;
+    /* border: 2px solid lime; */
+}
+.cta__title h1 {
+    border-bottom: 1px solid white;
+    /* width: max-content; */
+}
+.cta__title p {
+    padding: 5px 0 10px;
+    font-weight: 400;
+    /* border: 1px solid blue; */
 }
 
 .cta__credentials {
@@ -101,21 +114,28 @@
     margin-bottom: 30px;
 }
 .cta__credentials h4 {
-    color: rgb(46, 253, 74);
+    color: rgb(116, 233, 131);
     font-size: 1.3rem;
     margin-bottom: 10px;
+    margin-right: 12px;
     font-weight: 900;
+    letter-spacing: 1px;
 }
 .cta__credentials h4 span {
     color: #fff;
     font-weight: 300;
+    /* border: 2px solid red; */
+    display: block;
+    
+    letter-spacing: 1.5px;
 }
 
 .cta__links {
-    margin-bottom: 0px;
+    /* margin: auto; */
     display: flex;
     justify-content: space-between;
-    width: min(300px, 100%);
+    width: min(100%, 450px);
+
     /* border: 2px solid red; */
 }
 .cta__links button {
@@ -136,9 +156,10 @@
 
 .tech-stack__container {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 4%;
-    margin-top: 50px;
+    gap: 3%;
+    /* gap: 4%; */
     /* border: 2px solid blue; */
 }
 
@@ -212,24 +233,43 @@
     .grid__right {
         order: 1;
         margin: 0 auto 40px ;
+        width: 70%;
+        height: 50vw;
     }
 
     .grid__left {
         order: 2;
+        width: 100%;
     }
 
     .grid__right img {
         position: static;
         margin: auto;
+        height: min(200px, 50vw);
     }
 
     .cta__container {
         margin: auto;
+        width: 98%;
     }
+    .cta__credentials h4 {
+        font-size: 1rem;
+    }
+    .cta__credentials h4 span {
+        display: block;
+    }
+
     .tech-stack__container {
         margin: 20px auto;
         /* border: 2px solid yellow; */
-        justify-content: space-around;
+        /* justify-content: space-around; */
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cta__links button {
+        padding: 10px 15px;
     }
 }
 

@@ -73,7 +73,7 @@ function Projects() {
       }, []);
 
     return (
-        <div className="projects" ontouchStart={handleMouseDown} onMouseDown={handleMouseDown}>
+        <div className="projects" onTouchStart={handleMouseDown} onMouseDown={handleMouseDown}>
             <Navbar />
             <div className="projects__container">
 

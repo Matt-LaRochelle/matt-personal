@@ -6,6 +6,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    margin: 0em;
 }
 
 .home__text {
@@ -32,8 +33,17 @@
 
 .home__text span {
     color: rgb(46, 239, 253);
+    white-space: nowrap;
 }
 
 .home__text span:nth-child(2) {
     color: rgb(46, 253, 74);
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 560px) {
+    .home__text {
+        padding-left: 4px;
+        padding-bottom: 20px;
+    }
 }

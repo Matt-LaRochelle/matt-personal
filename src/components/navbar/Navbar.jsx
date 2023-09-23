@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <header id="navbar">
             <section className='navbar__title'>
-                <h1>Matt's Developer Projects</h1>
+                <h1>Matt's Dev Projects</h1>
                 <button onClick={handleNav} className="menu-button">
                     <div className="menu-icon"></div>
                 </button>
