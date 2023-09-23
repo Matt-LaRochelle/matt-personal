@@ -39,14 +39,13 @@
     width: 100%;
     font-size: 2rem;
     text-align: center;
-    color: #333;
+    color: #222;
     /* border: 2px solid lime; */
     display: flex;
     justify-content: space-between;
 }
 .about__tech-stack p {
     font-size: 1rem;
-    color: #444;
     margin: 0;
 }
 
@@ -110,6 +109,8 @@
 
 .education__school {
     display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
 }
 
 .education__school img {
@@ -118,17 +119,23 @@
     border-radius: 12px;
     margin: 8px 30px 8px 10px;
     object-fit: cover;
+    /* border: 2px solid yellow; */
 }
-
+.education__school div {
+    /* border: 2px solid pink; */
+    height: max-content;
+}
 .education__school h4 {
     font-size: 1.5rem;
-    padding-top: 15px;
+    /* padding-top: 15px; */
+    /* border: 2px solid blue; */
 }
 
 .education__school p {
     font-size: 1.1rem;
     font-weight: 300;
     margin: 4px 0;
+    /* border: 2px solid green; */
 }
 
 @media screen and (max-width: 860px) {
@@ -202,5 +209,8 @@
 
     .education__container {
         padding: 4px;
+    }
+    .education__school img {
+        margin-right: 10px;
     }
 }
