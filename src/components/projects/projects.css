@@ -28,7 +28,7 @@
     top: 10%;
     left: 8%;
     padding: 16px 13px;
-    background: rgb(7, 43, 56);
+    background: rgba(7, 43, 56, 0.829);
     box-shadow: 5px 5px 1px 0px rgba(17, 190, 60, 0.4)
 }
 .projects__helper h4 {
