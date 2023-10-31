@@ -1,36 +1,45 @@
 import './navbar.css'
 import { NavLink } from 'react-router-dom';
-// import { useState } from 'react';
+import { useState } from 'react';
+import {RxHamburgerMenu} from 'react-icons/rx';
+import {AiOutlineClose} from 'react-icons/ai';
 
 const Navbar = () => {
 
-    const handleNav = () => {
-        console.log("You clicked me!")
+    const [menu, setMenu] = useState(false)
+
+    const openMenu = () => {
+        setMenu(true)
     }
+    const closeMenu = () => {
+        setMenu(false)
+    }
+
     return (
-        <header id="navbar">
-            <section className='navbar__title'>
+        <header className='navbarHeader'>
+            <section className="navLogo">
                 <h1>Matt's Dev Projects</h1>
-                <button onClick={handleNav} className="menu-button">
+                {/* <button className="menu-button">
                     <div className="menu-icon"></div>
-                </button>
+                </button> */}
             </section>
-            <nav>
+            <nav className={menu ? "navMenuContainer active" : "navMenuContainer"}>
                 <ul>
-                    <li>
+                    <li className="navLink">
                     <NavLink to="/">Home</NavLink>
                     </li>
-                    <li>
+                    <li className="navLink">
                     <NavLink to="/about">About</NavLink>
                     </li>
-                    <li>
+                    <li className="navLink">
                     <NavLink to="/projects">Portfolio</NavLink>
                     </li>
-                    <li id="contact">
+                    <li className="navLink">
                     <NavLink to="/contact">Contact</NavLink>
                     </li>
                 </ul>
             </nav>
+            {!menu ? <RxHamburgerMenu onClick={openMenu} className="menuIcon" /> : <AiOutlineClose className="menuIcon" onClick={closeMenu} /> }
         </header>
     )
 }
