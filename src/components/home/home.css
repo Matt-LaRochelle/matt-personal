@@ -13,6 +13,7 @@
     flex-grow: 1;
     position: relative;
     z-index: 1;
+    margin-bottom: 40px;
 }
 .home__container .headshot {
     display: block;
