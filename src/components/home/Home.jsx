@@ -11,9 +11,10 @@ function Home() {
             <Navbar />
             {/* <Background /> */}
             <div className="home__container">
+                <h1>Hello</h1>
                 <img src={me} alt="Matt La Rochelle" className="headshot" />
                 <div className="home__text">
-                    <h1>Hello</h1>
+                    
                     <h4>My name is Matt</h4>
                     <p>I develop <span>websites</span> and <span>web applications</span></p>
                 </div>

@@ -304,4 +304,10 @@
     }
 }
 
+@media screen and (max-width: 350px) {
+    .navbarHeader h1 {
+        font-size: 1rem;
+    }
+}
+
 
