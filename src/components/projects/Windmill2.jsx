@@ -1,6 +1,6 @@
-import { FaReact, FaHtml5, FaFigma, FaNodeJs } from 'react-icons/fa';
-import {IoLogoJavascript, IoLogoCss3} from 'react-icons/io';
-import {SiMongodb, SiExpress, SiJavascript} from 'react-icons/si';
+import { FaReact, FaHtml5, FaFigma } from 'react-icons/fa';
+import { IoLogoCss3 } from 'react-icons/io';
+import { SiJavascript } from 'react-icons/si';
 import { TbBrandVscode } from 'react-icons/tb'
 import { BsGit } from 'react-icons/bs'
 import { AiFillGithub } from 'react-icons/ai'
@@ -8,17 +8,14 @@ import windmill from '../images/windmill2.0.png'
 import './project.css'
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
-import connections from '../images2/alina-grubnyak-ZiQkhI7417A-unsplash.jpg'
-import projects from '../images2/projects.png'
-import future from '../images/future3.jpg'
-import { useState } from 'react';
+// import { useState } from 'react';
 
 const Windmill2 = () => {
-    const [moreContent, setMoreContent] = useState(false);
+    // const [moreContent, setMoreContent] = useState(false);
 
-    const openContent = () => {
-        setMoreContent(prevValue => !prevValue);
-    }
+    // const openContent = () => {
+    //     setMoreContent(prevValue => !prevValue);
+    // }
 
     return (
         <div className="project__container">

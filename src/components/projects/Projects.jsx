@@ -8,7 +8,7 @@ import Windmill from '../images/windmill2.0.png'
 import GuitarPaths2 from '../images/gp2.0.png'
 import Navbar from "../navbar/Navbar"
 import Footer from "../footer/Footer"
-import Background from "../background/Background"
+// import Background from "../background/Background"
 
 function Projects() {
     const [maxWidth, setMaxWidth] = useState(null);
@@ -70,7 +70,7 @@ function Projects() {
         return () => {
           window.removeEventListener('resize', handleResize);
         };
-      }, []);
+      }, [handleMouseMove]);
 
     return (
         <div className="projects" onTouchStart={handleMouseDown} onMouseDown={handleMouseDown}>
