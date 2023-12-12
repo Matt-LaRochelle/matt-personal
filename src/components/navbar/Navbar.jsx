@@ -15,6 +15,10 @@ const Navbar = () => {
         setMenu(false)
     }
 
+    const navExperiment = () => {
+        console.log("Clicked!")
+    }
+
     return (
         <header className='navbarHeader'>
             <section className="navLogo">
@@ -40,6 +44,9 @@ const Navbar = () => {
                 </ul>
             </nav>
             {!menu ? <RxHamburgerMenu onClick={openMenu} className="menuIcon" /> : <AiOutlineClose className="menuIcon" onClick={closeMenu} /> }
+            <button onClick={navExperiment} className="experiment">
+                <div className="experimentIcon"></div>
+            </button>
         </header>
     )
 }
