@@ -70,7 +70,7 @@ function Projects() {
         return () => {
           window.removeEventListener('resize', handleResize);
         };
-      }, [handleMouseMove]);
+      }, []);
 
     return (
         <div className="projects" onTouchStart={handleMouseDown} onMouseDown={handleMouseDown}>
