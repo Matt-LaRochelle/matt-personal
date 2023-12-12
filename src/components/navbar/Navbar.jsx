@@ -1,33 +1,18 @@
 import './navbar.css'
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import {RxHamburgerMenu} from 'react-icons/rx';
-import {AiOutlineClose} from 'react-icons/ai';
 
 const Navbar = () => {
-
     const [menu, setMenu] = useState(false)
-    const [experiment, setExperiment] = useState(false)
-
-    const openMenu = () => {
-        setMenu(true)
-    }
-    const closeMenu = () => {
-        setMenu(false)
-    }
 
     const navExperiment = () => {
-        console.log("Clicked!")
-        setExperiment(!experiment)
+        setMenu(!menu)
     }
 
     return (
         <header className='navbarHeader'>
             <section className="navLogo">
                 <h1>Matt's Dev Projects</h1>
-                {/* <button className="menu-button">
-                    <div className="menu-icon"></div>
-                </button> */}
             </section>
             <nav className={menu ? "navMenuContainer active" : "navMenuContainer"}>
                 <ul>
@@ -45,12 +30,11 @@ const Navbar = () => {
                     </li>
                 </ul>
             </nav>
-            {!menu ? <RxHamburgerMenu onClick={openMenu} className="menuIcon" /> : <AiOutlineClose className="menuIcon" onClick={closeMenu} /> }
             <button
                 onClick={navExperiment}
-                className={`experiment ${experiment ? 'aActive' : ''}`}
+                className={`icon ${menu ? 'aActive' : ''}`}
             >
-                <div className={`experimentIcon ${experiment ? 'eActive red' : ''}`}></div>
+                <div className={`hamburgerIcon ${menu ? 'eActive' : ''}`}></div>
             </button>
         </header>
     )
