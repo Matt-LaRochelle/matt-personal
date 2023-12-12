@@ -9,7 +9,7 @@ function Footer() {
 
     return (
         <footer className="footer">
-            <p className="footer__year">Copyright {year}</p>
+            <p className="footer__year">&copy; Copyright {year}</p>
             <div className="footer__links">
                 <a href='https://github.com/Matt-LaRochelle'><p className="links__p">GitHub</p></a>
                 <a href='https://www.linkedin.com/in/matthew-la-rochelle-565b41245/'><p className="links__p">LinkedIn</p></a>

@@ -223,7 +223,7 @@
 
 @media screen and (max-width: 666px) {
     .project__page {
-        padding: 100px 0 0;
+        padding: 70px 0 0;
     }
 
     .project__grid {
@@ -234,7 +234,7 @@
         order: 1;
         margin: 0 auto 40px ;
         width: 70%;
-        height: 50vw;
+        /* height: 50vw; */
     }
 
     .grid__left {
