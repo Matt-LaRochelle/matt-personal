@@ -7,6 +7,7 @@ import {AiOutlineClose} from 'react-icons/ai';
 const Navbar = () => {
 
     const [menu, setMenu] = useState(false)
+    const [experiment, setExperiment] = useState(false)
 
     const openMenu = () => {
         setMenu(true)
@@ -17,6 +18,7 @@ const Navbar = () => {
 
     const navExperiment = () => {
         console.log("Clicked!")
+        setExperiment(!experiment)
     }
 
     return (
@@ -44,8 +46,11 @@ const Navbar = () => {
                 </ul>
             </nav>
             {!menu ? <RxHamburgerMenu onClick={openMenu} className="menuIcon" /> : <AiOutlineClose className="menuIcon" onClick={closeMenu} /> }
-            <button onClick={navExperiment} className="experiment">
-                <div className="experimentIcon"></div>
+            <button
+                onClick={navExperiment}
+                className={`experiment ${experiment ? 'aActive' : ''}`}
+            >
+                <div className={`experimentIcon ${experiment ? 'eActive red' : ''}`}></div>
             </button>
         </header>
     )

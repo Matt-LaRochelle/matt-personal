@@ -97,6 +97,17 @@
         transform: translate(-20px, 12px)
     }
 
+    .eActive {
+        background-color: transparent;
+        transform: rotate(720deg);
+    }
+    .aActive .experimentIcon::before {
+        transform: translateX(-20px) rotate(45deg);
+    }
+    .aActive .experimentIcon::after {
+        transform: translateX(-20px) rotate(-45deg);
+    }
+
     /*
 
     #navbar .menu-button {
