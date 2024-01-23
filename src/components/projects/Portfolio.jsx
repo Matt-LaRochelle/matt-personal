@@ -25,8 +25,8 @@ const Portfolio = () => {
                     <p><FaReact /> <span>React</span></p>
                 </div>
                 <div className={styles.links}>
-                    <a href='https://mattsdevprojects.com'><button>Link</button></a>
-                    <a href='https://github.com/Matt-LaRochelle/matt-personal'><button>Code</button></a>
+                    <a href='https://mattsdevprojects.com' target="_blank"><button>Link</button></a>
+                    <a href='https://github.com/Matt-LaRochelle/matt-personal' target="_blank"><button>Code</button></a>
                 </div>
             </div>
             <div className={styles.project_image}>

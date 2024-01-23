@@ -26,8 +26,8 @@ const Norman = () => {
                     <p><FaReact /> <span>React</span></p>
                 </div>
                 <div className={styles.links}>
-                    <a href='https://stellular-cheesecake-af5f51.netlify.app'><button>Link</button></a>
-                    <a href='https://github.com/Matt-LaRochelle/norman-sings'><button>Code</button></a>
+                    <a href='https://stellular-cheesecake-af5f51.netlify.app' target="_blank"><button>Link</button></a>
+                    <a href='https://github.com/Matt-LaRochelle/norman-sings' target="_blank"><button>Code</button></a>
                 </div>
             </div>
             <div className={styles.project_image}>

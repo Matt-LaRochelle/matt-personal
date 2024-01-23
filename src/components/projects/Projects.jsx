@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 // Components
 import Bingo from '../images/bingo2.0.png'
 import Windmill from '../images/windmill2.0.png'
+import Opera from '../images/opera_cultura.png'
 import GuitarPaths2 from '../images/gp2.0.png'
 import Navbar from "../navbar/Navbar"
 import Footer from "../footer/Footer"
@@ -88,6 +89,16 @@ function Projects() {
                         transform: `translate(${percentage}%, -50%)`,
                         }}
                     >
+                    <Link to="/opera">
+                        <div className="projects__card">
+                            <img 
+                                src={Opera} 
+                                alt="Ópera Cultura Website" 
+                                draggable="false"
+                                style={{objectPosition: `${percentage + 100}% 50%`}} />
+                            <p className="projects__title">Ópera Cultura Website</p>
+                        </div>
+                    </Link>
                     <Link to="/windmill">
                         <div className="projects__card">
                             <img 

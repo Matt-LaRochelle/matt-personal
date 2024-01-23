@@ -41,8 +41,8 @@ const Bingo = () => {
                                 <h4>Password: <span>ABCabc123!</span></h4>
                             </div>
                             <div className="cta__links">
-                                <a href='https://bingo-kncb.onrender.com/'><button>Website</button></a>
-                                <a href='https://github.com/Matt-LaRochelle/bingo'><button>GitHub Repo</button></a>
+                                <a href='https://bingo-kncb.onrender.com/' target="_blank"><button>Website</button></a>
+                                <a href='https://github.com/Matt-LaRochelle/bingo' target="_blank"><button>GitHub Repo</button></a>
                             </div>
                         </div>
                         <h1 className="grid__tech-title">Tech</h1>

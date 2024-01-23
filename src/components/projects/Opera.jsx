@@ -1,16 +1,17 @@
-import { FaReact, FaHtml5, FaFigma } from 'react-icons/fa';
-import { IoLogoCss3 } from 'react-icons/io';
-import { SiJavascript } from 'react-icons/si';
+import { FaReact, FaHtml5, FaFigma, FaNodeJs } from 'react-icons/fa';
+import { IoLogoCss3} from 'react-icons/io';
+import { SiMongodb, SiExpress, SiJavascript } from 'react-icons/si';
 import { TbBrandVscode } from 'react-icons/tb'
 import { BsGit } from 'react-icons/bs'
 import { AiFillGithub } from 'react-icons/ai'
-import windmill from '../images/windmill2.0.png'
+
+import opera from '../images/opera_cultura.png'
 import './project.css'
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
 // import { useState } from 'react';
 
-const Windmill2 = () => {
+const Opera = () => {
     // const [moreContent, setMoreContent] = useState(false);
 
     // const openContent = () => {
@@ -28,15 +29,15 @@ const Windmill2 = () => {
                     <div className="grid__left">
                         <div className="cta__container">
                             <div className='cta__title'>
-                                <h1>Windmill Equestrian</h1>
-                                <p>A website for a horse back riding school</p>
+                                <h1>Ópera Cultura</h1>
+                                <p>A website for a latino/x/a/é opera company and community school</p>
                             </div>
                             <div className="cta__credentials">
                                 {/* <p>Want to check it out?</p> */}
                             </div>
                             <div className="cta__links">
-                                <a href='https://windmill-equestrian.com/' target="_blank"><button>Website</button></a>
-                                <a href='https://github.com/Matt-LaRochelle/horses' target="_blank"><button>GitHub Repo</button></a>
+                                <a href='https://operacultura.org/' target="_blank"><button>Website</button></a>
+                                <p>Code is private</p>
                             </div>
                         </div>
                         <h1 className="grid__tech-title">Tech</h1>
@@ -58,6 +59,20 @@ const Windmill2 = () => {
                                 </ul>
                                 <h3>Frontend</h3>
                             </div>
+                            <div className="tech-stack__backend">
+                                <ul>
+                                    <li>
+                                        <span className="icon"><FaNodeJs /></span>Node
+                                    </li>
+                                    <li>
+                                        <span className="icon"><SiExpress /></span>Express
+                                    </li>
+                                    <li>
+                                        <span className="icon"><SiMongodb /></span>MongoDB
+                                    </li>
+                                </ul>
+                                <h3>Backend</h3>
+                            </div>
                             <div className="tech-stack__utilities">
                                 <ul>
                                     <li>
@@ -78,7 +93,7 @@ const Windmill2 = () => {
                         </div>
                     </div>
                     <div className='grid__right'>
-                        <img src={windmill} alt="Windmill Equestrian" />
+                        <img src={opera} alt="Ópera Cultura" />
                     </div>
                 </div>
 
@@ -194,4 +209,4 @@ const Windmill2 = () => {
     )
 }
 
-export default Windmill2
+export default Opera
