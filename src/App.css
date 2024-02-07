@@ -8,3 +8,28 @@
 *::backdrop {
     display: none;
 }
+
+/* layout */
+:root {
+    --primary-300: palegreen;
+    --primary-500: rgb(46, 253, 74);
+    --primary-800: rgba(17, 190, 60, 0.4);
+    --secondary: rgb(46, 239, 253);
+    --white: #eee;
+    --black: #23242a;
+    --gray: #888;
+    --error: #e7195a;
+
+    --clear: 6px 6px 6px 0px rgba(0, 0, 0, 0.379);
+  }
+
+  a,
+  a:visited {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  a:hover {
+    color: var(--primary-500);
+  }
+
