@@ -5,7 +5,7 @@ import { TbBrandVscode } from 'react-icons/tb'
 import { BsGit } from 'react-icons/bs'
 import { AiFillGithub } from 'react-icons/ai'
 
-import opera from '../images/opera_cultura.png'
+import opera from '../images/opera-cultura.png'
 import './project.css'
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';

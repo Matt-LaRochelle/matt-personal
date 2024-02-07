@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 // Components
 import Bingo from '../images/bingo2.0.png'
 import Windmill from '../images/windmill2.0.png'
-import Opera from '../images/opera_cultura.png'
+import Opera from '../images/opera-cultura.png'
 import GuitarPaths2 from '../images/gp2.0.png'
 import Navbar from "../navbar/Navbar"
 import Footer from "../footer/Footer"

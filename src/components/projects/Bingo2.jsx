@@ -8,9 +8,7 @@ import bingo from '../images/bingo2.0.png'
 import './project.css'
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
-import connections from '../images2/alina-grubnyak-ZiQkhI7417A-unsplash.jpg'
-import projects from '../images2/projects.png'
-import future from '../images2/future.png'
+
 import { useState } from 'react';
 import Background from '../background/Background'
 

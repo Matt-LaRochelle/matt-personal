@@ -11,8 +11,6 @@ import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
 
 import guitarist from '../images/guitarist.png'
-import projects from '../images2/projects.png'
-import future from '../images/future2.jpg'
 import gp2 from '../images/gp2.0.png'
 
 
