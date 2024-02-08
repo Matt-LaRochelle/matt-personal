@@ -58,6 +58,11 @@
     color: var(--primary-500);
 }
 
+.active-link {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
 .navbarHeader .icon {
     display: none;
 }

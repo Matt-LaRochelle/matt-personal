@@ -1,13 +1,21 @@
 import './navbar.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false)
+    const location = useLocation();
 
     const navExperiment = () => {
         setMenu(!menu)
     }
+
+    const linkStyle = {
+        textDecoration: "underline",
+        textDecorationColor: "white",
+        textUnderlineOffset: "5px"
+    };
+    const inactiveLinkStyle = {};
 
     return (
         <header className='navbarHeader'>
@@ -17,16 +25,16 @@ const Navbar = () => {
             <nav className={menu ? "navMenuContainer active" : "navMenuContainer"}>
                 <ul>
                     <li className="navLink">
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/" style={location.pathname === "/" ? linkStyle : inactiveLinkStyle }>Home</NavLink>
                     </li>
                     <li className="navLink">
-                    <NavLink to="/about">About</NavLink>
+                    <NavLink to="/about" style={location.pathname === "/about" ? linkStyle : inactiveLinkStyle }>About</NavLink>
                     </li>
                     <li className="navLink">
-                    <NavLink to="/projects">Portfolio</NavLink>
+                    <NavLink to="/projects" style={location.pathname === "/projects" ? linkStyle : inactiveLinkStyle }>Portfolio</NavLink>
                     </li>
                     <li className="navLink">
-                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/contact" style={location.pathname === "/contact" ? linkStyle : inactiveLinkStyle }>Contact</NavLink>
                     </li>
                 </ul>
             </nav>
