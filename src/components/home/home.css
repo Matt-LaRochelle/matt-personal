@@ -2,7 +2,7 @@
     background: var(--black);
     min-height: 100vh;
     width: 100%;
-    color: var(--black);
+    color: var(--content-fade-text);
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -28,7 +28,7 @@
 .home__text {
     padding: 20px;
     background: rgba(215, 185, 94, 0.203);
-    background-image: linear-gradient(200deg, rgba(134, 248, 93, 0.82) 1%, rgba(54, 239, 233, 0.84) 99%);
+    background-image: var(--content-fade);
     backdrop-filter: blur(3px);
     display: flex;
     flex-direction: column;
@@ -59,14 +59,14 @@
 }
 
 .home__text button {
-    color: var(--primary-300);
-    border: 1px solid var(--primary-800);
+    color: var(--button-text);
+    border: 1px solid var(--button-border);
     font-size: 1.5rem;
     font-weight: 600;
     padding: 18px 25px;
     border-radius: 4px;
     white-space: nowrap;
-    background-color: var(--black);
+    background-color: var(--button-background);
 
 }
 .home__text button:hover {

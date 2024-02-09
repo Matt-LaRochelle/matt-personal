@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 *::backdrop {
@@ -11,16 +12,30 @@
 
 /* layout */
 :root {
+  /* primitives */
     --primary-300: palegreen;
     --primary-500: rgb(46, 253, 74);
     --primary-800: rgba(17, 190, 60, 0.4);
-    --secondary: rgb(46, 239, 253);
+    --secondary-500: rgb(46, 239, 253);
+    --tertiary-500: rgb(201, 121, 240);
     --white: #eee;
     --black: #23242a;
     --gray: #888;
     --error: #e7195a;
 
     --clear: 6px 6px 6px 0px rgba(0, 0, 0, 0.379);
+
+    /* semantics */
+    --nav-link: var(--white);
+    --nav-link-hover: var(--primary-500);
+    --nav-border: var(-gray);
+    --nav-background: linear-gradient(#1414198d, transparent);
+    --content-fade: linear-gradient(200deg, rgba(134, 248, 93, 0.82) 1%, rgba(54, 239, 233, 0.84) 99%);
+    --content-fade-2: linear-gradient(150deg, rgba(36, 230, 175, 0.82) 12%, rgba(204, 159, 232, 0.84));
+    --content-fade-text: var(--black);
+    --button-text: var(--primary-300);
+    --button-background: var(--black);
+    --button-border: var(--primary-800);
   }
 
   a,

@@ -2,10 +2,10 @@
 .navbarHeader {
     background: linear-gradient(#1414198d, transparent) ;
     backdrop-filter: blur(3px);
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    color: var(--white);
+    color: var(--nav-link);
     padding: 0.25rem 0.5rem;
     z-index: 100;
     position: absolute;
@@ -21,7 +21,7 @@
 .navLogo h2 {
     font-size: 20px;
     font-weight: 700;
-    color: var(--white);
+    color: var(--nav-link);
     margin-top: 14px;
     width: 120px;
 }
@@ -38,7 +38,7 @@
     align-items: center;
     gap: 30px;
     z-index: 50000;
-    color: var(--white);
+    /* color: var(--white); */
 }
 
 .navLink {
@@ -49,18 +49,18 @@
     font-size: 1.2rem;
     text-decoration: none;
     cursor: pointer;
-    color: var(--white);
+    /* color: var(--white); */
 }
 .navLink a:visited {
-    color: var(--white);
+    color: var(--nav-link);
 }
 .navLink a:hover {
-    color: var(--primary-500);
+    color: var(--nav-link-hover);
 }
 
 .active-link {
     text-decoration: underline;
-    text-decoration-color: white;
+    text-decoration-color: var(--nav-link);
 }
 
 .navbarHeader .icon {
@@ -87,7 +87,7 @@
     .hamburgerIcon,
     .hamburgerIcon::before,
     .hamburgerIcon::after {
-        background-color: var(--white);
+        background-color: var(--nav-link);
         width: 40px;
         height: 5px;
         border-radius: 5px;
@@ -119,7 +119,7 @@
     .hamburgerIcon:hover,
     .hamburgerIcon:hover::before,
     .hamburgerIcon:hover::after {
-        background-color: var(--primary-500);
+        background-color: var(--nav-link-hover);
     }
     .aActive .hamburgerIcon:hover {
         background-color: transparent;

@@ -19,7 +19,7 @@
 .contact__box {
     position: relative;
     width: 380px;
-    height: 430px;
+    height: 440px;
     border-radius: 8px;
     overflow: hidden;
     background: #11111174;
@@ -123,12 +123,14 @@
 {
     border: none;
     /* outline: none; */
-    padding: 9px 25px;
-    background: #ffffffc4;
+    padding: 3px 25px;
+    background: var(--white);
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 1em;
+    border: 2px solid var(--white);
     border-radius: 4px;
     font-weight: 600;
+    letter-spacing: .05rem;
     width: 100px;
     margin-top: 10px;
 }
@@ -136,8 +138,9 @@
 .contact__box form input[type="submit"]:active,
 .contact__box form input[type="submit"]:hover
 {
-    opacity: 0.8;
+    opacity: 1;
     background: radial-gradient(circle at 20px 60px, rgb(52, 167, 199), rgb(36, 251, 251), rgb(136, 251, 251),  rgb(95, 250, 198), rgb(122, 249, 162), rgb(41, 255, 102) );
+    background: var(--content-fade);
 }
 
 
