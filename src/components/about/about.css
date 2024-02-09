@@ -1,5 +1,5 @@
 .about {
-    /* width: 100vw; */
+    /* width: calc(100%-20px); */
     min-height: 100vh;
     background: #23242a;
     display: flex;
@@ -36,7 +36,7 @@
 }
 
 .about__tech-stack {
-    width: 100%;
+    /* width: calc(100%-20px); */
     font-size: 2rem;
     text-align: center;
     color: var(--content-fade-text);

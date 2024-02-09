@@ -2,6 +2,7 @@
 .navbarHeader {
     background: linear-gradient(#1414198d, transparent) ;
     backdrop-filter: blur(3px);
+    /* width: calc(100%-20px); */
     width: 100%;
     display: flex;
     justify-content: space-between;
