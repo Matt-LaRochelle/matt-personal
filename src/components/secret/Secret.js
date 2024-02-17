@@ -1,4 +1,5 @@
 import feymap from '../../secretImages/Fey-map.jpg'
+import serenity from '../../secretImages/Serenity-peak.jpg'
 import './secret.css'
 
 const Secret = () => {
@@ -6,6 +7,7 @@ const Secret = () => {
         <div className="secret-page">
             <h1>Secret Page</h1>
             <img src={feymap} alt="secret" />
+            <img src={serenity} alt="secret" />
         </div>
     )
 }
