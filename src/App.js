@@ -14,6 +14,8 @@ import Gp2 from './components/projects/GuitarPaths2'
 import Bingo from './components/projects/Bingo2';
 import Background from './components/background/Background';
 
+import Secret from './components/secret/Secret';
+
 function App() {
   return (
     <div className="app">
@@ -29,6 +31,7 @@ function App() {
           <Route path="gp2" element={<Gp2 />} />
           <Route path="bingo" element={<Bingo />} />
           <Route path="opera" element={<Opera />} />
+          <Route path="secret" element={<Secret />} />
         </Routes>
         <Background />
       </BrowserRouter>
