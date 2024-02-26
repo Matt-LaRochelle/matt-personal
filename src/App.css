@@ -58,20 +58,6 @@ svg {
 
 /* End CSS Reset */
 
-
-
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-*::backdrop {
-    display: none;
-}
-
 /* layout */
 :root {
   /* primitives */
@@ -83,7 +69,25 @@ svg {
     --color-neutral-100: #eee;
     --color-neutral-900: #23242a;
     --color-neutral-400: #888;
+    --color-error-100: #f9d4e1;
     --color-error-600: #e7195a;
+
+    --font-family-primary: 'Poppins', sans-serif;
+    --font-family-body: var(--font-family-primary);
+    --font-family-heading: var(--font-family-primary);
+
+    --font-weight-regular: 400;
+    --font-weight-semi-bold: 500;
+    --font-weight-bold: 700;
+
+    --font-size-200: 0.75rem;
+    --font-size-300: 1rem;
+    --font-size-400: 1.25rem;
+    --font-size-500: 1.5rem;
+    --font-size-600: 1.75rem;
+    --font-size-700: 2rem;
+    --font-size-800: 3rem;
+    --font-size-900: 4rem;
 
     --clear: 6px 6px 6px 0px rgba(0, 0, 0, 0.379);
 
@@ -103,6 +107,9 @@ svg {
     --button-hover-border: var(--color-neutral-900);
   }
 
+  * {
+    font-family: var(--font-family-primary);
+  }
   a,
   a:visited {
     text-decoration: none;
@@ -113,3 +120,9 @@ svg {
     color: var(--color-primary-500);
   }
 
+
+  /* Utility Classes */
+  .text-primary-400 {
+    color: var(--color-primary-500);
+
+  }
