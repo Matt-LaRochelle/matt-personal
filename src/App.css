@@ -36,6 +36,9 @@
     --button-text: var(--primary-300);
     --button-background: var(--black);
     --button-border: var(--primary-800);
+    --button-hover-text: var(--black);
+    --button-hover-background: var(--content-fade-2);
+    --button-hover-border: var(--black);
   }
 
   a,

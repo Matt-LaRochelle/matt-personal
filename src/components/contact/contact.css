@@ -133,14 +133,17 @@
     letter-spacing: .05rem;
     width: 100px;
     margin-top: 10px;
+    transition: all .5s;
 }
 
 .contact__box form input[type="submit"]:active,
 .contact__box form input[type="submit"]:hover
 {
     opacity: 1;
-    background: radial-gradient(circle at 20px 60px, rgb(52, 167, 199), rgb(36, 251, 251), rgb(136, 251, 251),  rgb(95, 250, 198), rgb(122, 249, 162), rgb(41, 255, 102) );
+    cursor: pointer;
+    border: 2px solid var(--white);
     background: var(--content-fade);
+    color: var(--button-hover-text);
 }
 
 
