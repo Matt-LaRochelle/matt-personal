@@ -2,7 +2,7 @@
     min-height: 100vh;
     width: 100%;
     background-color: #23232a;
-    color: var(--color-white);
+    color: var(--color-neutral-100);
     display: flex;
     flex-direction: column;
     /* border: 1px solid white; */
@@ -48,7 +48,7 @@
 
 .grid__tech-title {
     margin-top: 50px;
-    border-bottom: 1px solid var(--color-white);
+    border-bottom: 1px solid var(--color-neutral-100);
 }
 
 .grid__right {
@@ -89,7 +89,7 @@
     /* border: 2px solid lime; */
 }
 .cta__title h1 {
-    border-bottom: 1px solid var(--color-white);
+    border-bottom: 1px solid var(--color-neutral-100);
     /* width: max-content; */
 }
 .cta__title p {
@@ -122,7 +122,7 @@
     letter-spacing: 1px;
 }
 .cta__credentials h4 span {
-    color: var(--color-white);
+    color: var(--color-neutral-100);
     font-weight: 300;
     /* border: 2px solid red; */
     display: block;
@@ -145,7 +145,7 @@
     padding: 18px 25px;
     border-radius: 4px;
     white-space: nowrap;
-    background-color: var(--color-black);
+    background-color: var(--color-neutral--900);
     transition: .5s;
 
 }

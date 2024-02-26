@@ -80,33 +80,33 @@ svg {
     --color-primary-800: rgba(17, 190, 60, 0.4);
     --color-secondary-500: rgb(46, 239, 253);
     --color-tertiary-500: rgb(201, 121, 240);
-    --color-white: #eee;
-    --color-black: #23242a;
-    --color-gray: #888;
-    --color-error: #e7195a;
+    --color-neutral-100: #eee;
+    --color-neutral-900: #23242a;
+    --color-neutral-400: #888;
+    --color-error-600: #e7195a;
 
     --clear: 6px 6px 6px 0px rgba(0, 0, 0, 0.379);
 
     /* semantics */
-    --nav-link: var(--color-white);
+    --nav-link: var(--color-neutral-100);
     --nav-link-hover: var(--color-primary-500);
-    --nav-border: var(--color-gray);
+    --nav-border: var(--color-neutral-400);
     --nav-background: linear-gradient(#1414198d, transparent);
     --content-fade: linear-gradient(200deg, rgba(134, 248, 93, 0.82) 1%, rgba(54, 239, 233, 0.84) 99%);
     --content-fade-2: linear-gradient(150deg, rgba(36, 230, 175, 0.82) 12%, rgba(204, 159, 232, 0.84));
-    --content-fade-text: var(--color-black);
+    --content-fade-text: var(--color-neutral-900);
     --button-text: var(--color-primary-300);
-    --button-background: var(--color-black);
+    --button-background: var(--color-neutral-900);
     --button-border: var(--color-primary-800);
-    --button-hover-text: var(--color-black);
+    --button-hover-text: var(--color-neutral-900);
     --button-hover-background: var(--content-fade-2);
-    --button-hover-border: var(--color-black);
+    --button-hover-border: var(--color-neutral-900);
   }
 
   a,
   a:visited {
     text-decoration: none;
-    color: var(--color-white);
+    color: var(--color-neutral-100);
   }
 
   a:hover {

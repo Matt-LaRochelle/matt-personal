@@ -124,10 +124,10 @@
     border: none;
     /* outline: none; */
     padding: 3px 25px;
-    background: var(--color-white);
+    background: var(--color-neutral-100);
     cursor: pointer;
     font-size: 1em;
-    border: 2px solid var(--color-white);
+    border: 2px solid var(--color-neutral-100);
     border-radius: 4px;
     font-weight: 600;
     letter-spacing: .05rem;
@@ -141,7 +141,7 @@
 {
     opacity: 1;
     cursor: pointer;
-    border: 2px solid var(--color-white);
+    border: 2px solid var(--color-neutral-100);
     background: var(--content-fade);
     color: var(--button-hover-text);
 }
