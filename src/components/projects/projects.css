@@ -16,7 +16,7 @@
 }
 
 .projects__container h1 {
-    color: var(--white);
+    color: var(--color-white);
     text-align: center;
     margin: 40px;
 }
@@ -83,7 +83,7 @@
     position: absolute;
     top: -40px;
     left: 0px;
-    color: var(--white);
+    color: var(--color-white);
     width: 100%;
     text-align: center;
     font-size: .8rem;
@@ -124,7 +124,7 @@
 
 /* only for debugging */
 .stateVariables {
-    color: var(--white);
+    color: var(--color-white);
     position: absolute;
     top: 5px;
     left: 5px;
@@ -166,8 +166,8 @@
     }
     
     .projects__card:hover .projects__title {
-        color: var(--primary-300);
-        border: 2px solid var(--primary-300);
+        color: var(--color-primary-300);
+        border: 2px solid var(--color-primary-300);
         backdrop-filter: blur(15px);
     }
 }

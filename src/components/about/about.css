@@ -25,14 +25,14 @@
 }
 .about__paragraph span {
     /* color: rgb(46, 253, 74); */
-    color: var(--primary-500);
+    color: var(--color-primary-500);
 }
 .about__paragraph span:nth-child(2) {
-    color: var(--secondary-500);
+    color: var(--color-secondary-500);
     white-space: nowrap;
 }
 .about__paragraph span:nth-child(3) {
-    color: var(--tertiary-500);
+    color: var(--color-tertiary-500);
 }
 
 .about__tech-stack {

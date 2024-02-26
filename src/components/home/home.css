@@ -1,5 +1,5 @@
 .home {
-    background: var(--black);
+    background: var(--color-black);
     min-height: 100vh;
     width: 100%;
     color: var(--content-fade-text);

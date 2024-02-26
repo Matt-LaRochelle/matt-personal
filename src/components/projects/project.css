@@ -2,7 +2,7 @@
     min-height: 100vh;
     width: 100%;
     background-color: #23232a;
-    color: var(--white);
+    color: var(--color-white);
     display: flex;
     flex-direction: column;
     /* border: 1px solid white; */
@@ -22,8 +22,8 @@
 
 .more__content {
     margin-top: 30px;
-    color: var(--primary-300);
-    border: 1px solid var(--primary-800);
+    color: var(--color-primary-300);
+    border: 1px solid var(--color-primary-800);
     padding: 4px 10px;
     border-radius: 4px;
 }
@@ -48,7 +48,7 @@
 
 .grid__tech-title {
     margin-top: 50px;
-    border-bottom: 1px solid var(--white);
+    border-bottom: 1px solid var(--color-white);
 }
 
 .grid__right {
@@ -77,7 +77,7 @@
     /* height: max-content; */
     padding: 20px;
     background: rgba(8, 49, 64, 0.838);
-    box-shadow: 5px 5px 1px 0px var(--primary-800);
+    box-shadow: 5px 5px 1px 0px var(--color-primary-800);
 }
 
 .cta__title {
@@ -89,7 +89,7 @@
     /* border: 2px solid lime; */
 }
 .cta__title h1 {
-    border-bottom: 1px solid var(--white);
+    border-bottom: 1px solid var(--color-white);
     /* width: max-content; */
 }
 .cta__title p {
@@ -114,7 +114,7 @@
     margin-bottom: 30px;
 }
 .cta__credentials h4 {
-    color: var(--primary-500);
+    color: var(--color-primary-500);
     font-size: 1.3rem;
     margin-bottom: 10px;
     margin-right: 12px;
@@ -122,7 +122,7 @@
     letter-spacing: 1px;
 }
 .cta__credentials h4 span {
-    color: var(--white);
+    color: var(--color-white);
     font-weight: 300;
     /* border: 2px solid red; */
     display: block;
@@ -139,13 +139,13 @@
     /* border: 2px solid red; */
 }
 .cta__links button {
-    color: var(--primary-300);
+    color: var(--color-primary-300);
     /* color: var(--primary); */
     border: 1px solid rgba(152, 251, 152, 0.411);
     padding: 18px 25px;
     border-radius: 4px;
     white-space: nowrap;
-    background-color: var(--black);
+    background-color: var(--color-black);
     transition: .5s;
 
 }
