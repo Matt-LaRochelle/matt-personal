@@ -25,7 +25,7 @@
     color: var(--content-text);
     /* transform: rotate(-13deg); */
     position: absolute;
-    top: 10%;
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
     padding: 16px 13px;
@@ -36,6 +36,7 @@
 .projects__helper h4 {
     margin-bottom: 12px;
     font-size: 1.2rem;
+    white-space: nowrap;
 }
 
 .projects__helper p {
@@ -53,7 +54,7 @@
     gap: 6vmin;
     position: absolute;
     left: 50%;
-    top: 56%;
+    top: 400px;
     transform: translate(0%, -50%);
 }
 

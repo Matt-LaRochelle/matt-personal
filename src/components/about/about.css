@@ -149,7 +149,7 @@
     /* border: 2px solid green; */
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 900px) {
 
     .about__tech-stack {
         display: block;
@@ -223,5 +223,8 @@
     }
     .education__school img {
         margin-right: 10px;
+    }
+    .education__school h4 {
+        font-size: 1.2rem;
     }
 }
