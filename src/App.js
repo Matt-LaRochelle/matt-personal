@@ -1,6 +1,8 @@
+import './App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './App.css';
+
+
 import Home from './components/home/Home';
 import About from './components/about/About';
 // import Navbar from './components/navbar/Navbar';
@@ -12,7 +14,9 @@ import Windmill2 from './components/projects/Windmill2'
 import Opera from './components/projects/Opera'
 import Gp2 from './components/projects/GuitarPaths2'
 import Bingo from './components/projects/Bingo2';
+
 import Background from './components/background/Background';
+import Background2 from './components/background2/Background2';
 
 import Secret from './components/secret/Secret';
 
@@ -33,7 +37,8 @@ function App() {
           <Route path="opera" element={<Opera />} />
           <Route path="secret" element={<Secret />} />
         </Routes>
-        <Background />
+        {/* <Background /> */}
+        <Background2 />
       </BrowserRouter>
       
     </div>

@@ -66,6 +66,7 @@
     height: clamp(250px, 35vw, 370px);
     object-fit: cover;
     border-radius: 8px;
+    box-shadow: var(--clear);
 
     /* border: 2px solid lime; */
     /* margin-right: 10px; */
@@ -77,7 +78,7 @@
     /* height: max-content; */
     padding: 20px;
     background: rgba(8, 49, 64, 0.838);
-    box-shadow: 5px 5px 1px 0px var(--color-primary-800);
+    box-shadow: var(--clear);
 }
 
 .cta__title {
@@ -163,6 +164,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 3%;
+    
     /* gap: 4%; */
     /* border: 2px solid blue; */
 }
@@ -178,6 +180,7 @@
     position: relative;
     color: #222;
     margin-top: 10px;
+    box-shadow: var(--clear);
     /* border: 2px solid yellow; */
 }
 .tech-stack__frontend ul,

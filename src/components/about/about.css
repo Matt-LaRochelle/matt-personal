@@ -48,6 +48,11 @@
     font-size: 1rem;
     margin: 0;
 }
+.about__tech-stack svg {
+    color: #333;
+    display: block;
+    margin: auto;
+}
 
 .tech-stack__current,
 .tech-stack__past {
@@ -58,6 +63,7 @@
     padding: 4rem 1.5rem 1.5rem;
     border-radius: 0 20px 20px 0;
     background-image: var(--content-fade);
+    box-shadow: var(--clear);
 }
 .tech-stack__current h4,
 .tech-stack__past h4 {
@@ -67,18 +73,20 @@
     transform: translateX(-50%);
     white-space: nowrap;
     font-weight: 600;
+
 }
 
 .tech-stack__current img {
     height: 2rem;
     width: 2rem;
+    margin: auto;
 }
 
 .item {
-    /* border: 1px solid #333; */
-    /* border-radius: 8px;
-    padding: 10px; */
-    /* box-shadow: rgba(0,0,0,0.5) 0px 4px 10px;
+    /* border: 1px solid #333;
+    border-radius: 8px; */
+    /* padding: 10px;
+    box-shadow: rgba(0,0,0,0.5) 0px 4px 10px;
     background-image: linear-gradient(rgb(136, 229, 252), rgb(96, 215, 245)); */
 }
 
@@ -88,6 +96,11 @@
     background-image: var(--content-fade-2);
 }
 
+.about__paragraph {
+    padding: 20px;
+    background: rgba(8, 49, 64, 0.838);
+    box-shadow: var(--clear);
+}
 
 .about__education {
     margin-top: 50px;
