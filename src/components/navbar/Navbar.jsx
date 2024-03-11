@@ -20,7 +20,7 @@ const Navbar = () => {
     return (
         <header className='navbarHeader'>
             <section className="navLogo">
-                <NavLink to="/"><h1>Matt's Dev Projects</h1></NavLink>
+                <NavLink to="/clear"><h1>Matt's Dev Projects</h1></NavLink>
             </section>
             <nav className={menu ? "navMenuContainer active" : "navMenuContainer"}>
                 <ul>

@@ -1,4 +1,5 @@
 import './background2.css'
+import { IoHappyOutline } from "react-icons/io5";
 
 const background2 = () => {
 
@@ -38,18 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
                                 1 0 0 0 0
                                 0 1 0 0 0
                                 0 0 1 0 0
-                                0 0 0 18 -8" result="goo" />
+                                0 0 0 38 -8" result="goo" />
                             <feBlend in="SourceGraphic" in2="goo" /> 
                         </filter>
                     </defs>
                 </svg>
                 <div className="gradients-container">
-                    <div className="g1"></div>
-                    <div className="g2"></div>
-                    <div className="g3"></div>
-                    <div className="g4"></div>
-                    <div className="g5"></div>
-                    <div className="interactive"></div>
+                    <div className="g1"><IoHappyOutline /></div>
+                    <div className="g2"><IoHappyOutline /></div>
+                    <div className="g3"><IoHappyOutline /></div>
+                    <div className="g4"><IoHappyOutline /></div>
+                    <div className="g5"><IoHappyOutline /></div>
+                    <div className="interactive"><IoHappyOutline /></div>
                 </div>
             </div>
         </div>

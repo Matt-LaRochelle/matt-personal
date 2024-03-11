@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
-import Home from './components/home/Home';
+import Home2 from './components/home/Home2';
 import About from './components/about/About';
 // import Navbar from './components/navbar/Navbar';
 import Projects from './components/projects/Projects';
@@ -17,6 +17,7 @@ import Bingo from './components/projects/Bingo2';
 
 import Background from './components/background/Background';
 import Background2 from './components/background2/Background2';
+import Clear from './components/clear/Clear';
 
 import Secret from './components/secret/Secret';
 
@@ -27,7 +28,8 @@ function App() {
       <BrowserRouter>
       
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home2 />} />
+          <Route path="clear" element={<Clear />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
