@@ -12,10 +12,10 @@
     flex-grow: 1;
     position: relative;
     z-index: 1;
-    margin-bottom: 140px;
+    /* margin-bottom: 140px; */
 }
 .home__element2 {
-    margin-top: 180px;
+    margin-top: 140px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: min(800px, 90%);
@@ -28,6 +28,8 @@
 .home__text2 {
     padding: 20px;
     background: rgba(151, 218, 212, 0.627);
+    background: #11111174;
+    color: #eee;
     backdrop-filter: blur(3px);
     display: flex;
     flex-direction: column;

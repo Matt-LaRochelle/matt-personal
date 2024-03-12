@@ -1,6 +1,7 @@
 
 .navbarHeader {
     background: linear-gradient(#1414198d, transparent) ;
+    background: #11111174;
     backdrop-filter: blur(3px);
     /* width: calc(100%-20px); */
     width: 100%;

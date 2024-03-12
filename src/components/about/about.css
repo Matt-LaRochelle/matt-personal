@@ -52,6 +52,7 @@
     color: #333;
     display: block;
     margin: auto;
+    color: #eee;
 }
 
 .tech-stack__current,
@@ -64,6 +65,8 @@
     border-radius: 0 20px 20px 0;
     background-image: var(--content-fade);
     box-shadow: var(--clear);
+    background: #11111174;
+    color: #eee;
 }
 .tech-stack__current h4,
 .tech-stack__past h4 {
@@ -93,12 +96,13 @@
 .tech-stack__past {
     border-radius: 20px 0 0 20px;
     /* border: 1px solid aqua; */
-    background-image: var(--content-fade-2);
+    /* background-image: var(--content-fade-2); */
 }
 
 .about__paragraph {
     padding: 20px;
     background: rgba(8, 49, 64, 0.838);
+    background: #11111174;
     box-shadow: var(--clear);
 }
 
@@ -122,6 +126,10 @@
     display: flex;
     align-items: center;
     /* border: 2px solid red; */
+
+    background: #11111174;
+    padding: 5px 12px;
+    box-shadow: var(--clear);
 }
 
 .education__school img {
