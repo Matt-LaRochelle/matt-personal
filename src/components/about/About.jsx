@@ -3,7 +3,7 @@ import './about.css'
 
 // icons
 import {FaReact, FaRegFilePowerpoint, FaHtml5, FaCss3, FaBootstrap, FaFigma, FaGithub, FaDocker, FaNodeJs, FaPython} from 'react-icons/fa';
-import {SiMongodb, SiJavascript, SiC, SiMysql, SiExpress, SiFlask, SiPycharm} from 'react-icons/si';
+import {SiMongodb, SiOpenai, SiJavascript, SiC, SiMysql, SiExpress, SiFlask, SiPycharm} from 'react-icons/si';
 import {BsGit} from 'react-icons/bs'
 import {AiOutlineFileExcel} from 'react-icons/ai'
 import {TbBrandVscode, TbBrandDjango} from 'react-icons/tb'
@@ -36,7 +36,7 @@ function About() {
                             <div className="item"><BsGit /><p>Git</p></div>
                             <div className="item"><FaGithub /><p>GitHub</p></div>      
                             <div className="item"><TbBrandVscode /><p>VSCode</p></div>    
-                            <div className="item"><img src={chatgpt} alt="chatgpt" /><p>Chat GPT</p></div>  
+                            <div className="item"><SiOpenai /><p>Chat GPT</p></div>  
                         </div>
                         <div className="tech-stack__past">
                             <h4>Past</h4>

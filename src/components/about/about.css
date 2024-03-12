@@ -35,6 +35,7 @@
     color: var(--color-tertiary-500);
 }
 
+
 .about__tech-stack {
     /* width: calc(100%-20px); */
     font-size: 2rem;
@@ -113,6 +114,7 @@
 .about__education h3 {
     margin-left: 38px;
     font-size: 2rem;
+    border-bottom: 2px solid #eee;
 }
 
 .education__container {
