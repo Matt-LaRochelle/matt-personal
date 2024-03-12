@@ -241,7 +241,11 @@
 }
 
 
-
+@media screen and (max-width: 850px) {
+    .cta__links button  {
+        font-size: 1rem;
+    }
+}
 
 @media screen and (max-width: 666px) {
     .project__page {
@@ -287,11 +291,12 @@
         /* justify-content: space-around; */
 
     }
+
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     .cta__links button {
-        padding: 10px 15px;
+        padding: 5px 8px;
     }
 }
 

@@ -12,7 +12,7 @@
     flex-grow: 1;
     position: relative;
     z-index: 1;
-    /* margin-bottom: 140px; */
+    margin-bottom: 80px;
 }
 .home__element2 {
     margin-top: 140px;
