@@ -1,8 +1,8 @@
 .project__container {
     min-height: 100vh;
     width: 100%;
-    background-color: #23232a;
-    color: var(--color-neutral-100);
+    /* background-color: #23232a; */
+    /* color: var(--color-neutral-100); */
     display: flex;
     flex-direction: column;
     /* border: 1px solid white; */
@@ -22,8 +22,8 @@
 
 .more__content {
     margin-top: 30px;
-    color: var(--color-primary-300);
-    border: 1px solid var(--color-primary-800);
+    color: var(--color-green-300);
+    border: 1px solid var(--color-green-800);
     padding: 4px 10px;
     border-radius: 4px;
 }
@@ -65,7 +65,7 @@
     width: 95%;
     height: clamp(250px, 35vw, 370px);
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: var(--border-radius-medium);
     box-shadow: var(--clear);
 
     /* border: 2px solid lime; */
@@ -78,102 +78,82 @@
     /* height: max-content; */
     padding: 20px;
     background: rgba(8, 49, 64, 0.838);
-    background: #11111174;
+    background: var(--dark-see-through);
     box-shadow: var(--clear);
 }
 
 .cta__title {
     width: 90%;
-    color: #fff;
+    color: var(--heading-text);
     position: static;
     text-align: left;
     padding-bottom: 10px;
-    /* border: 2px solid lime; */
 }
 .cta__title h1 {
     border-bottom: 1px solid var(--color-neutral-100);
-    /* width: max-content; */
+    font-size: var(--font-size-heading);
 }
 .cta__title p {
     padding: 5px 0 10px;
-    font-weight: 400;
-    /* border: 1px solid blue; */
+    color: var(--body-text);
 }
 
 .cta__credentials {
     display: block;
     margin: 10px 0 30px;
-    /* border: 2px solid green; */
 }
 .cta__credentials p {
     padding: 4px 0;
     font-size: 1.2rem;
-    /* width: 300px; */
-    /* border: 2px solid red; */
 }
 .cta__credentials p:nth-child(2) {
     font-size: 1.05rem;
     margin-bottom: 30px;
 }
 .cta__credentials h4 {
-    color: var(--color-primary-500);
+    color: var(--color-green-500);
     font-size: 1.3rem;
     margin-bottom: 10px;
     margin-right: 12px;
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: 1px;
 }
 .cta__credentials h4 span {
     color: var(--color-neutral-100);
     font-weight: 300;
-    /* border: 2px solid red; */
     display: block;
-    
     letter-spacing: 1.5px;
 }
 
 .cta__links {
-    /* margin: auto; */
     display: flex;
     justify-content: space-between;
     width: min(100%, 450px);
-
-    /* border: 2px solid red; */
 }
 .cta__links button {
-    /* color: var(--color-primary-300);
-    /* color: var(--primary); */
-    /* border: 1px solid rgba(152, 251, 152, 0.411);
-    padding: 18px 25px;
-    border-radius: 4px;
-    white-space: nowrap;
-    background-color: var(--color-neutral--900);
-    transition: .5s; */
-    color: white;
-    border: 2px solid white;
-    font-size: 1.5rem;
+    font-size: var(--font-size-button-text);
     font-weight: 600;
     padding: 18px 25px;
-    border-radius: 4px;
+    border-radius: var(--border-radius-small);
     white-space: nowrap;
+    color: var(--button-text);
+    border: 2px solid var(--button-border);
     background-color: var(--button-background);
     transition: .5s;
 
 }
 .cta__links button:hover {
-    /* cursor: pointer;
-    border: 1px solid var(--button-hover-border);
-    background: var(--button-hover-background);
-    color: var(--button-hover-text); */
-
     cursor: pointer;
     border: 2px solid var(--button-hover-border);
-    background: linear-gradient(40deg, rgb(87, 222, 94), rgb(110, 241, 243));
+    background: var(--button-hover-background);
     color: var(--button-hover-text);
 }
 
 
-
+.grid__tech-title {
+    color: var(--heading-text);
+    font-size: var(--font-size-heading);
+}
 .tech-stack__container {
     display: flex;
     justify-content: space-around;
@@ -226,7 +206,7 @@
     text-align: center;
     position: absolute;
     font-size: 1.3rem;
-    font-weight: 900;
+    font-weight: 800;
     bottom: 6px;
     left: 50%;
     color: #1b1b1b;
