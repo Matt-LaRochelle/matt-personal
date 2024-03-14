@@ -10,6 +10,8 @@ import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 // import Footer from './components/footer/Footer';
 
+import Project from './components/projects/Project';
+
 import Windmill2 from './components/projects/Windmill2'
 import Opera from './components/projects/Opera'
 import Gp2 from './components/projects/GuitarPaths2'
@@ -32,6 +34,7 @@ function App() {
           <Route path="clear" element={<Clear />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="project/:id" element={<Project />} />
           <Route path="contact" element={<Contact />} />
           <Route path="windmill" element={<Windmill2 />} />
           <Route path="gp2" element={<Gp2 />} />

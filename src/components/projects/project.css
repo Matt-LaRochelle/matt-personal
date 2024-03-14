@@ -130,6 +130,9 @@
     justify-content: space-between;
     width: min(100%, 450px);
 }
+.cta__links p {
+    color: var(--body-text);
+}
 .cta__links button {
     font-size: var(--font-size-button-text);
     font-weight: 600;

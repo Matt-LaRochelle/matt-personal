@@ -89,7 +89,7 @@ function Projects() {
                         transform: `translate(${percentage}%, -50%)`,
                         }}
                     >
-                    <Link to="/opera">
+                    <Link to="/project/opera">
                         <div className="projects__card">
                             <img 
                                 src={Opera} 
@@ -99,7 +99,7 @@ function Projects() {
                             <p className="projects__title">Ópera Cultura Website</p>
                         </div>
                     </Link>
-                    <Link to="/windmill">
+                    <Link to="/project/windmill">
                         <div className="projects__card">
                             <img 
                                 src={Windmill} 
@@ -109,7 +109,7 @@ function Projects() {
                             <p className="projects__title">Windmill Equestrian Website</p>
                         </div>
                     </Link>
-                    <Link to ="/gp2">
+                    <Link to ="/project/gp2">
                         <div className="projects__card">
                             <img 
                                 src={GuitarPaths2} 
@@ -119,7 +119,7 @@ function Projects() {
                             <p className="projects__title">Ear Training Web App</p>
                         </div>
                     </Link>
-                    <Link to="/bingo">
+                    <Link to="/project/bingo">
                         <div className="projects__card">
                             <img 
                                 src={Bingo} 

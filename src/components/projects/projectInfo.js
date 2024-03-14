@@ -3,8 +3,8 @@ import opera from '../images/opera-cultura.png'
 import windmill from '../images/windmill2.0.png'
 import bingo from '../images/bingo2.0.png'
 
-projectInfo = {
-    "project1": {
+export const projectInfo = {
+    "opera": {
         "title": "Ópera Cultura",
         "description": "A website for a latino/x/a/é opera company and community school",
         "credentials": false,
@@ -17,11 +17,11 @@ projectInfo = {
             "utilities": true
         }
     },
-    "project2": {
+    "windmill": {
         "title": "Windmill Equestrian",
         "description": "A website for a local equestrian business",
         "credentials": false,
-        "websiteURL": "https://windmillequestrian.net/",
+        "websiteURL": "https://windmill-equestrian.com/",
         "githubURL": 'https://github.com/Matt-LaRochelle/horses',
         "image": windmill,
         "techStack": {
@@ -30,11 +30,11 @@ projectInfo = {
             "utilities": true
         }
     },
-    "project3": {
+    "gp2": {
         "title": "Guitar Paths",
         "description": "A web application designed for guitarists learning ear training",
         "credentials": true,
-        "websiteURL": "https://guitar-paths.herokuapp.com/",
+        "websiteURL": "https://guitar-paths.onrender.com/",
         "githubURL": "https://github.com/Matt-LaRochelle/gp2",
         "image": gp2,
         "techStack": {
@@ -43,7 +43,7 @@ projectInfo = {
             "utilities": true
         }
     },
-    "project4": {
+    "bingo": {
         "title": "Bingo Cards",
         "description": "A web application designed for creating and printing bingo cards",
         "credentials": true,

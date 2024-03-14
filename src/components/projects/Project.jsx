@@ -1,3 +1,14 @@
+import './project.css'
+import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+
+// Components
+import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
+
+import { projectInfo } from './projectInfo';
+
+// Icons
 import { FaReact, FaHtml5, FaFigma, FaNodeJs } from 'react-icons/fa';
 import { IoLogoCss3} from 'react-icons/io';
 import { SiMongodb, SiExpress, SiJavascript } from 'react-icons/si';
@@ -5,22 +16,20 @@ import { TbBrandVscode } from 'react-icons/tb'
 import { BsGit } from 'react-icons/bs'
 import { AiFillGithub } from 'react-icons/ai'
 
-import './project.css'
-import { useState } from 'react';
-import Navbar from '../navbar/Navbar';
-import Footer from '../footer/Footer';
-
-import guitarist from '../images/guitarist.png'
-import gp2 from '../images/gp2.0.png'
 
 
 
 const Project = () => {
     const [moreContent, setMoreContent] = useState(false);
+    const location = useLocation();
+    const path = location.pathname;
+    const info = projectInfo[path.split("/")[2]];
 
     const openContent = () => {
         setMoreContent(prevValue => !prevValue);
     }
+
+    console.log(info)
 
     return (
         <div className="project__container">
@@ -33,73 +42,81 @@ const Project = () => {
 
                         <div className="cta__container">
                             <div className='cta__title'>
-                                <h1>Guitar Paths</h1>
-                                <p>A web application designed for guitarists learning ear training </p>
+                                <h1>{info.title}</h1>
+                                <p>{info.description}</p>
                             </div>
-                            <div className="cta__credentials">
-                                {/* <p>Want to check it out?</p><p>Use these credentials to try it</p> */}
-                                <h4>Login <span>testuser@testing.user</span></h4>
-                                <h4>Password <span>ABCabc123!</span></h4>
-                            </div>
+                            {info.credentials &&
+                                <div className="cta__credentials">
+                                    {/* <p>Want to check it out?</p><p>Use these credentials to try it</p> */}
+                                    <h4>Login <span>testuser@testing.user</span></h4>
+                                    <h4>Password <span>ABCabc123!</span></h4>
+                                </div>
+                            }
                             <div className="cta__links">
-                                <a href='https://guitar-paths.onrender.com/'><button>Web App</button></a>
-                                <a href='https://github.com/Matt-LaRochelle/gp2'><button>GitHub Repo</button></a>
+                                <a href={info.websiteURL} target="_blank"><button>Web App</button></a>
+                                {info.githubURL ? <a href={info.githubURL} target="_blank"><button>GitHub Repo</button></a> : <p>Code is private</p>}
                             </div>
                         </div>
                         <h1 className="grid__tech-title">Tech</h1>
                         <div className="tech-stack__container">
-                            <div className="tech-stack__frontend">
-                                <ul>
-                                    <li>
-                                        <span className="icon"><FaHtml5 /></span>HTML
-                                    </li>
-                                    <li>
-                                        <span className="icon"><IoLogoCss3 /></span>CSS
-                                    </li>
-                                    <li>
-                                        <span className="icon"><SiJavascript /></span>JavaScript
-                                    </li>
-                                    <li>
-                                        <span className="icon"><FaReact /></span>React
-                                    </li>
-                                </ul>
-                                <h3>Frontend</h3>
-                            </div>
-                            <div className="tech-stack__backend">
-                                <ul>
-                                    <li>
-                                        <span className="icon"><FaNodeJs /></span>Node
-                                    </li>
-                                    <li>
-                                        <span className="icon"><SiExpress /></span>Express
-                                    </li>
-                                    <li>
-                                        <span className="icon"><SiMongodb /></span>MongoDB
-                                    </li>
-                                </ul>
-                                <h3>Backend</h3>
-                            </div>
-                            <div className="tech-stack__utilities">
-                                <ul>
-                                    <li>
-                                        <span className="icon"><TbBrandVscode /></span>VSCode
-                                    </li>
-                                    <li>
-                                        <span className='icon'><BsGit /></span>Git
-                                    </li>
-                                    <li>
-                                        <span className='icon'><AiFillGithub /></span>GitHub
-                                    </li>
-                                    <li>
-                                        <span className='icon'><FaFigma /></span>Figma
-                                    </li>
-                                </ul>
-                                <h3>Utilities</h3>
-                            </div>
+                            {info.techStack.frontend &&
+                                <div className="tech-stack__frontend">
+                                    <ul>
+                                        <li>
+                                            <span className="icon"><FaHtml5 /></span>HTML
+                                        </li>
+                                        <li>
+                                            <span className="icon"><IoLogoCss3 /></span>CSS
+                                        </li>
+                                        <li>
+                                            <span className="icon"><SiJavascript /></span>JavaScript
+                                        </li>
+                                        <li>
+                                            <span className="icon"><FaReact /></span>React
+                                        </li>
+                                    </ul>
+                                    <h3>Frontend</h3>
+                                </div>
+                            }
+                            {info.techStack.backend &&
+                                <div className="tech-stack__backend">
+                                    <ul>
+                                        <li>
+                                            <span className="icon"><FaNodeJs /></span>Node
+                                        </li>
+                                        <li>
+                                            <span className="icon"><SiExpress /></span>Express
+                                        </li>
+                                        <li>
+                                            <span className="icon"><SiMongodb /></span>MongoDB
+                                        </li>
+                                    </ul>
+                                    <h3>Backend</h3>
+                                </div>
+                            }
+                            {info.techStack.utilities &&
+                                <div className="tech-stack__utilities">
+                                    <ul>
+                                        <li>
+                                            <span className="icon"><TbBrandVscode /></span>VSCode
+                                        </li>
+                                        <li>
+                                            <span className='icon'><BsGit /></span>Git
+                                        </li>
+                                        <li>
+                                            <span className='icon'><AiFillGithub /></span>GitHub
+                                        </li>
+                                        <li>
+                                            <span className='icon'><FaFigma /></span>Figma
+                                        </li>
+                                    </ul>
+                                    <h3>Utilities</h3>
+                                </div>
+                            }
                         </div>
                     </div>
                     <div className='grid__right'>
-                        <img src={gp2} alt="Guitar Paths" />
+                        <img src={info.image} alt={info.title} />
                     </div>
                 </div>
 
