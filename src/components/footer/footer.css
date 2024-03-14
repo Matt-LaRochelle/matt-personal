@@ -3,8 +3,9 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #23232a4e;
+    background-color: var(--content-background-primary);
     z-index: 100;
+    border-top: 1px solid var(--color-neutral-400);
 }
 
 .footer__links {
@@ -15,25 +16,24 @@
 
 .links__p {
     margin: 4px 20px;
-    color: #fff;
     padding: 0;
 }
 
 .footer__links a {
     text-decoration: none;
-    color: #fff;
+    color: var(--nav-link);
 }
 .footer__links a:visited {
-    color: #fff;
+    color: var(--nav-link);
 }
 .footer__links p:hover {
-    color: rgb(46, 253, 74);
+    color: var(--nav-link-hover);
     cursor: pointer;
 }
 
 .footer__year {
     padding: 4px 10px;
-    color: #fff;
+    color: var(--body-text);
     white-space: nowrap;
 }
 
