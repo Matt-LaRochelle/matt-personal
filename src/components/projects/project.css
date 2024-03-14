@@ -170,7 +170,7 @@
 .tech-stack__frontend,
 .tech-stack__backend,
 .tech-stack__utilities {
-    width: 150px;
+    width: 160px;
     padding: 12px 22px;
     height: 210px;
     border-radius: 20px;
@@ -196,12 +196,14 @@
     margin-bottom: 8px;
     /* border: 1px solid lime; */
 }
-.tech-stack__frontend .icon,
-.tech-stack__backend .icon,
-.tech-stack__utilities .icon {
+.tech-stack__frontend svg,
+.tech-stack__backend svg,
+.tech-stack__utilities svg {
     font-size: 1.3rem;
-    transform: translateY(3px);
+    /* transform: translateY(1px); */
     margin-right: 8px;
+    color: var(--color-neutral-900);
+    display: block;
 }
 .tech-stack__frontend h3,
 .tech-stack__backend h3,

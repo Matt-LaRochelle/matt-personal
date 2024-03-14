@@ -3,13 +3,10 @@ import './projects.css'
 import { Link } from "react-router-dom"
 
 // Components
-import Bingo from '../images/bingo2.0.png'
-import Windmill from '../images/windmill2.0.png'
-import Opera from '../images/opera-cultura.png'
-import GuitarPaths2 from '../images/gp2.0.png'
 import Navbar from "../navbar/Navbar"
 import Footer from "../footer/Footer"
-// import Background from "../background/Background"
+
+import { projectInfo } from "./projectInfo"
 
 function Projects() {
     const [maxWidth, setMaxWidth] = useState(null);
@@ -89,46 +86,20 @@ function Projects() {
                         transform: `translate(${percentage}%, -50%)`,
                         }}
                     >
-                    <Link to="/project/opera">
-                        <div className="projects__card">
-                            <img 
-                                src={Opera} 
-                                alt="Ópera Cultura Website" 
-                                draggable="false"
-                                style={{objectPosition: `${percentage + 100}% 50%`}} />
-                            <p className="projects__title">Ópera Cultura Website</p>
-                        </div>
-                    </Link>
-                    <Link to="/project/windmill">
-                        <div className="projects__card">
-                            <img 
-                                src={Windmill} 
-                                alt="Windmill Equestrian Website" 
-                                draggable="false"
-                                style={{objectPosition: `${percentage + 100}% 50%`}} />
-                            <p className="projects__title">Windmill Equestrian Website</p>
-                        </div>
-                    </Link>
-                    <Link to ="/project/gp2">
-                        <div className="projects__card">
-                            <img 
-                                src={GuitarPaths2} 
-                                alt="Ear Training Web Application" 
-                                draggable="false"
-                                style={{objectPosition: `${percentage + 100}% 50%`}} />
-                            <p className="projects__title">Ear Training Web App</p>
-                        </div>
-                    </Link>
-                    <Link to="/project/bingo">
-                        <div className="projects__card">
-                            <img 
-                                src={Bingo} 
-                                alt="Bingo Card Generator Web Application" 
-                                draggable="false"
-                                style={{objectPosition: `${percentage + 100}% 50%`}} />
-                            <p className="projects__title">Custom Bingo Cards Web App</p>
-                        </div>
-                    </Link>
+                    {projectInfo.map((project, index) => {
+                        return (
+                            <Link to={project.link} key={index}>
+                                <div className="projects__card">
+                                    <img 
+                                        src={project.image} 
+                                        alt={project.title} 
+                                        draggable="false"
+                                        style={{objectPosition: `${percentage + 100}% 50%`}} />
+                                    <p className="projects__title">{project.title} {project.type}</p>
+                                </div>
+                            </Link>
+                        )})
+                    }
                 </div>
                 {/* <div className="stateVariables">
                     <p>Start X = {startX}</p>

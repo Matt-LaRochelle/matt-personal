@@ -3,8 +3,10 @@ import opera from '../images/opera-cultura.png'
 import windmill from '../images/windmill2.0.png'
 import bingo from '../images/bingo2.0.png'
 
-export const projectInfo = {
-    "opera": {
+export const projectInfo = [
+    {
+        "link": "/project/opera",
+        "type": "Website",
         "title": "Ópera Cultura",
         "description": "A website for a latino/x/a/é opera company and community school",
         "credentials": false,
@@ -16,8 +18,10 @@ export const projectInfo = {
             "backend": true,
             "utilities": true
         }
-    },
-    "windmill": {
+},
+    {
+        "link": "/project/windmill",
+        "type": "Website",
         "title": "Windmill Equestrian",
         "description": "A website for a local equestrian business",
         "credentials": false,
@@ -29,8 +33,10 @@ export const projectInfo = {
             "backend": false,
             "utilities": true
         }
-    },
-    "gp2": {
+},
+    {
+        "link": "/project/gp2",
+        "type": "Web App",
         "title": "Guitar Paths",
         "description": "A web application designed for guitarists learning ear training",
         "credentials": true,
@@ -42,8 +48,10 @@ export const projectInfo = {
             "backend": true,
             "utilities": true
         }
-    },
-    "bingo": {
+},
+    {
+        "link": "/project/bingo",
+        "type": "Web App",
         "title": "Bingo Cards",
         "description": "A web application designed for creating and printing bingo cards",
         "credentials": true,
@@ -55,9 +63,4 @@ export const projectInfo = {
             "backend": true,
             "utilities": true
         }
-
-    }
-
-        
-
-}
+}]

@@ -22,8 +22,7 @@ import { AiFillGithub } from 'react-icons/ai'
 const Project = () => {
     const [moreContent, setMoreContent] = useState(false);
     const location = useLocation();
-    const path = location.pathname;
-    const info = projectInfo[path.split("/")[2]];
+    const info = Object.values(projectInfo).find(project => project.link === location.pathname);
 
     const openContent = () => {
         setMoreContent(prevValue => !prevValue);
