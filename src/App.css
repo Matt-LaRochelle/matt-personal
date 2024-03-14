@@ -116,9 +116,10 @@ svg {
 
     --body-text: var(--color-neutral-100);
     --heading-text: var(--color-neutral-100);
+    --icon-text: var(--color-neutral-100);
 
     --content-background-primary: var(--dark-see-through);
-    --content-background-secondary: var(var(--blue-purple-fade));
+    --content-background-secondary: var(--dark-see-through);
     --content-fade-text: var(--color-neutral-900);
 
     --button-text: var(--color-neutral-100);

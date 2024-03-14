@@ -68,7 +68,7 @@
 .home__text2 button:hover {
     cursor: pointer;
     border: 2px solid var(--button-hover-border);
-    background: linear-gradient(40deg, rgb(87, 222, 94), rgb(110, 241, 243));
+    background: var(--button-hover-background);
     color: var(--button-hover-text);
 }
 
