@@ -1,8 +1,6 @@
 .home2 {
-    background: var(--color-neutral-900);
     min-height: 100vh;
     width: 100%;
-    color: var(--content-fade-text);
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -12,43 +10,39 @@
     flex-grow: 1;
     position: relative;
     z-index: 1;
-    margin-bottom: 80px;
 }
 .home__element2 {
-    margin-top: 140px;
+    margin: 140px auto 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: min(800px, 90%);
     height: 400px;
-    margin-inline: auto;
-    border-radius: 10px;
+    border-radius: var(--border-radius-medium);
     overflow: hidden;
     box-shadow: var(--clear);
 }
 .home__text2 {
     padding: 20px;
     background: rgba(151, 218, 212, 0.627);
-    background: #11111174;
-    color: #eee;
+    background: var(--content-background-primary);
+    color: var(--body-text);
     backdrop-filter: blur(3px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
 }
 .home__container2 h1 {
-    font-size: 3rem;
-    /* margin-bottom: 20px; */
+    font-size: var(--font-size-display);
 }
 .home__text2 h4 {
-    font-size: 2rem;
+    font-size: var(--font-size-heading);
     font-weight: 500;
-    /* margin-bottom: 50px; */
 }
 .home__text2 p {
     font-weight: 200;
     display: block;
-    font-size: 1.6rem;
-    /* margin-bottom: 40px; */
+    font-size: var(--font-size-body);
 }
 .home__text2 span {
     /* color: var(--secondary); */
@@ -60,12 +54,12 @@
 }
 
 .home__text2 button {
-    color: white;
-    border: 2px solid white;
-    font-size: 1.5rem;
+    color: var(--button-text);
+    border: 2px solid var(--button-border);
+    font-size: var(--font-size-button-text);
     font-weight: 600;
     padding: 18px 25px;
-    border-radius: 4px;
+    border-radius: var(--border-radius-small);
     white-space: nowrap;
     background-color: var(--button-background);
     transition: .5s;
@@ -84,7 +78,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: .7;
+    opacity: .9;
 }
 
 
@@ -92,20 +86,5 @@
     .home__element2 {
         grid-template-columns: 1fr;
         height: 700px;
-    }
-    .home__container2 h1 {
-        font-size: 2.5rem;
-    }
-    .home__text2 h4 {
-        font-size: 1.8rem;
-    }
-    .home__text2 p {
-        font-size: 1.4rem;
-    }
-    .home__text2 span {
-        font-size: 1.4rem;
-    }
-    .home__text2 button {
-        padding: 15px 20px;
     }
 }

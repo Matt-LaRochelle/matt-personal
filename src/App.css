@@ -78,6 +78,14 @@ svg {
     --color-error-100: #f9d4e1;
     --color-error-600: #e7195a;
 
+    --dark-see-through: #11111174;
+
+    --green-blue-fade: linear-gradient(200deg, rgba(134, 248, 93, 0.82) 1%, rgba(54, 239, 233, 0.84) 99%);
+    --blue-purple-fade: linear-gradient(150deg, rgba(36, 230, 175, 0.82) 12%, rgba(204, 159, 232, 0.84));
+    --black-transparent-fade: linear-gradient(#1414198d, transparent);
+    
+    --purple-blue-fade: linear-gradient(40deg, rgb(108, 0, 162), rgb(0, 17, 82));
+
     --font-family-primary: 'Poppins', sans-serif;
 
 
@@ -96,20 +104,37 @@ svg {
 
     --clear: 6px 6px 6px 0px rgba(0, 0, 0, 0.379);
 
+    --border-radius-small: 4px;
+    --border-radius-medium: 8px;
+    --border-radius-large: 12px;
+
     /* semantics */
     --nav-link: var(--color-neutral-100);
     --nav-link-hover: var(--color-green-500);
     --nav-border: var(--color-neutral-400);
-    --nav-background: linear-gradient(#1414198d, transparent);
-    --content-fade: linear-gradient(200deg, rgba(134, 248, 93, 0.82) 1%, rgba(54, 239, 233, 0.84) 99%);
-    --content-fade-2: linear-gradient(150deg, rgba(36, 230, 175, 0.82) 12%, rgba(204, 159, 232, 0.84));
+    --nav-background: var(--black-transparent-fade);
+
+    --body-text: var(--color-neutral-100);
+    --heading-text: var(--color-neutral-100);
+
+    --content-background-primary: var(--dark-see-through);
+    --content-background-secondary: var(var(--blue-purple-fade));
     --content-fade-text: var(--color-neutral-900);
-    --button-text: var(--color-green-300);
-    --button-background: var(--color-neutral-900);
-    --button-border: var(--color-green-800);
+
+    --button-text: var(--color-neutral-100);
+    --button-background: var(--color-neutral-800);
+    --button-border: var(--color-neutral-100);
     --button-hover-text: var(--color-neutral-900);
-    --button-hover-background: var(--content-fade-2);
+    --button-hover-background: var(--green-blue-fade);
     --button-hover-border: var(--color-neutral-900);
+
+    --font-size-display: var(--font-size-900);
+    --font-size-heading: var(--font-size-700);
+    --font-size-subheading: var(--font-size-600);
+    --font-size-button-text: var(--font-size-500);
+    --font-size-body: var(--font-size-400);
+    --font-size-small: var(--font-size-300);
+    --font-size-tiny: var(--font-size-200);
   }
 
   * {
