@@ -2,8 +2,25 @@ import gp2 from '../images/gp2.0.png'
 import opera from '../images/opera-cultura.png'
 import windmill from '../images/windmill2.0.png'
 import bingo from '../images/bingo2.0.png'
+import dnd from '../images/dnd.png'
+import personal from '../images/personal.png'
 
 export const projectInfo = [
+    {
+        "link": "/project/dnd",
+        "type": "Web App",
+        "title": "Role Playing Buddy",
+        "description": "A web application for assisting in role playing campaigns",
+        "credentials": true,
+        "websiteURL": "https://classy-kulfi-77ddfa.netlify.app/login",
+        "githubURL": "https://github.com/Matt-LaRochelle/DnD",
+        "image": dnd,
+        "techStack": {
+            "frontend": true,
+            "backend": true,
+            "utilities": true
+        }
+},
     {
         "link": "/project/opera",
         "type": "Website",
@@ -63,4 +80,20 @@ export const projectInfo = [
             "backend": true,
             "utilities": true
         }
-}]
+},
+    {
+        "link": "/project/personal",
+        "type": "Website",
+        "title": "Personal Portfolio",
+        "description": "My personal website where I showcase my work and skills",
+        "credentials": false,
+        "websiteURL": "https://mattsdevprojects.com/",
+        "githubURL": "https://github.com/Matt-LaRochelle/matt-personal",
+        "image": personal,
+        "techStack": {
+            "frontend": true,
+            "backend": false,
+            "utilities": true
+        }
+},
+]
