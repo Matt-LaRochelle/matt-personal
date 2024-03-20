@@ -16,6 +16,7 @@ import Secret from './components/secret/Secret';
 
 import Background from './components/background/Background';
 import Background2 from './components/background2/Background2';
+import Background3 from './components/background3/Background3';
 
 
 function App() {
@@ -34,7 +35,8 @@ function App() {
           <Route path="secret" element={<Secret />} />
         </Routes>
         {/* <Background /> */}
-        <Background2 />
+        {/* <Background2 /> */}
+        <Background3 />
       </BrowserRouter>
       
     </div>

@@ -1,0 +1,27 @@
+.background3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgb(13, 1, 39), rgb(43, 2, 14));
+    background: linear-gradient(rgb(3, 0, 9), rgb(20, 1, 24));
+    background: linear-gradient(rgb(31, 1, 92), rgb(80, 7, 29));
+
+    z-index: 0;
+}
+
+.background-plants {
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://cdn.pixabay.com/photo/2022/10/27/20/14/trees-7551720_960_720.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter:brightness(0.1);
+}
