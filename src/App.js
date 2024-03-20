@@ -21,18 +21,21 @@ import Background3 from './components/background3/Background3';
 
 function App() {
   const [background, setBackground] = useState(0)
+  const [title, setTitle] = useState("Whisps")
+
+
+
   const toggleBackground = () => {
     console.log("clicked")
     setBackground((prev) => {
       if (prev === 0) {
-        alert("Morphing Colors")
+        setTitle("Morphing Colors")
         return 1
       } else if (prev === 1) {
-        alert("Vista which follows the time of day")
+        setTitle("Vista which follows the time of day")
         return 2
       } else if (prev === 2) {
-        
-        alert("Whisps")
+        setTitle("Whisps")
         return 0
       }
     })
@@ -55,7 +58,10 @@ function App() {
         {background === 0 && <Background />}
         {background === 1 && <Background2 />}
         {background === 2 && <Background3 />}
-        <button onClick={toggleBackground} className="background-button">Toggle Background</button>
+        <div>
+          <button onClick={toggleBackground} className="background-button">Toggle Background</button>
+          <p className="background-title">{ title }</p>
+        </div>
       </BrowserRouter>
       
     </div>
