@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // Pages
@@ -20,6 +20,24 @@ import Background3 from './components/background3/Background3';
 
 
 function App() {
+  const [background, setBackground] = useState(0)
+  const toggleBackground = () => {
+    console.log("clicked")
+    setBackground((prev) => {
+      if (prev === 0) {
+        alert("Morphing Colors")
+        return 1
+      } else if (prev === 1) {
+        alert("Vista which follows the time of day")
+        return 2
+      } else if (prev === 2) {
+        
+        alert("Whisps")
+        return 0
+      }
+    })
+
+  }
   return (
     <div className="app">
       
@@ -34,9 +52,10 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="secret" element={<Secret />} />
         </Routes>
-        {/* <Background /> */}
-        {/* <Background2 /> */}
-        <Background3 />
+        {background === 0 && <Background />}
+        {background === 1 && <Background2 />}
+        {background === 2 && <Background3 />}
+        <button onClick={toggleBackground} className="background-button">Toggle Background</button>
       </BrowserRouter>
       
     </div>

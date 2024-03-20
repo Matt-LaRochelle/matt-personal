@@ -3,15 +3,9 @@ import './background3.css'
 const Background3 = () => {
     const date = new Date();
     let hours = date.getHours();
-    const ampm = hours >= 12 ? 'PM' : 'AM';
 
-    // Convert from 24-hour to 12-hour format
-    hours = hours % 12;
-    // Convert '0' hours (midnight) to '12'
-    hours = hours ? hours : 12;
-
-    console.log(hours, ampm);
-    hours = 23;
+    console.log(hours);
+    // hours = 23;
 
     let backgroundStyle = {};
     let plantStyle = {};

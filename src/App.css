@@ -213,3 +213,18 @@ svg {
   .font-size-small {
     font-size: var(--font-size-200);
   }
+
+
+  .app .background-button {
+    position: absolute;
+    top: 40px;
+    left: 5px;
+    padding: 5px;
+    z-index: 100;
+  }
+
+  .app .background-button:hover {
+    background-color: var(--color-green-500);
+    color: var(--color-neutral-900);
+    cursor: pointer;
+  }
