@@ -8,6 +8,15 @@
     background: linear-gradient(rgb(3, 0, 9), rgb(20, 1, 24));
     background: linear-gradient(rgb(31, 1, 92), rgb(80, 7, 29));
 
+    /* Clear sky */
+    background: linear-gradient(hsl(204, 92%, 71%), hsl(204, 92%, 78%));
+
+    /* Stormy */
+    background: linear-gradient(hsl(204, 92%, 31%), hsl(204, 92%, 18%));
+
+    /* Sunset */
+    background: linear-gradient(hsl(258, 62%, 52%), hsl(28, 92%, 33%));
+
     z-index: 0;
 }
 
@@ -24,4 +33,5 @@
     -o-background-size: cover;
     background-size: cover;
     filter:brightness(0.1);
+    filter:brightness(0.9);
 }
