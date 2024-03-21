@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import './home2.css'
 import Navbar from '../navbar/Navbar'
 import Footer from '../footer/Footer'
+import Toggle from '../toggle/Toggle'
 import me from '../images/me.jpg'
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
             <Navbar />
             {/* <Background /> */}
             <div className="home__container2">
+                <Toggle />
                 <div className="home__element2">
                     <div className="home__text2">
                         <h1>Hello</h1>

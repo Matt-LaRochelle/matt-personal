@@ -12,7 +12,7 @@ import Contact from './components/contact/Contact';
 import Clear from './components/clear/Clear';
 import Secret from './components/secret/Secret';
 
-
+import { useBackgroundContext } from './components/hooks/useBackgroundContext';
 
 import Background from './components/background/Background';
 import Background2 from './components/background2/Background2';
@@ -20,27 +20,8 @@ import Background3 from './components/background3/Background3';
 
 
 function App() {
-  const [background, setBackground] = useState(0)
-  const [title, setTitle] = useState("Whisps")
+  const { background } = useBackgroundContext()
 
-
-
-  const toggleBackground = () => {
-    console.log("clicked")
-    setBackground((prev) => {
-      if (prev === 0) {
-        setTitle("Morphing Colors")
-        return 1
-      } else if (prev === 1) {
-        setTitle("Vista which follows the time of day")
-        return 2
-      } else if (prev === 2) {
-        setTitle("Whisps")
-        return 0
-      }
-    })
-
-  }
   return (
     <div className="app">
       
@@ -58,10 +39,6 @@ function App() {
         {background === 0 && <Background />}
         {background === 1 && <Background2 />}
         {background === 2 && <Background3 />}
-        <div>
-          <button onClick={toggleBackground} className="background-button">Toggle Background</button>
-          <p className="background-title">{ title }</p>
-        </div>
       </BrowserRouter>
       
     </div>

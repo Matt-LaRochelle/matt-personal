@@ -214,31 +214,3 @@ svg {
     font-size: var(--font-size-200);
   }
 
-
-  .app .background-button {
-    position: absolute;
-    top: 40px;
-    left: 5px;
-    padding: 5px;
-    z-index: 100;
-    border-radius: var(--border-radius-small);
-    border: 2px solid var(--button-border);
-    color: var(--button-text);
-    background-color: var(--button-background);
-  }
-
-  .app .background-button:hover {
-    background: var(--button-hover-background);
-    color: var(--button-hover-text);
-    border: 2px solid var(--button-hover-border);
-    cursor: pointer;
-  }
-  .app .background-title {
-    position: absolute;
-    top: 80px;
-    left: 5px;
-    color: var(--body-text);
-    background: var(--dark-see-through);
-    padding: 5px 15px;
-    border-radius: var(--border-radius-medium);
-  }
