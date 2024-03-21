@@ -41,8 +41,8 @@ const Project = () => {
 
                         <div className="cta__container">
                             <div className='cta__title'>
-                                <h1>{info.title}</h1>
-                                <p>{info.description}</p>
+                                <h1>{ info.title }</h1>
+                                <p>{ info.description }</p>
                             </div>
                             {info.credentials &&
                                 <div className="cta__credentials">
@@ -52,8 +52,8 @@ const Project = () => {
                                 </div>
                             }
                             <div className="cta__links">
-                                <a href={info.websiteURL} target="_blank"><button>Web App</button></a>
-                                {info.githubURL ? <a href={info.githubURL} target="_blank"><button>GitHub Repo</button></a> : <p>Code is private</p>}
+                                <a href={ info.websiteURL } target="_blank"><button>{ info.type }</button></a>
+                                {info.githubURL ? <a href={ info.githubURL } target="_blank"><button>GitHub Repo</button></a> : <p>Code is private</p>}
                             </div>
                         </div>
                         <h1 className="grid__tech-title">Tech</h1>
@@ -115,7 +115,7 @@ const Project = () => {
                         </div>
                     </div>
                     <div className='grid__right'>
-                        <img src={info.image} alt={info.title} />
+                        <img src={ info.image } alt={ info.title } />
                     </div>
                 </div>
 
