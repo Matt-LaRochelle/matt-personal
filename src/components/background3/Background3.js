@@ -5,7 +5,7 @@ const Background3 = () => {
     let hours = date.getHours();
 
     console.log(hours);
-    // hours = 23;
+    // hours = 20;
 
     let backgroundStyle = {};
     let plantStyle = {};

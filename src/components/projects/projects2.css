@@ -1,33 +1,38 @@
-.projects {
+.projects2 {
     min-height: 100vh;
     width: 100%;
     margin: 0rem;
+    overflow: hidden;
     position: relative;
-    z-index: 10;
-}
-
-.projects__container {
-    flex-grow: 1;
-    padding: 80px 10px;
     display: flex;
     flex-direction: column;
 }
 
+.projects__container2 {
+    flex-grow: 1;
+    z-index: 10;
+}
 
-.projects__helper {
+
+.projects__helper2 {
     color: var(--body-text);
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 16px 13px;
-    display: inline-block;
-    margin: 0 auto;
     border-radius: var(--border-radius-small);
     background: var(--content-background-secondary);
     box-shadow: var(--clear);
 }
-.projects__helper p {
+.projects__helper2 h4 {
     margin-bottom: 12px;
     font-size: var(--font-size-subheading);
     white-space: nowrap;
-    display: inline;
+}
+
+.projects__helper2 p {
+    font-size: var(--font-size-body);
 }
 
 
@@ -35,22 +40,24 @@
 
 
 
-.projects__grid {
+.projects__image-track2 {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 3rem;
-    margin: 50px auto;
+    position: absolute;
+    left: 50%;
+    top: 500px;
+    transform: translate(0%, -50%);
 }
 
-.projects__card {
+.projects__card2 {
     height: 400px;
     width: 300px;
     border-radius: var(--border-radius-large);
     position: relative;
 }
 
-.projects__card img {
+.projects__card2 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -62,7 +69,7 @@
     box-shadow: var(--clear);
 }
 
-.projects__title {
+.projects__title2 {
     position: absolute;
     top: -40px;
     left: 0px;
@@ -79,10 +86,10 @@
 
 /*  Since there is clicking and dragging, we don't want to be able to 
     highlight/select things */
-.projects__helper h4::selection,
-.projects__helper p::selection,
-.projects__card img::selection,
-.projects__title::selection {
+.projects__helper2 h4::selection,
+.projects__helper2 p::selection,
+.projects__card2 img::selection,
+.projects__title2::selection {
     background: transparent;
 }
 
@@ -93,7 +100,7 @@
 
 
 /* only for debugging */
-.stateVariables {
+.stateVariables2 {
     color: var(--color-neutral-100);
     position: absolute;
     top: 5px;
@@ -101,24 +108,24 @@
 }
 
 @media screen and (max-width: 500px) {
-    .projects__container {
+    .projects__container2 {
         padding: 20px 0;
     }
-    .projects__helper {
+    .projects__helper2 {
         width: 95%;
         
     }
-    .projects__helper h4 {
+    .projects__helper2 h4 {
         white-space: normal;
         width: 90%;
     }
-    .projects__image-track {
+    .projects__image-track2 {
         top: 550px;
     }
 }
 
 @media (hover) {
-    .projects__title {
+    .projects__title2 {
         /* color: #f8f8f8; */
         color: transparent;
  
@@ -137,12 +144,12 @@
         text-align: center;
     }
 
-    .projects__card:hover :not(.projects__title) {
+    .projects__card2:hover :not(.projects__title) {
         filter: opacity(.25);  
         
     }
     
-    .projects__card:hover .projects__title {
+    .projects__card2:hover .projects__title {
         color: var(--color-green-500);
         border: 2px solid var(--color-green-300);
         backdrop-filter: blur(15px);
