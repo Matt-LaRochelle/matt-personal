@@ -12,7 +12,7 @@
     z-index: 1;
 }
 .home__element2 {
-    margin: 140px auto 80px;
+    margin: 100px auto 180px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: min(800px, 90%);
