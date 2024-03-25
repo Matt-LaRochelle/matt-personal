@@ -31,7 +31,7 @@ const Toggle = () => {
             <div className="background-picker-grid">
               <img src={whisp} alt="whisp" name="whisps" onClick={toggleBackground} className="background-picker-grid-item" />
               <img src={morph} alt="morph" name="morph" onClick={toggleBackground} className="background-picker-grid-item" />
-              <img src={vista} alt="vista" name="vista" onClick={toggleBackground} className="background-picker-grid-item" />
+              {/* <img src={vista} alt="vista" name="vista" onClick={toggleBackground} className="background-picker-grid-item" /> */}
             </div>
         </div>
     )
