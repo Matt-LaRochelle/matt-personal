@@ -40,7 +40,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 3rem;
-    margin: 50px auto;
+    margin: 60px auto;
 }
 
 .projects__card {
@@ -48,6 +48,7 @@
     width: 300px;
     border-radius: var(--border-radius-large);
     position: relative;
+    margin-bottom: 30px;
 }
 
 .projects__card img {
@@ -55,7 +56,7 @@
     width: 100%;
     object-fit: cover;
     position: relative;
-    object-position: 100% 50%;
+    object-position: center;
     transition: filter .3s;
     border: 3px solid rgba(97, 97, 97, 0.402);
     border-radius: var(--border-radius-large);
@@ -77,20 +78,6 @@
 
 
 
-/*  Since there is clicking and dragging, we don't want to be able to 
-    highlight/select things */
-.projects__helper h4::selection,
-.projects__helper p::selection,
-.projects__card img::selection,
-.projects__title::selection {
-    background: transparent;
-}
-
-
-
-
-
-
 
 /* only for debugging */
 .stateVariables {
@@ -105,15 +92,16 @@
         padding: 20px 0;
     }
     .projects__helper {
-        width: 95%;
+        margin: 60px auto;
+        width: 90%;
         
     }
-    .projects__helper h4 {
+    .projects__helper p {
         white-space: normal;
-        width: 90%;
     }
-    .projects__image-track {
-        top: 550px;
+    .projects__card {
+        width: 80%;
+        margin: 30px auto;
     }
 }
 
