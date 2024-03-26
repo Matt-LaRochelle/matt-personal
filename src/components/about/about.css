@@ -21,6 +21,7 @@
     font-weight: 300;
     line-height: 28px;
     color: var(--body-text);
+    border-radius: var(--border-radius-large);
 }
 .about__paragraph span {
     color: var(--color-green-500);
@@ -114,12 +115,14 @@
     background: var(--content-background-primary);
     padding: 5px 12px;
     box-shadow: var(--clear);
+    border-radius: var(--border-radius-small);
+    min-height: 150px;
 }
 
 .education__school img {
     height: 100px;
     width: 100px;
-    border-radius: var(--borer-radius-large);
+    border-radius: var(--border-radius-medium);
     margin: 8px 30px 8px 10px;
     object-fit: cover;
 }
