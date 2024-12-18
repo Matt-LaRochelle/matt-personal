@@ -4,6 +4,7 @@ import windmill from '../images/windmill2.0.png'
 import bingo from '../images/bingo2.0.png'
 import dnd from '../images/dnd.png'
 import personal from '../images/personal.png'
+import norman from '../images/norman.png'
 
 export const projectInfo = [
     {
@@ -20,6 +21,21 @@ export const projectInfo = [
             "backend": true,
             "utilities": true
         }
+},
+{
+    "link": "/project/norman",
+    "type": "Website",
+    "title": "Norman Espinoza",
+    "description": "A website for an opera singer",
+    "credentials": false,
+    "websiteURL": "https://normanespinoza.com",
+    "githubURL": "https://github.com/Matt-LaRochelle/norman-sings",
+    "image": norman,
+    "techStack": {
+        "frontend": true,
+        "backend": false,
+        "utilities": true
+    }
 },
     {
         "link": "/project/opera",
