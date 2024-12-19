@@ -56,7 +56,7 @@ export const projectInfo = [
         "link": "/project/windmill",
         "type": "Website",
         "title": "Windmill Equestrian",
-        "description": "A website for a local equestrian business. This business has since shut down, so please do not use contact information as you explore the website",
+        "description": "A website for a local equestrian business",
         "credentials": false,
         "websiteURL": "https://gregarious-gumption-b9353e.netlify.app/",
         "githubURL": 'https://github.com/Matt-LaRochelle/horses',
