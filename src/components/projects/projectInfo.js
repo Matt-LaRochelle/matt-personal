@@ -67,21 +67,21 @@ export const projectInfo = [
             "utilities": true
         }
 },
-    {
-        "link": "/project/gp2",
-        "type": "Web App",
-        "title": "Guitar Paths",
-        "description": "A web application designed for guitarists learning ear training",
-        "credentials": true,
-        "websiteURL": "https://guitar-paths.onrender.com/",
-        "githubURL": "https://github.com/Matt-LaRochelle/gp2",
-        "image": gp2,
-        "techStack": {
-            "frontend": true,
-            "backend": true,
-            "utilities": true
-        }
-},
+//     {
+//         "link": "/project/gp2",
+//         "type": "Web App",
+//         "title": "Guitar Paths",
+//         "description": "A web application designed for guitarists learning ear training",
+//         "credentials": true,
+//         "websiteURL": "https://guitar-paths.onrender.com/",
+//         "githubURL": "https://github.com/Matt-LaRochelle/gp2",
+//         "image": gp2,
+//         "techStack": {
+//             "frontend": true,
+//             "backend": true,
+//             "utilities": true
+//         }
+// },
     {
         "link": "/project/bingo",
         "type": "Web App",
